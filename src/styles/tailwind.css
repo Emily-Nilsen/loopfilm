@@ -1,0 +1,14 @@
+body {
+  font-family: 'futura-pt', sans-serif;
+}
+h1 {
+  font-family: 'adobe-garamond-pro', serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
