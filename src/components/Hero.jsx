@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
+import { CldImage } from 'next-cloudinary'
 
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
@@ -11,7 +12,7 @@ export function Hero() {
   return (
     <div className="relative min-h-[90vh] overflow-hidden py-20 sm:min-h-[60vh] sm:py-32 lg:pb-32  xl:pb-36">
       <div className="absolute inset-0">
-        <Image
+        <CldImage
           priority
           className="object-cover"
           fill
