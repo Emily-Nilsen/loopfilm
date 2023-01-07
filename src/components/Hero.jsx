@@ -15,9 +15,11 @@ export function Hero() {
         <CldImage
           priority
           className="object-cover"
-          fill
+          // fill
+          width={5906}
+          height={3930}
           alt="The Beauty of Norway"
-          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1672749096/Loop%20Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
+          src="Loop%20Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
         />{' '}
       </div>
       <Container>
