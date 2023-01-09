@@ -19,7 +19,7 @@ export function Hero() {
           width={5906}
           height={3930}
           alt="The Beauty of Norway"
-          src="Loop%20Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
+          src="Loop Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
         />{' '}
       </div>
       <Container>

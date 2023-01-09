@@ -1,6 +1,6 @@
 # Loop Film
 
-Loop Film is a landing page for Norwegian film production company built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org). The site includes a portfolio section showcasing previous works, a services and about us page, a list of locations an online contact form.
+Loop Film is a landing page for a Norwegian film production company built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org). The site includes a portfolio section showcasing previous works, a services and about us page, a list of locations an online contact form.
 
 Here is a link to the [Loop Film](https://loopfilm.no) website.
 
