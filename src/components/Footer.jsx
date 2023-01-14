@@ -10,7 +10,7 @@ import OldTownLogo from '@/images/old-town-escapes.svg'
 
 export function Footer() {
   return (
-    <footer className="border-t border-gray-200">
+    <footer className="relative z-20 border-t border-gray-200 bg-sky-500/50">
       <Container>
         <div className="flex flex-col items-start justify-between pt-16 pb-6 gap-y-12 lg:flex-row lg:items-center lg:py-16">
           <div>

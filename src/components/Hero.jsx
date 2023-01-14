@@ -1,25 +1,33 @@
-import { useId, useRef, useState } from 'react'
+import { useId, useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue } from 'framer-motion'
 import { CldImage } from 'next-cloudinary'
-
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
 
 export function Hero() {
+  const [height, setHeight] = useState(0)
+
+  useEffect(() => {
+    setHeight(window.innerHeight)
+  }, [])
+
   return (
-    <div className="relative min-h-[90vh] overflow-hidden py-20 sm:min-h-[60vh] sm:py-32 lg:pb-32  xl:pb-36">
-      <div className="absolute inset-0">
-        <CldImage
+    <div
+      className={clsx(
+        `h-${height} relative overflow-hidden py-20 sm:h-[60vh] sm:py-32 lg:pb-32 xl:pb-36`
+      )}
+    >
+      <div className="absolute inset-0 bg-green-200">
+        <Image
           priority
           className="object-cover"
-          // fill
-          width={5906}
-          height={3930}
+          fill
           alt="The Beauty of Norway"
-          src="Loop Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
+          src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
+          unoptimized
         />{' '}
       </div>
       <Container>
@@ -48,16 +56,12 @@ export function Hero() {
                 </Link>
               </div>
             </div>
-            {/* <div className="flex self-end h-full col-span-3 col-start-1 text-white">
-              <div className="flex justify-between w-full">
-                <div className="">Service 1</div>
-                <div className="">Service 2</div>
-                <div className="">Service 3</div>
-              </div>
-            </div> */}
           </div>
         </div>
       </Container>
+      <div>
+        <p>View height: {height}px</p>
+      </div>
     </div>
   )
 }
