@@ -25,7 +25,7 @@ export function AboutLoopFilm() {
                   Our location offers a wide range of spectacular landscapes,
                   from white sandy beaches to glaciers, and we have the
                   infrastructure to make filming in Norway a breeze. Whether
-                  you're looking to shoot under extreme conditions or capture
+                  you’re looking to shoot under extreme conditions or capture
                   the beauty of our curvy, breathtaking roads and rugged
                   coastline, we can help.
                 </p>
@@ -40,15 +40,15 @@ export function AboutLoopFilm() {
                 </p>
                 <p>
                   We have a reputation for working with some of the best
-                  filmmakers in the world, and we're proud to have a philosophy
+                  filmmakers in the world, and we’re proud to have a philosophy
                   that every job is manageable and every client is our most
-                  important client. We're also proud members of the Global
+                  important client. We’re also proud members of the Global
                   Production Network, ensuring we are always up to date with the
                   latest industry trends and standards.
                 </p>
                 <p>
-                  Don't hesitate to contact us for references or to discuss your
-                  project. We're ready to help you create a masterpiece in
+                  Don’t hesitate to contact us for references or to discuss your
+                  project. We’re ready to help you create a masterpiece in
                   Norway.
                 </p>
               </div>
