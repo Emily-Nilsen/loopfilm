@@ -38,6 +38,9 @@ module.exports = {
         'sky-orange': '#ed6b5c',
         'sky-pink': '#d75f67',
         'sky-yellow': '#f9c45b',
+        'GPN-light-blue': '#40c0f0',
+        'GPN-medium-blue': '#1a519f',
+        'GPN-dark-blue': '#252766',
       }),
       fontFamily: {
         sans: ['futura-pt', ...defaultTheme.fontFamily.sans],
@@ -68,5 +71,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

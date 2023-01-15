@@ -6,8 +6,6 @@ import { Container } from '@/components/Container'
 import { Logomark } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 
-import OldTownLogo from '@/images/old-town-escapes.svg'
-
 export function Footer() {
   return (
     <footer className="relative z-20 border-t border-gray-200 bg-sky-500/50">

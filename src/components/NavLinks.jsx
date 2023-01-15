@@ -6,6 +6,7 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
+    ['Home', '/'],
     ['Our company', '/about'],
     ['Our Locations', '/locations'],
     ['Portfolio', '/portfolio'],

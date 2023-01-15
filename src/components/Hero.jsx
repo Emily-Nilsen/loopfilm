@@ -20,13 +20,13 @@ export function Hero() {
         `h-${height} relative overflow-hidden py-20 sm:h-[60vh] sm:py-32 lg:pb-32 xl:pb-36`
       )}
     >
-      <div className="absolute inset-0 bg-green-200">
+      <div className="absolute inset-0 bg-green-200/50">
         <Image
           priority
           className="object-cover"
           fill
           alt="The Beauty of Norway"
-          src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/005512_Christian-Ringer_www.nordnorge.com_eq93yp.jpg"
+          src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/landing_page_ufbowp.webp"
           unoptimized
         />{' '}
       </div>

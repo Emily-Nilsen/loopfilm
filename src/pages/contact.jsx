@@ -1,16 +1,20 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 
+import { Header } from '@/components/Header'
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { SelectField, TextField } from '@/components/Fields'
+import { OurOffices } from '@/components/OurOffices'
 
 export default function Contact() {
   return (
-    <>
+    <main className="w-full h-full">
       <Head>
         <title>Contact Us - LoopFilm</title>
       </Head>
+      <Header />
       <AuthLayout
         title="Get in touch"
         subtitle="We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
@@ -60,6 +64,17 @@ export default function Contact() {
           </Button>
         </form>
       </AuthLayout>
-    </>
+      <div className="absolute inset-0 bg-gray-800">
+        <Image
+          fill
+          src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1672749093/Loop%20Film/003528_Tofoto_www.nordnorge.com_a4ygqu.jpg"
+          alt="Beautiful Norway"
+        />
+        <div className="absolute top-0 h-[50vh] w-full bg-gradient-to-b from-black/80"></div>
+        <div className="absolute bottom-0 flex h-[50vh] w-full items-end bg-gradient-to-t from-black/80">
+          <OurOffices />
+        </div>
+      </div>
+    </main>
   )
 }

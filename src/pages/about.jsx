@@ -7,12 +7,13 @@ import { Header } from '../components/Header'
 import { Footer } from '@/components/Footer'
 import { Container } from '@/components/Container'
 import { AboutLoopFilm } from '@/components/AboutLoopFilm'
+import { AboutUs } from '@/components/AboutUs'
 
 export default function About() {
   return (
     <div className="relative">
       <Head>
-        <title>About Us - LoopFilm</title>
+        <title>About LoopFilm</title>
       </Head>
       <Header />
 
@@ -23,7 +24,7 @@ export default function About() {
               className="object-cover"
               alt="Beautiful Northern Norway"
               fill
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/LoopFilm_background_v2_isu7w9.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/about_page_background_v2_ixu8pi.webp"
               unoptimized
             />
           </div>
@@ -31,12 +32,17 @@ export default function About() {
         <div id="content" className="">
           <Container className="relative h-full z-1">
             <div className="flex flex-col justify-between h-full py-40">
-              <div className="bg-green-200/10">
+              <div className="bg-t">
                 <AboutLoopFilm />
               </div>
-              <div className="bg-yellow-200/50">Middle content</div>
-              <div className="mb-20 bg-pink-100/10">
-                <AboutLoopFilm />
+              <div className="flex items-center justify-center bg-t h-96">
+                <h1 className="max-w-md text-2xl font-semibold tracking-tight text-center text-white sm:text-3xl">
+                  Bringing 20+ years of experience to the Norwegian film
+                  industry
+                </h1>
+              </div>
+              <div className="bg-t">
+                <AboutUs />
               </div>
             </div>
           </Container>
