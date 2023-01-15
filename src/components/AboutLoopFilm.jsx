@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function AboutLoopFilm() {
   return (
     <div className="px-6 py-16 overflow-hidden bg-t lg:px-8 xl:py-36">
@@ -54,12 +56,12 @@ export function AboutLoopFilm() {
               </div>
             </div>
             <div className="inline-flex mt-8 rounded-md shadow">
-              <a
+              <Link
                 href="/contact"
                 className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-sky-orange hover:bg-sky-pink"
               >
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
         </div>
