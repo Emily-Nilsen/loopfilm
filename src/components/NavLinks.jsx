@@ -8,14 +8,14 @@ export function NavLinks() {
   return [
     ['Home', '/'],
     ['Our company', '/about'],
-    ['Our Locations', '/locations'],
+    ['Our locations', '/locations'],
     ['Portfolio', '/portfolio'],
-    ['Contact Us', '/contact'],
+    ['Contact us', '/contact'],
   ].map(([label, href], index) => (
     <Link
       key={label}
       href={href}
-      className="relative -my-2 -mx-3 rounded-lg px-3 py-2 text-sm text-white transition-colors delay-150 hover:text-white hover:delay-[0ms]"
+      className="relative -my-2 -mx-3 rounded-lg px-3 py-2 text-base text-white transition-colors delay-150 hover:text-white hover:delay-[0ms]"
       onMouseEnter={() => setHoveredIndex(index)}
       onMouseLeave={() => setHoveredIndex(null)}
     >

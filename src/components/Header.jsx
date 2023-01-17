@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Popover } from '@headlessui/react'
@@ -6,6 +7,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logomark } from '@/components/Logo'
+import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 
 const container = {
@@ -66,23 +68,41 @@ function MobileNavLink({ children, ...props }) {
 }
 
 export function Header() {
+  const router = useRouter()
+
   return (
     <header className="absolute top-0 left-0 w-full">
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
           {/* Logo */}
+          {router.pathname === '/' && (
+            <div>
+              <Link href="/" aria-label="Home">
+                <motion.div
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                  className="flex items-center"
+                >
+                  <Logomark className="w-auto h-10 stroke-sky-orange" />
+                </motion.div>
+              </Link>
+            </div>
+          )}
+
           <div>
             <Link href="/" aria-label="Home">
-              <motion.div
-                variants={container}
-                initial="hidden"
-                animate="visible"
-                className="flex items-center"
-              >
-                <Logomark className="w-auto h-10 stroke-sky-orange" />
-              </motion.div>
+              <div className="flex items-center">
+                {router.pathname === '/about' && (
+                  <Logo className="w-auto h-10 stroke-GPN-light-blue" />
+                )}
+                {router.pathname === '/contact' && (
+                  <Logo className="w-auto h-10 stroke-sky-orange" />
+                )}
+              </div>
             </Link>
           </div>
+
           {/* NavItems */}
           <div className="flex">
             <div className="relative z-10 flex items-center gap-16">

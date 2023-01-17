@@ -29,7 +29,7 @@ export function OurOffices() {
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-medium text-white">Contact info</h3>
+            <h3 className="text-lg font-medium text-white">Contact details</h3>
             <p className="mt-2 text-base text-white/80">
               <span className="block">+47 9098 0286</span>
               <span className="block">Skype: jarletangen</span>

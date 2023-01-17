@@ -17,10 +17,10 @@ export function Hero() {
   return (
     <div
       className={clsx(
-        `h-${height} relative overflow-hidden py-20 sm:h-[60vh] sm:py-32 lg:pb-32 xl:pb-36`
+        `h-${height} relative overflow-hidden py-20 sm:h-[60vh] sm:pt-32 lg:pb-20`
       )}
     >
-      <div className="absolute inset-0 bg-green-200/50">
+      <div className="absolute inset-0 bg-gray-800">
         <Image
           priority
           className="object-cover"
@@ -30,14 +30,16 @@ export function Hero() {
           unoptimized
         />{' '}
       </div>
-      <Container>
-        <div className="relative">
-          <div className="grid w-full h-full grid-cols-5">
-            <div className="flex flex-col col-span-3 text-white sm:col-span-2">
-              <h1 className="pt-10 mb-4 text-4xl font-semibold leading-10 tracking-tight sm:pt-0 sm:text-5xl sm:leading-tight">
+      <Container className="relative h-full z-1">
+        <div className="grid w-full h-full grid-cols-5">
+          <div className="flex flex-col justify-between col-span-3 text-white sm:col-span-2">
+            <div>
+              <p className="pt-10 mb-4 text-4xl font-semibold tracking-tight sm:pt-0 sm:text-5xl lg:text-6xl">
                 Capturing the natural beauty of Norway
-              </h1>
-              <h2 className="mt-[40vh] max-w-xs text-lg leading-tight  sm:mt-0 sm:leading-normal">
+              </p>
+            </div>
+            <div>
+              <h2 className="mt-[40vh] max-w-sm text-lg leading-tight sm:mt-0 sm:text-2xl sm:leading-normal">
                 Unique locations and breathtaking views for your next film
                 production.
               </h2>
@@ -48,10 +50,7 @@ export function Hero() {
                     color="rose"
                     className="flex-none w-full mt-10 sm:w-fit"
                   >
-                    <span className="hidden lg:inline">
-                      Contact us to learn more
-                    </span>
-                    <span className="lg:hidden">Contact us</span>
+                    <span className="text-lg">Inquire now</span>
                   </Button>
                 </Link>
               </div>

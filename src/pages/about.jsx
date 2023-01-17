@@ -36,7 +36,7 @@ export default function About() {
                 <AboutLoopFilm />
               </div>
               <div className="flex items-center justify-center bg-t h-96">
-                <h1 className="max-w-md text-2xl font-semibold tracking-tight text-center text-white sm:text-3xl">
+                <h1 className="max-w-md text-2xl italic font-medium tracking-tight text-center text-white sm:text-3xl">
                   Bringing 20+ years of experience to the Norwegian film
                   industry
                 </h1>

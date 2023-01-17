@@ -25,7 +25,7 @@ export function Footer() {
                 </p>
               </div>
             </div>
-            <nav className="flex gap-8 mt-11">
+            <nav className="flex flex-wrap gap-8 mt-11">
               <NavLinks />
             </nav>
           </div>

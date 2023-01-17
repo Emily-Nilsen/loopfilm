@@ -5,8 +5,9 @@ import { CallToAction } from '@/components/CallToAction'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-
+import { LogoCloud } from '@/components/LogoCloud'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { SiteMenuFeature } from '@/components/SiteMenuFeature'
 
 export default function Home() {
   return (
@@ -22,7 +23,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <PrimaryFeatures />
+        <LogoCloud />
+        {/* <PrimaryFeatures /> */}
+        <SiteMenuFeature />
+        <div className="pt-24"></div>
 
         {/* <CallToAction /> */}
       </main>
