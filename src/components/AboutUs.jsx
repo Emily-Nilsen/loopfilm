@@ -66,10 +66,11 @@ export function AboutUs() {
                   <li key={person.name}>
                     <div className="space-y-4">
                       <div className="aspect-w-3 aspect-h-2">
-                        <img
+                        <Image
                           className="object-cover rounded-lg shadow-lg"
                           src={person.imageUrl}
-                          alt=""
+                          alt={person.name}
+                          fill
                         />
                       </div>
                       <div className="space-y-1 text-lg font-semibold leading-6 text-white">

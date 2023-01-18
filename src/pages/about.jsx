@@ -21,6 +21,7 @@ export default function About() {
         <div className="absolute inset-0">
           <div className="relative w-full h-full">
             <Image
+              priority
               className="object-cover"
               alt="Beautiful Northern Norway"
               fill

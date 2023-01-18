@@ -8,7 +8,7 @@ function FeatureHeading() {
       <div className="px-6 pt-16 pb-6 mx-auto max-w-7xl sm:pb-10 sm:pt-24 lg:px-8">
         <div className="text-center">
           <p className="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            Film in Norway's stunning natural settings
+            Film in Norway’s stunning natural settings
           </p>
           <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
             From fjords, snowy mountains, and forests to cities, explore the
