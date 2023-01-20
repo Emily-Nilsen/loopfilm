@@ -57,14 +57,17 @@ function ChevronUpIcon(props) {
 
 function MobileNavLink({ children, ...props }) {
   return (
-    <Popover.Button
-      as={Link}
+    <Link
       className="block text-base leading-7 tracking-tight text-gray-700"
       {...props}
     >
       {children}
-    </Popover.Button>
+    </Link>
   )
+}
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
 }
 
 export function Header() {
@@ -93,12 +96,16 @@ export function Header() {
           <div>
             <Link href="/" aria-label="Home">
               <div className="flex items-center">
-                {router.pathname === '/about' && (
-                  <Logo className="w-auto h-10 stroke-GPN-light-blue" />
-                )}
-                {router.pathname === '/contact' && (
-                  <Logo className="w-auto h-10 stroke-sky-orange" />
-                )}
+                <Logo
+                  className={classNames(
+                    router.pathname === '/about'
+                      ? ' stroke-white/80'
+                      : router.pathname === '/contact'
+                      ? ' stroke-white'
+                      : '',
+                    'h-10 w-auto'
+                  )}
+                />
               </div>
             </Link>
           </div>
@@ -115,7 +122,16 @@ export function Header() {
                 {({ open }) => (
                   <>
                     <Popover.Button
-                      className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-sky-pink p-2 hover:bg-sky-pink/10 hover:stroke-sky-yellow active:stroke-sky-yellow [&:not(:focus-visible)]:focus:outline-none"
+                      className={classNames(
+                        router.pathname === '/'
+                          ? 'stroke-sky-pink hover:bg-sky-pink/10 hover:stroke-sky-pink active:stroke-sky-pink'
+                          : router.pathname === '/about'
+                          ? ' stroke-GPN-medium-blue hover:bg-GPN-medium-blue/10 hover:stroke-GPN-medium-blue active:stroke-GPN-medium-blue'
+                          : router.pathname === '/contact'
+                          ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
+                          : '',
+                        'relative z-10 -m-2 inline-flex items-center rounded-lg  p-2  [&:not(:focus-visible)]:focus:outline-none'
+                      )}
                       aria-label="Toggle site navigation"
                     >
                       {({ open }) =>
@@ -162,8 +178,8 @@ export function Header() {
                                 Portfolio
                               </MobileNavLink>
                             </div>
-                            <div className="flex flex-col gap-4 mt-8">
-                              <Button href="/contact" variant="outline">
+                            <div className="flex flex-col w-full gap-4 mt-8 sm:w-fit">
+                              <Button href="/contact" variant="solid">
                                 Contact us
                               </Button>
                             </div>

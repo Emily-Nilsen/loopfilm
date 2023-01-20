@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { GPNLogo } from '@/components/Logos'
+import { Button } from './Button'
 
 export function AboutLoopFilm() {
   return (
@@ -7,7 +8,7 @@ export function AboutLoopFilm() {
       <div className="mx-auto max-w-max lg:max-w-7xl">
         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
           <div className="text-base max-w-prose lg:max-w-none">
-            <p className="mt-2 text-4xl font-bold leading-8 tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <p className="mt-2 text-4xl font-bold leading-8 tracking-tight text-white/90 sm:text-5xl lg:text-6xl">
               Loop<span className="text-GPN-dark-blue">Film</span>
             </p>
           </div>
@@ -54,16 +55,13 @@ export function AboutLoopFilm() {
                   project. We’re ready to help you create a masterpiece in
                   Norway.
                 </p>
-                <GPNLogo className="w-32 h-auto mt-12" />
+                <GPNLogo className="w-32 h-auto mt-12 opacity-80" />
               </div>
             </div>
             <div className="inline-flex mt-8 rounded-md shadow">
-              <Link
-                href="/contact"
-                className="flex items-center justify-center px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-sky-orange hover:bg-sky-pink"
-              >
+              <Button href="/contact" variant="solid" color="white">
                 Get in touch
-              </Link>
+              </Button>
             </div>
           </div>
         </div>

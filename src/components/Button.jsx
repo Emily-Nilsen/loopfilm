@@ -4,16 +4,16 @@ import clsx from 'clsx'
 
 const baseStyles = {
   solid:
-    'inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold outline-2 outline-offset-2 transition-colors duration-300 ease-in-out transition',
+    'inline-flex justify-center rounded-lg py-3 px-4 font-semibold outline-2 outline-offset-2 transition-colors duration-300 ease-in-out transition',
   outline:
-    'inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors',
+    'inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] outline-2 outline-offset-2 transition-colors',
 }
 
 const variantStyles = {
   solid: {
     rose: 'relative overflow-hidden bg-sky-pink/95 text-white before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-sky-orange active:text-white/80 before:transition-colors',
     white:
-      'bg-white text-rose-900 hover:bg-white/90 active:bg-white/90 active:text-rose-900/70',
+      'bg-white/80 text-GPN-dark-blue hover:bg-white active:bg-white/90 active:text-GPN-dark-blue/70',
     gray: 'bg-gray-800 text-white hover:bg-gray-900 active:bg-gray-800 active:text-white/80',
   },
   outline: {

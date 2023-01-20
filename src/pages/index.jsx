@@ -2,12 +2,12 @@ import Head from 'next/head'
 
 import { CallToAction } from '@/components/CallToAction'
 
-import { Footer } from '@/components/Footer'
+import { HomepageFooter } from '@/components/HomepageFooter'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { LogoCloud } from '@/components/LogoCloud'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SiteMenuFeature } from '@/components/SiteMenuFeature'
+import { HomepageFeature } from '@/components/HomepageFeature'
+import { MemberLogoCloud } from '@/components/MemberLogoCloud'
 
 export default function Home() {
   return (
@@ -24,13 +24,10 @@ export default function Home() {
       <main>
         <Hero />
         <LogoCloud />
-        {/* <PrimaryFeatures /> */}
-        <SiteMenuFeature />
-        <div className="pt-24"></div>
-
-        {/* <CallToAction /> */}
+        <HomepageFeature />
+        <MemberLogoCloud />
       </main>
-      <Footer />
+      <HomepageFooter />
     </div>
   )
 }

@@ -4,53 +4,61 @@ import Head from 'next/head'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import { Header } from '../components/Header'
-import { Footer } from '@/components/Footer'
+import { AboutFooter } from '@/components/AboutFooter'
 import { Container } from '@/components/Container'
 import { AboutLoopFilm } from '@/components/AboutLoopFilm'
 import { AboutUs } from '@/components/AboutUs'
 
 export default function About() {
   return (
-    <div className="relative">
+    <>
       <Head>
         <title>About LoopFilm</title>
       </Head>
       <Header />
 
-      <main className="bg-black/50">
+      <main className="relative bg-black/50 pt-[5vw] pb-[35vw]">
         <div className="absolute inset-0">
-          <div className="relative w-full h-full">
+          <motion.div
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{
+              duration: 0.8,
+              type: 'fade',
+            }}
+            className="relative w-full h-full"
+          >
             <Image
               priority
-              className="object-cover"
+              className="object-cover object-bottom"
               alt="Beautiful Northern Norway"
               fill
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto,f_auto/Loop%20Film/about_page_background_v2_ixu8pi.webp"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_company_only_j4u8e8.webp"
               unoptimized
             />
-          </div>
+          </motion.div>
         </div>
-        <div id="content" className="">
+        <div id="content" className="py-16 pb-80">
           <Container className="relative h-full z-1">
-            <div className="flex flex-col justify-between h-full py-40">
+            <div className="flex flex-col justify-between h-full py-0">
               <div className="bg-t">
                 <AboutLoopFilm />
               </div>
-              <div className="flex items-center justify-center bg-t h-96">
-                <h1 className="max-w-md text-2xl italic font-medium tracking-tight text-center text-white sm:text-3xl">
+              <div className="flex items-center justify-center h-40 bg-t">
+                <h1 className="max-w-md text-2xl font-medium tracking-tight text-center text-white/90 sm:text-3xl">
                   Bringing 20+ years of experience to the Norwegian film
                   industry
                 </h1>
-              </div>
-              <div className="bg-t">
-                <AboutUs />
               </div>
             </div>
           </Container>
         </div>
       </main>
+      <section className="relative">
+        <AboutUs />
+      </section>
 
-      <Footer />
-    </div>
+      <AboutFooter />
+    </>
   )
 }

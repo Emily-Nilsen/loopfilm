@@ -1,8 +1,15 @@
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
+import clsx from 'clsx'
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export function NavLinks() {
+  const router = useRouter()
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
@@ -22,7 +29,14 @@ export function NavLinks() {
       <AnimatePresence>
         {hoveredIndex === index && (
           <motion.span
-            className="absolute inset-0 rounded-lg bg-sky-pink"
+            className={classNames(
+              router.pathname === '/'
+                ? ' bg-sky-pink/50'
+                : router.pathname === '/about'
+                ? ' bg-white/10'
+                : 'bg-white/10',
+              'absolute inset-0 rounded-lg'
+            )}
             layoutId="hoverBackground"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.15 } }}

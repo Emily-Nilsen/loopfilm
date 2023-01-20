@@ -1,24 +1,5 @@
 import { motion } from 'framer-motion'
 
-const container = {
-  hidden: {
-    scale: 3,
-    x: '45vw',
-    y: '25vh',
-  },
-  visible: {
-    scale: 1,
-    x: 0,
-    y: 0,
-    transition: {
-      delay: 4,
-      type: 'spring',
-      duration: 1.0,
-      bounce: 0,
-    },
-  },
-}
-
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
