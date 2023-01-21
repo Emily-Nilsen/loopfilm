@@ -15,16 +15,16 @@ export function MemberLogoCloud() {
         </p>
         <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-4 lg:mt-8">
           <div className="flex justify-center col-span-1 px-8 py-8 bg-white">
-            <GlobalProductionLogo className="max-h-12" />
+            <GlobalProductionLogo className="h-12 max-h-12" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-white">
-            <IACPLogo className="max-h-12 fill-gray-400" />
+            <IACPLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-white">
-            <GreenTheBidLogo className="max-h-12 fill-gray-400" />
+            <GreenTheBidLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-white">
-            <VirkeLogo className="max-h-12 fill-gray-400" />
+            <VirkeLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
         </div>
       </div>

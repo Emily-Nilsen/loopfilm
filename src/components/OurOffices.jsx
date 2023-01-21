@@ -41,15 +41,15 @@ export function OurOffices() {
     <section className="relative">
       {/* Offices */}
       <div className="relative w-full bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+        <div className="px-6 py-16 mx-auto max-w-7xl sm:py-24 lg:py-32 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
             Our offices
           </h2>
-          <p className="mt-6 max-w-3xl text-lg text-gray-900/80">
+          <p className="max-w-3xl mt-6 text-lg text-gray-900/80">
             We have offices in Oslo and Aalesund, providing easy access to the
             best locations throughout Norway.
           </p>
-          <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-10 mt-10 sm:grid-cols-2 lg:grid-cols-4">
             <div>
               <h3 className="text-lg font-medium text-gray-900">Main office</h3>
               <p className="mt-2 text-base text-gray-900/80">
@@ -75,16 +75,16 @@ export function OurOffices() {
               <div className="mt-2 text-base text-gray-900/80">
                 <dl className="space-y-2">
                   <dd className="flex items-center space-x-2">
-                    <PhoneIcon className="h-4 w-4 fill-gray-400 " />
+                    <PhoneIcon className="w-4 h-4 fill-gray-400 " />
                     <span className="block">+47 9098 0286</span>
                   </dd>
                   <dd className="flex items-center space-x-2">
-                    <SkypeIcon className="h-5 w-5 fill-gray-400 " />
+                    <SkypeIcon className="w-5 h-5 fill-gray-400 " />
                     <span className="block">jarletangen</span>
                   </dd>
 
                   <dd className="flex items-center space-x-2">
-                    <EmailIcon className="h-4 w-4 fill-gray-400 " />
+                    <EmailIcon className="w-4 h-4 fill-gray-400 " />
                     <span className="block">jarle@loopfilm.no</span>
                   </dd>
                 </dl>

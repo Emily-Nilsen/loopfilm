@@ -87,7 +87,7 @@ export function Footer() {
                         router.pathname === '/'
                           ? ' text-sky-pink'
                           : router.pathname === '/about'
-                          ? ' text-GPN-medium-blue'
+                          ? ' text-sky-600'
                           : router.pathname === '/contact'
                           ? ' text-red-500'
                           : ''
@@ -111,7 +111,7 @@ export function Footer() {
                         router.pathname === '/'
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/about'
-                          ? ' hover:text-GPN-medium-blue'
+                          ? ' hover:text-sky-600'
                           : router.pathname === '/contact'
                           ? ' hover:text-red-500'
                           : '',
@@ -171,7 +171,7 @@ export function Footer() {
                   router.pathname === '/'
                     ? ' hover:text-sky-pink'
                     : router.pathname === '/about'
-                    ? ' hover:text-GPN-medium-blue'
+                    ? ' hover:text-sky-600'
                     : router.pathname === '/contact'
                     ? ' hover:text-green-300'
                     : '',

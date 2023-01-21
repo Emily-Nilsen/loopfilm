@@ -4,19 +4,19 @@ import { Button } from './Button'
 
 export function AboutLoopFilm() {
   return (
-    <div className="px-6 py-16 overflow-hidden bg-t lg:px-8 xl:py-36">
+    <div className="bg-t overflow-hidden px-6 py-16 lg:px-8 xl:py-36">
       <div className="mx-auto max-w-max lg:max-w-7xl">
         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
-          <div className="text-base max-w-prose lg:max-w-none">
+          <div className="max-w-prose text-base lg:max-w-none">
             <p className="mt-2 text-4xl font-bold leading-8 tracking-tight text-white/90 sm:text-5xl lg:text-6xl">
               Loop<span className="text-GPN-dark-blue">Film</span>
             </p>
           </div>
         </div>
         <div className="relative">
-          <div className="relative md:bg-t md:p-6">
+          <div className="md:bg-t relative md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-              <div className="prose prose-lg text-white prose-indigo lg:max-w-none">
+              <div className="prose prose-lg prose-indigo text-white lg:max-w-none">
                 <p>
                   If you’re looking for a professional Norwegian film production
                   company specialising in service production, look no further
@@ -34,7 +34,7 @@ export function AboutLoopFilm() {
                   coastline, we can help.
                 </p>
               </div>
-              <div className="mt-6 prose prose-lg text-white prose-indigo lg:mt-0">
+              <div className="prose prose-lg prose-indigo mt-6 text-white lg:mt-0">
                 <p>
                   Norway is the perfect playground for any director with our
                   vast range of landscapes, including mountains, fjords,
@@ -55,10 +55,10 @@ export function AboutLoopFilm() {
                   project. We’re ready to help you create a masterpiece in
                   Norway.
                 </p>
-                <GPNLogo className="w-32 h-auto mt-12 opacity-80" />
+                <GPNLogo className="mt-12 h-auto w-32 opacity-80" />
               </div>
             </div>
-            <div className="inline-flex mt-8 rounded-md shadow">
+            <div className="mt-8 inline-flex rounded-md shadow">
               <Button href="/contact" variant="solid" color="white">
                 Get in touch
               </Button>

@@ -13,7 +13,7 @@ import { NavLinks } from '@/components/NavLinks'
 const container = {
   hidden: {
     scale: 3,
-    x: '45vw',
+    x: 'calc(50vw - 36px)',
     y: '25vh',
   },
   visible: {
@@ -87,7 +87,7 @@ export function Header() {
                   animate="visible"
                   className="flex items-center"
                 >
-                  <Logomark className="w-auto h-10 stroke-sky-orange" />
+                  <Logomark className="w-auto h-6 stroke-sky-orange sm:h-8" />
                 </motion.div>
               </Link>
             </div>
@@ -103,7 +103,7 @@ export function Header() {
                       : router.pathname === '/contact'
                       ? ' stroke-white'
                       : '',
-                    'h-10 w-auto'
+                    'h-6 w-auto sm:h-8'
                   )}
                 />
               </div>

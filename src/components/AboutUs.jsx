@@ -56,10 +56,11 @@ const container = {
 }
 
 const slideIn = {
-  hidden: { opacity: 0, x: '100%' },
+  hidden: { opacity: 0, x: '100%', rotate: 180 },
   show: {
     opacity: 1,
     x: 0,
+    rotate: 0,
     transition: {
       duration: 1,
       type: 'spring',
@@ -77,12 +78,12 @@ export function AboutUs() {
 
   return (
     <div className="overflow-x-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-12 pb-16 md:py-24 lg:px-8 lg:py-32">
+      <div className="px-6 py-24 mx-auto max-w-7xl lg:px-8 lg:py-32">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           <div className="flex flex-col justify-between">
             <div className="space-y-5 sm:space-y-4">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                <span className="text-GPN-medium-blue">About</span> Us
+                <span className="text-sky-600">About</span> Us
               </h2>
               <p className="text-xl text-gray-500">
                 Meet the professional team at LoopFilm AS, with decades of
@@ -90,36 +91,7 @@ export function AboutUs() {
                 locations.
               </p>
             </div>
-            <div className="hidden items-end lg:flex">
-              {/* Awards */}
-              <div
-                ref={ref}
-                className="flex items-end justify-center px-3 text-center font-medium text-gray-500"
-              >
-                <motion.div
-                  whileInView={{ opacity: inView ? 1 : 0 }}
-                  variants={container}
-                  initial={inView ? 'show' : 'hidden'}
-                  animate={inView ? 'show' : 'hidden'}
-                  className="flex items-center justify-end gap-10 sm:flex-col"
-                >
-                  {awards.map((award, i) => (
-                    <motion.div
-                      variants={slideIn}
-                      key={i}
-                      className="flex h-44 w-44 flex-col items-center justify-around rounded-full bg-gray-50 p-10 shadow-sm"
-                    >
-                      <div className="flex h-full items-center justify-center">
-                        <award.logo className="h-auto max-h-[80px] w-24 max-w-[100px] fill-gray-400 sm:w-28" />
-                      </div>
-                      <div className="max-w-[90px] pt-4 text-xs">
-                        {award.title}
-                      </div>
-                    </motion.div>
-                  ))}
-                </motion.div>
-              </div>
-            </div>
+            <div className="items-end hidden lg:flex"></div>
           </div>
           <div className="lg:col-span-2">
             <ul
@@ -130,10 +102,10 @@ export function AboutUs() {
                 <li key={person.name} className="sm:py-8">
                   <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
                     <div>
-                      <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                      <div className="aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
                         <Image
                           fill
-                          className="rounded-lg object-cover shadow-lg"
+                          className="object-cover rounded-lg shadow-lg"
                           src={person.imageUrl}
                           alt={person.name}
                         />
@@ -143,7 +115,7 @@ export function AboutUs() {
                       <div className="space-y-4">
                         <div className="space-y-1 text-lg font-semibold leading-6">
                           <h3>{person.name}</h3>
-                          <p className="text-GPN-medium-blue">{person.role}</p>
+                          <p className="text-sky-600">{person.role}</p>
                         </div>
                         <div className="text-lg">
                           {person.bio.map((sentence, i) => (
@@ -156,11 +128,11 @@ export function AboutUs() {
                           <li>
                             <a
                               href={person.linkedinUrl}
-                              className="text-gray-400 transition duration-300 ease-in-out hover:text-GPN-medium-blue"
+                              className="text-gray-400 transition duration-300 ease-in-out hover:text-sky-600"
                             >
                               <span className="sr-only">LinkedIn</span>
                               <svg
-                                className="h-5 w-5"
+                                className="w-5 h-5"
                                 aria-hidden="true"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
@@ -181,36 +153,34 @@ export function AboutUs() {
               ))}
             </ul>
           </div>
-          <div className="flex w-full lg:hidden">
-            {/* Awards */}
-            <div
-              ref={awardsRef}
-              id="awards"
-              className="flex w-full items-center px-3 text-center text-sm font-medium text-gray-500"
+        </div>
+        {/* Awards */}
+        <div className="flex w-full pt-16 bg-t">
+          <div
+            ref={awardsRef}
+            id="awards"
+            className="flex items-center w-full max-w-4xl px-3 mx-auto text-sm font-medium text-center text-sky-50"
+          >
+            <motion.div
+              whileInView={{ opacity: awardsInView ? 1 : 0 }}
+              variants={container}
+              initial={awardsInView ? 'show' : 'hidden'}
+              animate={awardsInView ? 'show' : 'hidden'}
+              className="grid w-full grid-cols-2 gap-2 md:grid-cols-4"
             >
-              <motion.div
-                whileInView={{ opacity: awardsInView ? 1 : 0 }}
-                variants={container}
-                initial={awardsInView ? 'show' : 'hidden'}
-                animate={awardsInView ? 'show' : 'hidden'}
-                className="grid w-full grid-cols-2 gap-2 md:grid-cols-4"
-              >
-                {awards.map((award, i) => (
-                  <motion.div
-                    variants={slideIn}
-                    key={i}
-                    className="mx-auto flex h-36 w-36 flex-col items-center justify-around gap-2 rounded-full bg-gray-50 p-6 shadow-sm sm:h-40 sm:w-40 sm:p-8"
-                  >
-                    <div className="flex h-full items-center justify-center">
-                      <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-gray-400 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
-                    </div>
-                    <div className="max-w-[90px] pt-4 text-xs">
-                      {award.title}
-                    </div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
+              {awards.map((award, i) => (
+                <motion.div
+                  variants={slideIn}
+                  key={i}
+                  className="flex flex-col items-center justify-around gap-2 p-6 mx-auto rounded-full shadow-sm h-36 w-36 bg-sky-900 sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
+                >
+                  <div className="flex items-center justify-center h-full">
+                    <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-sky-200 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
+                  </div>
+                  <div className="max-w-[90px] pt-4 text-xs">{award.title}</div>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>

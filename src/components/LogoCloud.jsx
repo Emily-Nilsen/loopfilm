@@ -16,22 +16,22 @@ export function LogoCloud() {
         </p>
         <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <PorscheLogo className="max-h-12 fill-gray-400" />
+            <PorscheLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <AppleLogo className="max-h-12 fill-gray-400" />
+            <AppleLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <FerrariLogo className="max-h-12 fill-gray-400" />
+            <FerrariLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <AmazonLogo className="max-h-12 fill-gray-400" />
+            <AmazonLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <BmwLogo className="max-h-12 fill-gray-400" />
+            <BmwLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
           <div className="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-            <AlphaRomeoLogo className="max-h-12 fill-gray-400" />
+            <AlphaRomeoLogo className="h-12 max-h-12 fill-gray-400" />
           </div>
         </div>
       </div>
