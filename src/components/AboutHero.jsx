@@ -11,8 +11,6 @@ const supportLinks = [
       company specialising in service production, look no further
       than LoopFilm Productions AS.`,
     icon: ClapperboardIcon,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674328036/Loop%20Film/aboutHero_1_tdgkzg.webp',
   },
   {
     name: 'Global excellence',
@@ -21,16 +19,12 @@ const supportLinks = [
       Norway, known for our ability to provide exceptional services
       to filmmakers worldwide.`,
     icon: GlobeIcon,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674328036/Loop%20Film/aboutImage_2_cqdox4.webp',
   },
   {
     name: 'Scenic Norway',
     description:
       'Our location offers a wide range of spectacular landscapes, from white sandy beaches to glaciers, and we have the infrastructure to make filming in Norway a breeze.',
     icon: MountainIcon,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674328036/Loop%20Film/aboutImage_3_jo5imi.webp',
   },
 ]
 
@@ -38,16 +32,18 @@ export function AboutHero() {
   return (
     <div className="bg-t">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32 sm:h-[70vh]">
+      <div className="relative bg-gray-800 pb-32 sm:h-[70vh] sm:min-h-[550px]">
         <div className="absolute inset-0">
           <Image
             fill
             className="object-cover w-full h-full"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1672749092/Loop%20Film/002966_Marcela-Cardenas_www.nordnorge.com_j49wjk.jpg"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1672749093/Loop%20Film/000342_Baard-Loeken_www.nordnorge.com_luco06.jpg"
             alt="Snowy mountain glacier in Norway"
+            unoptimized
+            priority
           />
           <div
-            className="absolute inset-0 bg-gray-800/70 mix-blend-multiply"
+            className="absolute inset-0 bg-gray-800/30 mix-blend-multiply"
             aria-hidden="true"
           />
           <div
@@ -55,7 +51,7 @@ export function AboutHero() {
             aria-hidden="true"
           />
         </div>
-        <div className="relative flex items-center h-full px-6 py-24 mx-auto max-w-7xl sm:py-32 lg:px-8">
+        <div className="relative flex items-center h-full px-6 pt-32 pb-16 mx-auto max-w-7xl sm:pt-32 sm:pb-16 lg:px-8">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
               Loop
@@ -70,7 +66,7 @@ export function AboutHero() {
 
       {/* Overlapping cards */}
       <section
-        className="relative z-10 px-6 pb-32 mx-auto -mt-32 max-w-7xl lg:px-8"
+        className="relative z-10 px-6 pb-32 mx-auto -mt-20 max-w-7xl lg:px-8"
         aria-labelledby="contact-heading"
       >
         <h2 className="sr-only" id="contact-heading">
@@ -80,29 +76,23 @@ export function AboutHero() {
           {supportLinks.map((link) => (
             <div
               key={link.name}
-              className="relative flex flex-col max-w-md bg-white shadow-xl rounded-2xl"
+              className="relative flex flex-col max-w-md bg-gray-100 shadow-xl rounded-2xl"
             >
               <div className="relative z-10 flex-1 px-6 pt-16 pb-8 md:px-8">
-                <div className="absolute top-0 inline-block p-5 transform -translate-y-1/2 shadow-lg rounded-xl bg-sky-600">
+                <div className="absolute top-0 inline-block p-4 transform -translate-y-1/2 shadow-lg rounded-xl bg-sky-600 sm:p-5">
                   <link.icon
-                    className="w-6 h-6 fill-white"
+                    className="w-5 h-5 fill-white sm:h-6 sm:w-6"
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-gray-900">
                   {link.name}
                 </h3>
-                <p className="mt-4 text-lg text-gray-700">{link.description}</p>
+                <p className="mt-4 text-base text-gray-700">
+                  {link.description}
+                </p>
               </div>
-              <div className="p-2 bg-white rounded-bl-2xl rounded-br-2xl md:px-8"></div>
-              <div className="absolute inset-0 overflow-hidden rounded-2xl">
-                <Image
-                  src={link.image}
-                  alt="LoopFilm AS Norway"
-                  fill
-                  className="overflow-hidden rounded-2xl object-cover opacity-[0.15]"
-                />
-              </div>
+              <div className="p-2 bg-gray-100 rounded-bl-2xl rounded-br-2xl md:px-8"></div>
             </div>
           ))}
         </div>
