@@ -71,6 +71,7 @@ export function ContactGallery() {
       >
         {photos.map((photo, imageIndex) => (
           <div
+            key={imageIndex}
             className={clsx(
               'z-1 aspect-square relative w-44 flex-none overflow-hidden rounded-xl border-4 border-white bg-zinc-100 sm:w-72 sm:rounded-2xl',
               `${photo.rotation}`
