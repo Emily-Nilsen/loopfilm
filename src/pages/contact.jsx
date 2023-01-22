@@ -20,7 +20,7 @@ export default function Contact() {
         <title>Contact Us - LoopFilm</title>
       </Head>
       <Header />
-      <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:max-h-[537]">
+      <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:min-h-[600px]">
         <Container className="w-full">
           <motion.div
             animate={{ opacity: 1 }}
@@ -29,7 +29,7 @@ export default function Contact() {
               duration: 0.8,
               type: 'fade',
             }}
-            className="absolute inset-0 h-[450px] sm:h-[70vh]"
+            className="absolute inset-0 h-[450px] sm:h-[70vh] sm:min-h-[600px]"
           >
             <Image
               priority
@@ -55,12 +55,12 @@ export default function Contact() {
               initial={{ opacity: 0 }}
               transition={{
                 delay: 2.5,
-                duration: 0.5,
+                duration: 0.8,
                 type: 'fade',
               }}
               className="absolute top-0 flex items-center justify-center w-full h-full"
             >
-              <CameraFrame className="w-5/6 h-auto fill-white/40" />
+              <CameraFrame className="lg:max-h-none h-auto max-h-[400px] w-5/6 fill-white/40 stroke-white/50" />
             </motion.div>
           </motion.div>
           <motion.div

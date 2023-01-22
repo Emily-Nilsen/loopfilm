@@ -26,11 +26,11 @@ export function AboutFooter() {
           }}
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutFooter_huleog.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/contactFooter_wscxxc.webp"
             alt="Beautiful Norway"
             width={3000}
             height={821}
-            className="object-cover -mt-20"
+            className="object-cover -mt-20 sm:-mt-36 lg:-mt-52"
           />
         </motion.div>
       </div>

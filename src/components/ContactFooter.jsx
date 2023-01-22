@@ -27,11 +27,11 @@ export function ContactFooter() {
           }}
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/contactFooter_wscxxc.webp"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutFooter_huleog.webp"
             alt="Beautiful Oslo"
             width={3000}
             height={1148}
-            className="-mt-20 object-cover sm:-mt-36 lg:-mt-52"
+            className="-mt-20 object-cover"
           />
         </motion.div>
       </div>
