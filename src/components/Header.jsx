@@ -12,8 +12,27 @@ import { NavLinks } from '@/components/NavLinks'
 
 const container = {
   hidden: {
-    scale: 3,
-    x: 'calc(50vw - 36px)',
+    scale: 7,
+    x: 'calc(50vw - 108px)',
+    y: '25vh',
+  },
+  visible: {
+    scale: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      delay: 4,
+      type: 'spring',
+      duration: 1.0,
+      bounce: 0,
+    },
+  },
+}
+
+const containerMobile = {
+  hidden: {
+    scale: 7,
+    x: 'calc(50vw - 31px)',
     y: '25vh',
   },
   visible: {
@@ -79,18 +98,32 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           {/* Logo */}
           {router.pathname === '/' && (
-            <div>
-              <Link href="/" aria-label="Home">
-                <motion.div
-                  variants={container}
-                  initial="hidden"
-                  animate="visible"
-                  className="flex items-center"
-                >
-                  <Logomark className="w-auto h-6 stroke-sky-orange sm:h-8" />
-                </motion.div>
-              </Link>
-            </div>
+            <>
+              <div className="hidden sm:block">
+                <Link href="/" aria-label="Home">
+                  <motion.div
+                    variants={container}
+                    initial="hidden"
+                    animate="visible"
+                    className="flex items-center"
+                  >
+                    <Logomark className="w-auto h-8 stroke-sky-orange" />
+                  </motion.div>
+                </Link>
+              </div>
+              <div className="sm:hidden">
+                <Link href="/" aria-label="Home">
+                  <motion.div
+                    variants={containerMobile}
+                    initial="hidden"
+                    animate="visible"
+                    className="flex items-center"
+                  >
+                    <Logomark className="w-auto h-6 stroke-sky-orange" />
+                  </motion.div>
+                </Link>
+              </div>
+            </>
           )}
 
           <div>
