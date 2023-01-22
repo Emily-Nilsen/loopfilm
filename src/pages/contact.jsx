@@ -20,7 +20,7 @@ export default function Contact() {
         <title>Contact Us - LoopFilm</title>
       </Head>
       <Header />
-      <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:min-h-[600px]">
+      <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:max-h-[800px] sm:min-h-[600px]">
         <Container className="w-full">
           <motion.div
             animate={{ opacity: 1 }}
@@ -29,12 +29,12 @@ export default function Contact() {
               duration: 0.8,
               type: 'fade',
             }}
-            className="absolute inset-0 h-[450px] sm:h-[70vh] sm:min-h-[600px]"
+            className="absolute inset-0 h-[450px] sm:h-[70vh] sm:max-h-[800px] sm:min-h-[600px]"
           >
             <Image
               priority
               fill
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/003528_Tofoto_www.nordnorge.com_a4ygqu.jpg"
+              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/contactHero_tyxchd.webp"
               alt="Beautiful Norway"
               className="object-cover object-center"
               unoptimized
@@ -54,13 +54,13 @@ export default function Contact() {
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 2.5,
+                delay: 1.8,
                 duration: 0.8,
                 type: 'fade',
               }}
               className="absolute top-0 flex items-center justify-center w-full h-full"
             >
-              <CameraFrame className="lg:max-h-none h-auto max-h-[400px] w-5/6 fill-white/40 stroke-white/50" />
+              <CameraFrame className="h-auto max-h-[400px] w-5/6 fill-white/40 stroke-white/50 lg:max-h-[400px] 2xl:max-h-[500px]" />
             </motion.div>
           </motion.div>
           <motion.div
@@ -68,7 +68,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 200 }}
             transition={{
               delay: 0.8,
-              duration: 1.5,
+              duration: 0.7,
               type: 'fade',
               ease: 'linear',
             }}

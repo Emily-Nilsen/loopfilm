@@ -32,7 +32,7 @@ const companyFeatures = [
 
 export function AboutHero() {
   return (
-    <div className="bg-t">
+    <div className="overflow-x-hidden bg-t">
       {/* Header */}
       <div className="relative bg-gray-800 pb-32 sm:h-[70vh] sm:min-h-[550px]">
         <motion.div
@@ -98,7 +98,7 @@ export function AboutHero() {
                 ease: 'easeOut',
               }}
               key={i}
-              className="relative flex flex-col max-w-md bg-gray-100 shadow-xl rounded-2xl"
+              className="relative flex flex-col max-w-md mx-auto bg-gray-100 shadow-xl rounded-2xl"
             >
               <div className="relative z-10 flex-1 px-6 pt-16 pb-8 md:px-8">
                 <div className="absolute top-0 inline-block p-4 transform -translate-y-1/2 shadow-lg rounded-xl bg-sky-600 sm:p-5">

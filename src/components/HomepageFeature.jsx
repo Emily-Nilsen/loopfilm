@@ -46,7 +46,7 @@ function FeatureHeading() {
   const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true })
 
   return (
-    <div className="bg-white">
+    <div className="overflow-x-hidden bg-white">
       <div className="px-6 pb-6 mx-auto max-w-7xl sm:pb-10 lg:px-8">
         <motion.div
           ref={ref}

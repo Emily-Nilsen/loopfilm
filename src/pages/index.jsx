@@ -24,7 +24,9 @@ export default function Home() {
       <main>
         <Hero />
         <LogoCloud />
-        <HomepageFeature />
+        <div className="overflow-x-hidden">
+          <HomepageFeature />
+        </div>
         <MemberLogoCloud />
       </main>
       <HomepageFooter />

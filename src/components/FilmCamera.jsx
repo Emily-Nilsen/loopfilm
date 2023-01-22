@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer'
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
-    const delay = 1
+    const delay = 0.1
     return {
       pathLength: 1,
       opacity: 1,
@@ -23,7 +23,7 @@ const draw = {
 
 export function FilmCamera(props) {
   const [ref, inView] = useInView({
-    threshold: 1, // adjust as needed
+    threshold: 0.5, // adjust as needed
     triggerOnce: true,
   })
   return (

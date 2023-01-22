@@ -10,6 +10,7 @@ import { ClioLogo } from '@/components/Logos'
 import { InstagramLogo } from '@/components/Logos'
 import { FacebookLogo } from '@/components/Logos'
 import { LinkIcon } from '@/components/Logos'
+import { ArrowRightIcon } from '@/components/Logos'
 
 const awards = [
   { title: '3 Bronze and 3 Shortlists', logo: CannesLogo },
@@ -212,7 +213,15 @@ export function AboutUs() {
                                     </li>
                                   ))}
                               </ol>
-                              <Expandable.Button>See more</Expandable.Button>
+                              <Expandable.Button>
+                                See more{' '}
+                                <span>
+                                  <ArrowRightIcon
+                                    fill="currentColor"
+                                    className="w-4 h-4 ml-2"
+                                  />
+                                </span>{' '}
+                              </Expandable.Button>
                             </>
                           )}
                         </Expandable>
