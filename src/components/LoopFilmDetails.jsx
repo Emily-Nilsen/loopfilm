@@ -32,7 +32,7 @@ const features = [
 
 export function LoopFilmDetails() {
   return (
-    <div className="pb-24 -mt-10 bg-t sm:pb-32 lg:mt-0 lg:pb-40">
+    <div className="pb-24 -mt-10 bg-t sm:pb-32 md:mt-0 lg:pb-40">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-lg font-semibold leading-8 text-sky-600">

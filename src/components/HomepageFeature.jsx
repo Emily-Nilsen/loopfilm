@@ -37,7 +37,7 @@ const slideIn = {
     x: 0,
     transition: {
       duration: 1.5,
-      ease: 'anticipate',
+      ease: 'easeOut',
     },
   },
 }
