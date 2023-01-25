@@ -35,7 +35,7 @@ export function AboutHero() {
   return (
     <div className="overflow-hidden bg-t">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32 sm:h-[50vh] sm:min-h-[550px]">
+      <div className="relative bg-gray-800 pb-32 sm:-mb-0 sm:h-[50vh] sm:min-h-[550px]">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -80,7 +80,7 @@ export function AboutHero() {
         <h2 className="sr-only" id="contact-heading">
           About LoopFilm AS
         </h2>
-        <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-12 sm:gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {companyFeatures.map((feature, i) => (
             <motion.div
               initial={{

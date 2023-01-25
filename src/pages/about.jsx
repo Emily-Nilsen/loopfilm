@@ -25,7 +25,9 @@ export default function About() {
 
       <main>
         <AboutHero />
-        <AboutCta />
+        <div className="-mt-6 sm:-mt-0">
+          <AboutCta />
+        </div>
         <LoopFilmDetails />
 
         <AboutCtaTwo />
