@@ -14,6 +14,7 @@ import { AboutCta } from '@/components/AboutCta'
 import { AboutSeparator } from '@/components/AboutSeparator'
 import { AboutUs } from '@/components/AboutUs'
 import { AboutCtaTwo } from '@/components/AboutCtaTwo'
+import { Jarle } from '@/components/Jarle'
 
 export default function About() {
   return (
@@ -31,6 +32,7 @@ export default function About() {
         <LoopFilmDetails />
 
         <AboutCtaTwo />
+        <Jarle />
       </main>
 
       <AboutFooter />

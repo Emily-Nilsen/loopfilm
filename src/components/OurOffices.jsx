@@ -75,16 +75,16 @@ export function OurOffices() {
               <div className="mt-2 text-base text-gray-900">
                 <dl className="space-y-2">
                   <dd className="flex items-center space-x-2">
-                    <PhoneIcon className="w-4 h-4 fill-blue-600/50 " />
+                    <PhoneIcon className="w-4 h-4 fill-sky-pink " />
                     <span className="block">+47 9098 0286</span>
                   </dd>
                   <dd className="flex items-center space-x-2">
-                    <SkypeIcon className="w-5 h-5 fill-blue-600/50 " />
+                    <SkypeIcon className="w-5 h-5 fill-sky-pink " />
                     <span className="block">jarletangen</span>
                   </dd>
 
                   <dd className="flex items-center space-x-2">
-                    <EmailIcon className="w-4 h-4 fill-blue-600/50 " />
+                    <EmailIcon className="w-4 h-4 fill-sky-pink " />
                     <span className="block">jarle@loopfilm.no</span>
                   </dd>
                 </dl>

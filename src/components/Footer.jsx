@@ -12,10 +12,11 @@ import { NavLinks } from '@/components/NavLinks'
 
 const links = [
   ['Home', '/'],
-  ['Our company', '/about'],
-  ['Our locations', '/locations'],
-  ['Portfolio', '/portfolio'],
-  ['Contact us', '/contact'],
+  ['Company', '/about'],
+  ['Locations', '/locations'],
+  ['Work', '/portfolio'],
+  ['Clients', '/clients'],
+  ['Contact', '/contact'],
 ]
 
 const socials = [
@@ -89,7 +90,7 @@ export function Footer() {
                           : router.pathname === '/about'
                           ? ' text-fuchsia-600'
                           : router.pathname === '/contact'
-                          ? ' text-blue-600'
+                          ? ' text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' text-teal-600'
                           : ''
@@ -115,7 +116,7 @@ export function Footer() {
                           : router.pathname === '/about'
                           ? ' hover:text-fuchsia-600'
                           : router.pathname === '/contact'
-                          ? ' hover:text-blue-600'
+                          ? ' hover:text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' hover:text-teal-500'
                           : '',

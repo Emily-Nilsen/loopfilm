@@ -30,7 +30,7 @@ export function AboutFooter() {
             alt="Beautiful Norway"
             width={3000}
             height={821}
-            className="object-cover -mt-20 sm:-mt-36 lg:-mt-80"
+            className="object-cover -mt-20 sm:-mt-36 lg:-mt-60 xl:-mt-72"
           />
         </motion.div>
       </div>

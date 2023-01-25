@@ -9,6 +9,7 @@ import { CannesLogo } from '@/components/Logos'
 import { EpicaLogo } from '@/components/Logos'
 import { EurobestLogo } from '@/components/Logos'
 import { ClioLogo } from '@/components/Logos'
+import { LinkedInLogo } from '@/components/Logos'
 import { InstagramLogo } from '@/components/Logos'
 import { FacebookLogo } from '@/components/Logos'
 import { LinkIcon } from '@/components/Logos'
@@ -21,37 +22,18 @@ const awards = [
   { title: '1 Bronze', logo: ClioLogo },
 ]
 
-const people = [
+const jarle = [
   {
-    name: 'Jarle Tangen',
-    role: 'Founder of LoopFilm',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/g_face,g_east/Loop%20Film/Jarle_w2viow.webp',
-    bio: [
-      'Meet Jarle Tangen, the founding partner of LoopFilm AS. Jarle has a wealth of experience in the film industry, having studied film at the University of Windsor in Canada and Communication studies and Philosophy at the University of Oslo in Norway.',
-      'He is also an authorised ski instructor, a happy grouse hunter, and an enthusiastic hobby sailor.',
-      'With over two decades of experience working on both sides of the table with service production worldwide, Jarle is well-equipped to bring your project to life.',
-    ],
-
-    linkedinUrl: 'https://www.linkedin.com/in/jarle-tangen-b2285a4/',
-    instagram: 'https://www.instagram.com/loopfilm/',
-    facebook: 'https://www.facebook.com/Loopfilm.no',
+    logo: LinkedInLogo,
+    url: 'https://www.linkedin.com/in/jarle-tangen-b2285a4/',
   },
-  {
-    name: 'Per-Henry Borch',
-    role: 'Film Producer',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Per_Henry_btmlrb.webp',
-    bio: [
-      'Joining Jarle at LoopFilm AS is Per-Henry Borch, a seasoned film producer with over 25 years of experience in the industry. Per Henry is dedicated to getting the best results from any budget or script and takes an active role in every production stage.',
-      'He works closely with all team members and has experience filming on all continents, having travelled to 55 countries and specialising in working in remote locations.',
-      'He’s also been part of Norwegian climbing expeditions to K2 in Pakistan and skiing expeditions to the North and South Poles. You can find him climbing, skiing, skydiving or travelling when not working.',
-      'The film industry has recognised his quality of work and creativity. Per-Henry’s productions received several top awards from Cannes, Epica, Eurobest, and CLIO.',
-    ],
+  { logo: InstagramLogo, url: 'https://www.instagram.com/loopfilm/' },
+  { logo: FacebookLogo, url: 'https://www.facebook.com/Loopfilm.no' },
+]
 
-    linkedinUrl: 'https://www.linkedin.com/in/phborch/',
-    website: 'https://imdb.me/borch',
-  },
+const perhenry = [
+  { logo: LinkedInLogo, url: 'https://www.linkedin.com/in/phborch/' },
+  { logo: LinkIcon, url: 'https://imdb.me/borch' },
 ]
 
 const container = {
@@ -102,12 +84,32 @@ export function Jarle() {
           <div className="relative max-w-xl px-6 mx-auto mt-12 lg:mt-24 lg:max-w-7xl lg:px-8">
             <div className="relative lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
               <div className="relative">
-                <h2 className="text-lg font-semibold text-blue-600">
+                <h2 className="text-lg font-semibold text-fuchsia-700">
                   Founder of LoopFilm
                 </h2>
                 <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                   Jarle Tangen
                 </h3>
+                {/* socials */}
+                <div>
+                  <ul role="list" className="flex py-4">
+                    {jarle.map((item, i) => (
+                      <li key={i}>
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mr-4 text-gray-400 transition duration-300 ease-in-out hover:text-fuchsia-700"
+                        >
+                          <item.logo
+                            className="w-5 h-5 mr-4"
+                            fill="currentColor"
+                          />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <p className="mt-3 text-lg text-gray-500">
                   Meet Jarle Tangen, the founding partner of LoopFilm AS. Jarle
                   has a wealth of experience in the film industry, having
@@ -128,25 +130,47 @@ export function Jarle() {
               </div>
 
               <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
-                <Image
-                  className="relative object-cover object-center mx-auto rounded-lg shadow-lg"
-                  width={478}
-                  height={472}
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Jarle_w2viow.webp"
-                  alt="Jarle Tangen"
-                />
+                <figure>
+                  <Image
+                    className="relative object-cover object-center mx-auto rounded-lg shadow-lg"
+                    width={478}
+                    height={472}
+                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Jarle_w2viow.webp"
+                    alt="Jarle Tangen"
+                  />
+                </figure>
               </div>
             </div>
 
             <div className="relative mt-12 sm:mt-16 lg:mt-24">
               <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
                 <div className="lg:col-start-2">
-                  <h2 className="text-lg font-semibold text-blue-600">
+                  <h2 className="text-lg font-semibold text-fuchsia-700">
                     Film Producer
                   </h2>
                   <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
                     Per-Henry Borch
                   </h3>
+                  {/* socials */}
+                  <div>
+                    <ul role="list" className="flex py-4">
+                      {perhenry.map((item, i) => (
+                        <li key={i}>
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mr-4 text-gray-400 transition duration-300 ease-in-out hover:text-fuchsia-700"
+                          >
+                            <item.logo
+                              className="w-5 h-5 mr-4"
+                              fill="currentColor"
+                            />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <p className="mt-3 text-lg text-gray-500">
                     Joining Jarle at LoopFilm AS is Per-Henry Borch, a seasoned
                     film producer with over 25 years of experience in the
@@ -202,10 +226,10 @@ export function Jarle() {
                     <motion.div
                       variants={slideIn}
                       key={i}
-                      className="flex flex-col items-center justify-around gap-2 p-6 mx-auto bg-blue-100 rounded-full shadow-sm h-36 w-36 sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
+                      className="flex flex-col items-center justify-around gap-2 p-6 mx-auto bg-gray-100 rounded-full shadow-sm h-36 w-36 sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
                     >
                       <div className="flex items-center justify-center h-full">
-                        <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-blue-900 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
+                        <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-fuchsia-900 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
                       </div>
                       <div className="max-w-[90px] pt-4 text-xs">
                         {award.title}

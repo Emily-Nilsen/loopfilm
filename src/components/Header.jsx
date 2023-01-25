@@ -97,7 +97,7 @@ export function Header() {
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
           {/* Logo */}
-          {router.pathname === '/' && (
+          {/* {router.pathname === '/' && (
             <>
               <div className="hidden sm:block">
                 <Link href="/" aria-label="Home">
@@ -124,21 +124,23 @@ export function Header() {
                 </Link>
               </div>
             </>
-          )}
+          )} */}
 
           <div>
             <Link href="/" aria-label="Home">
               <div className="flex items-center">
                 <Logo
                   className={classNames(
-                    router.pathname === '/about'
+                    router.pathname === '/'
+                      ? ' stroke-white'
+                      : router.pathname === '/about'
                       ? ' stroke-fuchsia-200'
                       : router.pathname === '/contact'
                       ? ' stroke-white'
                       : router.pathname === '/locations'
                       ? ' stroke-teal-500'
                       : '',
-                    'h-6 w-auto sm:h-8'
+                    'h-8 w-auto sm:h-12'
                   )}
                 />
               </div>
@@ -203,19 +205,22 @@ export function Header() {
                             <div className="space-y-4">
                               <MobileNavLink href="/">Home</MobileNavLink>
                               <MobileNavLink href="/about">
-                                Our company
+                                Company
                               </MobileNavLink>
                               <MobileNavLink href="/locations">
-                                Our Locations
+                                Locations
                               </MobileNavLink>
 
                               <MobileNavLink href="/portfolio">
-                                Portfolio
+                                Work
+                              </MobileNavLink>
+                              <MobileNavLink href="/clients">
+                                Clients
                               </MobileNavLink>
                             </div>
                             <div className="flex flex-col w-full gap-4 mt-8 sm:w-fit">
                               <Button href="/contact" variant="solid">
-                                Contact us
+                                Contact
                               </Button>
                             </div>
                           </Popover.Panel>

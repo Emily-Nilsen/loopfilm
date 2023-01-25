@@ -27,7 +27,14 @@ export function Hero() {
       )}
     >
       <div className="absolute inset-0 bg-gray-800">
-        <div>
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+          }}
+        >
           <Image
             priority
             className="object-cover"
@@ -36,54 +43,21 @@ export function Hero() {
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/landing_page_ufbowp.webp"
             unoptimized
           />
-        </div>
+        </motion.div>
       </div>
       <Container className="relative h-full z-1">
-        <motion.div
-          animate={{ opacity: 1 }}
-          initial={{ opacity: 0 }}
-          transition={{
-            delay: 4.5,
-            duration: 1,
-            type: 'fade',
-          }}
-          className="grid w-full h-full grid-cols-5"
-        >
-          <div className="flex flex-col justify-between col-span-4 text-white sm:col-span-2">
+        <div className="grid w-full h-full grid-cols-5">
+          <div className="flex col-span-4 text-white sm:col-span-3">
             <div>
-              <h1 className="pt-10 mb-4 text-4xl font-semibold tracking-tight sm:pt-0 sm:text-5xl lg:text-6xl">
-                Capturing the natural beauty of Norway
+              <h1 className="pt-10 text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+                Capturing the natural
+                <br className="" />
+                beauty of Norway
               </h1>
             </div>
-            <div>
-              <h2 className="mt-[40vh] max-w-sm text-lg leading-tight sm:mt-0 sm:text-2xl sm:leading-normal">
-                Unique locations and breathtaking views for your next film
-                production.
-              </h2>
-              <div>
-                <Link href="/contact">
-                  <Button
-                    color="rose"
-                    className="flex-none w-3/4 mt-10 sm:w-fit"
-                  >
-                    <span className="text-lg">Inquire now</span>
-                  </Button>
-                </Link>
-              </div>
-            </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
-      <motion.div
-        animate={{ opacity: 0 }}
-        initial={{ opacity: 0.9 }}
-        transition={{
-          delay: 4,
-          duration: 1.5,
-          type: 'fade',
-        }}
-        className="absolute top-0 w-full h-full bg-gray-800"
-      ></motion.div>
     </div>
   )
 }
