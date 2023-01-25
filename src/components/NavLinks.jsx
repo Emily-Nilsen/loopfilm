@@ -33,7 +33,7 @@ export function NavLinks() {
               router.pathname === '/'
                 ? ' bg-sky-pink/50'
                 : router.pathname === '/about'
-                ? ' bg-white/10'
+                ? ' bg-fuchsia-200/20'
                 : 'bg-white/10',
               'absolute inset-0 rounded-lg'
             )}

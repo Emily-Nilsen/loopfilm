@@ -132,9 +132,11 @@ export function Header() {
                 <Logo
                   className={classNames(
                     router.pathname === '/about'
-                      ? ' stroke-white/80'
+                      ? ' stroke-fuchsia-200'
                       : router.pathname === '/contact'
                       ? ' stroke-white'
+                      : router.pathname === '/locations'
+                      ? ' stroke-teal-500'
                       : '',
                     'h-6 w-auto sm:h-8'
                   )}
@@ -159,7 +161,7 @@ export function Header() {
                         router.pathname === '/'
                           ? 'stroke-sky-pink hover:bg-sky-pink/10 hover:stroke-sky-pink active:stroke-sky-pink'
                           : router.pathname === '/about'
-                          ? ' stroke-GPN-medium-blue hover:bg-GPN-medium-blue/10 hover:stroke-GPN-medium-blue active:stroke-GPN-medium-blue'
+                          ? ' stroke-fuchsia-300 hover:bg-fuchsia-500/10 hover:stroke-fuchsia-500 active:stroke-fuchsia-500'
                           : router.pathname === '/contact'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
                           : '',

@@ -12,6 +12,7 @@ import { ContactGallery } from '@/components/ContactGallery'
 import { OurOffices } from '@/components/OurOffices'
 import { ContactFooter } from '@/components/ContactFooter'
 import { CameraFrame } from '@/components/CameraFrame'
+import { Jarle } from '@/components/Jarle'
 
 export default function Contact() {
   return (
@@ -99,11 +100,13 @@ export default function Contact() {
       <div className="mb-6 sm:mb-16 lg:mb-24">
         <ContactGallery />
       </div>
+      <Jarle />
 
       {/* Offices */}
       <div className="relative">
         <OurOffices />
       </div>
+
       <ContactFooter />
     </main>
   )

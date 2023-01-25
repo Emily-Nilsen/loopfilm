@@ -85,7 +85,7 @@ export function AboutUs() {
 
   return (
     <div className="overflow-x-hidden bg-white">
-      <div className="px-6 py-24 mx-auto max-w-7xl lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           <div className="flex flex-col justify-between">
             <div className="space-y-5 sm:space-y-4">
@@ -98,7 +98,7 @@ export function AboutUs() {
                 locations.
               </p>
             </div>
-            <div className="items-end hidden lg:flex"></div>
+            <div className="hidden items-end lg:flex"></div>
           </div>
           <div className="lg:col-span-2">
             <ul
@@ -112,7 +112,7 @@ export function AboutUs() {
                       <div className="aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
                         <Image
                           fill
-                          className="object-cover rounded-lg shadow-lg"
+                          className="rounded-lg object-cover shadow-lg"
                           src={person.imageUrl}
                           alt={person.name}
                         />
@@ -124,7 +124,7 @@ export function AboutUs() {
                           <h3>{person.name}</h3>
                           <p className="text-sky-600">{person.role}</p>
                           {/* LinkedIn */}
-                          <ul role="list" className="flex py-4 space-x-5">
+                          <ul role="list" className="flex space-x-5 py-4">
                             <li>
                               <a
                                 href={person.linkedinUrl}
@@ -134,7 +134,7 @@ export function AboutUs() {
                               >
                                 <span className="sr-only">LinkedIn</span>
                                 <svg
-                                  className="w-5 h-5"
+                                  className="h-5 w-5"
                                   aria-hidden="true"
                                   fill="currentColor"
                                   viewBox="0 0 20 20"
@@ -159,7 +159,7 @@ export function AboutUs() {
                                     Personal website link
                                   </span>
                                   <LinkIcon
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -175,7 +175,7 @@ export function AboutUs() {
                                 >
                                   <span className="sr-only">Instagram</span>
                                   <InstagramLogo
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -191,7 +191,7 @@ export function AboutUs() {
                                 >
                                   <span className="sr-only">Facebook</span>
                                   <FacebookLogo
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -218,7 +218,7 @@ export function AboutUs() {
                                 <span>
                                   <ArrowRightIcon
                                     fill="currentColor"
-                                    className="w-4 h-4 ml-2"
+                                    className="ml-2 h-4 w-4"
                                   />
                                 </span>{' '}
                               </Expandable.Button>
@@ -234,11 +234,11 @@ export function AboutUs() {
           </div>
         </div>
         {/* Awards */}
-        <div className="flex w-full pt-16 bg-t">
+        <div className="bg-t flex w-full pt-16">
           <div
             ref={awardsRef}
             id="awards"
-            className="flex items-center w-full max-w-4xl px-3 mx-auto text-sm font-medium text-center text-sky-50"
+            className="mx-auto flex w-full max-w-4xl items-center px-3 text-center text-sm font-medium text-sky-50"
           >
             <motion.div
               whileInView={{ opacity: awardsInView ? 1 : 0 }}
@@ -251,9 +251,9 @@ export function AboutUs() {
                 <motion.div
                   variants={slideIn}
                   key={i}
-                  className="flex flex-col items-center justify-around gap-2 p-6 mx-auto rounded-full shadow-sm h-36 w-36 bg-sky-900 sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
+                  className="mx-auto flex h-36 w-36 flex-col items-center justify-around gap-2 rounded-full bg-sky-900 p-6 shadow-sm sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
                 >
-                  <div className="flex items-center justify-center h-full">
+                  <div className="flex h-full items-center justify-center">
                     <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-sky-200 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
                   </div>
                   <div className="max-w-[90px] pt-4 text-xs">{award.title}</div>

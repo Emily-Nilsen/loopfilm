@@ -69,22 +69,22 @@ export function OurOffices() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-medium text-gray-900">
+              <h3 className="text-lg font-bold text-gray-900">
                 Contact details
               </h3>
-              <div className="mt-2 text-base text-gray-900/80">
+              <div className="mt-2 text-base text-gray-900">
                 <dl className="space-y-2">
                   <dd className="flex items-center space-x-2">
-                    <PhoneIcon className="w-4 h-4 fill-gray-400 " />
+                    <PhoneIcon className="w-4 h-4 fill-blue-600/50 " />
                     <span className="block">+47 9098 0286</span>
                   </dd>
                   <dd className="flex items-center space-x-2">
-                    <SkypeIcon className="w-5 h-5 fill-gray-400 " />
+                    <SkypeIcon className="w-5 h-5 fill-blue-600/50 " />
                     <span className="block">jarletangen</span>
                   </dd>
 
                   <dd className="flex items-center space-x-2">
-                    <EmailIcon className="w-4 h-4 fill-gray-400 " />
+                    <EmailIcon className="w-4 h-4 fill-blue-600/50 " />
                     <span className="block">jarle@loopfilm.no</span>
                   </dd>
                 </dl>

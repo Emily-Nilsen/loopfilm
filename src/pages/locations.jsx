@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import { Header } from '@/components/Header'
+import { LocationsHero } from '@/components/LocationsHero'
+import { CollageOfNorway } from '@/components/CollageOfNorway'
+
+import { LocationsCta } from '@/components/LocationsCta'
+import { LocationsFooter } from '@/components/LocationsFooter'
+
 export default function Locations() {
   return (
     <>
@@ -17,6 +24,14 @@ export default function Locations() {
           </div>
         </div>
       </main>
+      {/* <main>
+        <Header />
+        <LocationsHero />
+        <CollageOfNorway />
+
+        
+      </main> */}
+      <LocationsFooter />
     </>
   )
 }

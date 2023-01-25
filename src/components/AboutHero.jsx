@@ -8,11 +8,10 @@ import { ClapperboardIcon } from './Logos'
 
 const companyFeatures = [
   {
-    name: 'Professional production',
-    description: `If you’re looking for a professional Norwegian film production
-      company specialising in service production, look no further
-      than LoopFilm Productions AS.`,
-    icon: ClapperboardIcon,
+    name: 'Full-service production',
+    description: `Looking to film in Norway? Look no further than LoopFilm AS - the experienced Norwegian film production company offering a one-stop full-service production.`,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/fullService_tvr6do.webp',
   },
   {
     name: 'Global excellence',
@@ -20,13 +19,15 @@ const companyFeatures = [
       established ourselves as the leading production company in
       Norway, known for our ability to provide exceptional services
       to filmmakers worldwide.`,
-    icon: GlobeIcon,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/biotherm_c4o2r3.webp',
   },
   {
     name: 'Scenic Norway',
     description:
       'Our location offers a wide range of spectacular landscapes, from white sandy beaches to glaciers, and we have the infrastructure to make filming in Norway a breeze.',
-    icon: MountainIcon,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674571867/Loop%20Film/beaches_ymznql.webp',
   },
 ]
 
@@ -34,7 +35,7 @@ export function AboutHero() {
   return (
     <div className="overflow-hidden bg-t">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32 sm:h-[70vh] sm:min-h-[550px]">
+      <div className="relative bg-gray-800 pb-32 sm:h-[50vh] sm:min-h-[550px]">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -47,15 +48,12 @@ export function AboutHero() {
           <Image
             fill
             className="object-cover w-full h-full"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutHero_gsly2d.webp"
-            alt="Snowy mountain glacier in Norway"
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutHero_uk3dmg.webp"
+            alt="Snowy mountain in Norway"
             unoptimized
             priority
           />
-          <div
-            className="absolute inset-0 bg-gray-800/30 mix-blend-multiply"
-            aria-hidden="true"
-          />
+
           <div
             className="absolute inset-0 h-32 bg-gradient-to-b from-gray-800"
             aria-hidden="true"
@@ -65,9 +63,9 @@ export function AboutHero() {
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
               Loop
-              <span className="text-sky-600">Film</span>
+              <span className="text-fuchsia-300">Film</span>
             </h1>
-            <p className="max-w-3xl mt-6 text-lg text-white/90 sm:text-2xl">
+            <p className="max-w-3xl mt-6 text-lg text-white/95 sm:text-2xl">
               Bringing 20+ years of experience to the Norwegian film industry.
             </p>
           </div>
@@ -98,23 +96,32 @@ export function AboutHero() {
                 ease: 'easeOut',
               }}
               key={i}
-              className="relative flex flex-col max-w-md mx-auto bg-gray-100 shadow-xl rounded-2xl"
+              className="relative flex flex-col max-w-3xl mx-auto bg-white shadow-xl rounded-2xl sm:flex-row lg:flex-col"
             >
-              <div className="relative z-10 flex-1 px-6 pt-16 pb-8 md:px-8">
-                <div className="absolute top-0 inline-block p-4 transform -translate-y-1/2 shadow-lg rounded-xl bg-sky-600 sm:p-5">
-                  <feature.icon
-                    className="w-5 h-5 fill-white sm:h-6 sm:w-6"
-                    aria-hidden="true"
-                  />
+              <div className="relative z-10 flex-col flex-1">
+                <div>
+                  <div className="relative w-full px-6 pt-10 pb-8 rounded-t-2xl bg-fuchsia-100 sm:rounded-tr-none md:px-8 lg:rounded-tr-2xl">
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {feature.name}
+                    </h3>
+                  </div>
+
+                  <div className="p-6 md:p-8">
+                    <p className="text-base text-gray-700">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {feature.name}
-                </h3>
-                <p className="mt-4 text-base text-gray-700">
-                  {feature.description}
-                </p>
               </div>
-              <div className="p-2 bg-gray-100 rounded-bl-2xl rounded-br-2xl md:px-8"></div>
+              <div className="relative p-2 bg-gray-300 h-52 rounded-bl-2xl rounded-br-2xl sm:h-auto sm:w-1/2 sm:rounded-tr-2xl md:px-8 lg:h-52 lg:w-full lg:rounded-tr-none lg:rounded-bl-2xl">
+                <Image
+                  src={feature.image}
+                  alt={feature.name}
+                  unoptimized
+                  fill
+                  className="object-cover w-full h-full overflow-hidden rounded-bl-2xl rounded-br-2xl sm:rounded-tr-2xl sm:rounded-bl-none lg:rounded-tr-none lg:rounded-bl-2xl"
+                />
+              </div>
             </motion.div>
           ))}
         </div>

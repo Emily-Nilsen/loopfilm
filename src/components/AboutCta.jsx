@@ -47,8 +47,8 @@ export function AboutCta() {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(512 512) rotate(90) scale(512)"
           >
-            <stop stopColor="#0ea5e9" />
-            <stop offset={1} stopColor="#38bdf8" stopOpacity={0} />
+            <stop stopColor="#d946ef" />
+            <stop offset={1} stopColor="#e879f9" stopOpacity={0} />
           </radialGradient>
         </defs>
       </svg>

@@ -83,7 +83,7 @@ export function ContactGallery() {
               data-name="Layer 2"
               viewBox="0 0 208.55 249.22"
             >
-              <g className="fill-gray-800" id="Layer_1-2" data-name="Layer 1">
+              <g className="fill-gray-300" id="Layer_1-2" data-name="Layer 1">
                 <g>
                   <g>
                     <path
@@ -107,7 +107,7 @@ export function ContactGallery() {
                   height={1600}
                   alt="Beautiful Norway"
                   sizes="(min-width: 640px) 18rem, 11rem"
-                  className="absolute inset-0 object-cover w-full h-full opacity-60"
+                  className="absolute inset-0 object-cover w-full h-full opacity-100"
                   unoptimized
                 />
               </motion.div>

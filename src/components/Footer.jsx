@@ -74,10 +74,10 @@ export function Footer() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <footer className="relative bg-gradient-to-b from-gray-50 sm:pt-16">
+    <footer className="relative bg-t sm:pt-16">
       <Container>
-        <div className="flex flex-col items-start justify-between pt-16 pb-6 gap-y-2 lg:flex-row lg:items-center lg:py-6">
-          <div className="w-full">
+        <div className="flex flex-col items-start justify-between pt-16 pb-6 border-t border-gray-200 gap-y-2 lg:flex-row lg:items-center lg:py-6">
+          <div className="w-full sm:pt-12">
             <div className="flex items-center text-gray-900 sm:justify-between">
               <div className="flex items-start justify-between w-full">
                 <div className="w-full">
@@ -87,9 +87,11 @@ export function Footer() {
                         router.pathname === '/'
                           ? ' text-sky-pink'
                           : router.pathname === '/about'
-                          ? ' text-sky-600'
+                          ? ' text-fuchsia-600'
                           : router.pathname === '/contact'
-                          ? ' text-red-500'
+                          ? ' text-blue-600'
+                          : router.pathname === '/locations'
+                          ? ' text-teal-600'
                           : ''
                       )}
                     >
@@ -111,9 +113,11 @@ export function Footer() {
                         router.pathname === '/'
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/about'
-                          ? ' hover:text-sky-600'
+                          ? ' hover:text-fuchsia-600'
                           : router.pathname === '/contact'
-                          ? ' hover:text-red-500'
+                          ? ' hover:text-blue-600'
+                          : router.pathname === '/locations'
+                          ? ' hover:text-teal-500'
                           : '',
                         'text-gray-400 transition duration-300 ease-in-out'
                       )}
@@ -171,7 +175,7 @@ export function Footer() {
                   router.pathname === '/'
                     ? ' hover:text-sky-pink'
                     : router.pathname === '/about'
-                    ? ' hover:text-sky-600'
+                    ? ' hover:text-fuchsia-600'
                     : router.pathname === '/contact'
                     ? ' hover:text-green-300'
                     : '',

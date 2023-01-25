@@ -8,9 +8,12 @@ import { AboutHero } from '@/components/AboutHero'
 import { LoopFilmDetails } from '@/components/LoopFilmDetails'
 import { AboutFooter } from '@/components/AboutFooter'
 import { Container } from '@/components/Container'
+import { ClientCloud } from '@/components/ClientCloud'
 import { AboutLoopFilm } from '@/components/AboutLoopFilm'
 import { AboutCta } from '@/components/AboutCta'
+import { AboutSeparator } from '@/components/AboutSeparator'
 import { AboutUs } from '@/components/AboutUs'
+import { AboutCtaTwo } from '@/components/AboutCtaTwo'
 
 export default function About() {
   return (
@@ -20,14 +23,13 @@ export default function About() {
       </Head>
       <Header />
 
-      <section>
+      <main>
         <AboutHero />
-        <LoopFilmDetails />
         <AboutCta />
-      </section>
-      <section className="relative">
-        <AboutUs />
-      </section>
+        <LoopFilmDetails />
+
+        <AboutCtaTwo />
+      </main>
 
       <AboutFooter />
     </>
