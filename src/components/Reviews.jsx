@@ -16,6 +16,9 @@ import { EurosportLogo } from '@/components/Logos'
 import { SagaHolidaysLogo } from '@/components/Logos'
 import { AllstateLogo } from '@/components/Logos'
 import { LottoLogo } from '@/components/Logos'
+import { PeugeotLogo } from '@/components/Logos'
+import { NapapijriLogo } from '@/components/Logos'
+import { EsselungaLogo } from '@/components/Logos'
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'
 import { BmwLogo } from '@/components/Logos'
@@ -37,7 +40,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Napapijri-large_ez7sne.webp',
     alt: 'Napapijri',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    logo: <NapapijriLogo className="h-12 max-h-7 fill-white" />,
     link: '',
   },
   {
@@ -68,8 +71,8 @@ const reviews = [
     id: 6,
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/essalunga-large_xogjph.webp',
-    alt: 'Essalunga',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    alt: 'Esselunga',
+    logo: <EsselungaLogo className="h-12 max-h-6 fill-white" />,
     link: '',
   },
   {
@@ -92,8 +95,8 @@ const reviews = [
     id: 9,
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
-    alt: 'Pegueot',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    alt: 'Peugeot',
+    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
     link: '',
   },
   {
@@ -147,7 +150,7 @@ function Review({ id, image, alt, logo, className, ...props }) {
           fill
           unoptimized={true}
         />
-        <div className="absolute bottom-0 left-0 z-20 flex items-center self-end justify-start w-full h-20 px-4 bg-gradient-to-t from-gray-900">
+        <div className="absolute bottom-0 left-0 z-20 flex items-end self-end justify-start w-full h-20 px-4 bg-gradient-to-t from-gray-900">
           {logo}
         </div>
       </div>
