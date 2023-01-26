@@ -14,6 +14,8 @@ import { GeneralMotorsLogo } from '@/components/Logos'
 import { BiothermLogo } from '@/components/Logos'
 import { EurosportLogo } from '@/components/Logos'
 import { SagaHolidaysLogo } from '@/components/Logos'
+import { AllstateLogo } from '@/components/Logos'
+import { LottoLogo } from '@/components/Logos'
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'
 import { BmwLogo } from '@/components/Logos'
@@ -59,7 +61,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Allstate-large_gjdlvn.webp',
     alt: 'Allstate',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    logo: <AllstateLogo className="h-12 max-h-10 fill-white" />,
     link: '',
   },
   {
@@ -83,7 +85,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/lotto-large_urvvxz.webp',
     alt: 'Lotto',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    logo: <LottoLogo className="h-12 max-h-10 fill-white" />,
     link: '',
   },
   {
