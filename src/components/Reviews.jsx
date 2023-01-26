@@ -19,6 +19,7 @@ import { LottoLogo } from '@/components/Logos'
 import { PeugeotLogo } from '@/components/Logos'
 import { NapapijriLogo } from '@/components/Logos'
 import { EsselungaLogo } from '@/components/Logos'
+import { InfinitiLogo } from '@/components/Logos'
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'
 import { BmwLogo } from '@/components/Logos'
@@ -68,6 +69,14 @@ const reviews = [
     link: '',
   },
   {
+    id: 9,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
+    alt: 'Peugeot',
+    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
+    link: '',
+  },
+  {
     id: 6,
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/essalunga-large_xogjph.webp',
@@ -92,14 +101,6 @@ const reviews = [
     link: '',
   },
   {
-    id: 9,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
-    alt: 'Peugeot',
-    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
-    link: '',
-  },
-  {
     id: 10,
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/eurosport-large_xax0ao.webp',
@@ -121,6 +122,22 @@ const reviews = [
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Amazon-large_m2w6kr.webp',
     alt: 'Amazon',
     logo: <AmazonLogo className="h-12 max-h-10 fill-white" />,
+    link: '',
+  },
+  {
+    id: 13,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/infiniti_fmqpxj.webp',
+    alt: 'Infiniti',
+    logo: <InfinitiLogo className="h-12 max-h-10 fill-white" />,
+    link: '',
+  },
+  {
+    id: 14,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/peugeotOculus_ahonyu.webp',
+    alt: 'Peugeot Oculus',
+    logo: <PeugeotLogo className="h-12 max-h-10 fill-white" />,
     link: '',
   },
 ]
