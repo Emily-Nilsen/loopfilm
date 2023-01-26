@@ -139,6 +139,8 @@ export function Header() {
                       ? ' stroke-white'
                       : router.pathname === '/locations'
                       ? ' stroke-teal-500'
+                      : router.pathname === '/clients'
+                      ? ' stroke-white'
                       : '',
                     'h-8 w-auto sm:h-12'
                   )}

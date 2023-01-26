@@ -29,6 +29,11 @@ module.exports = {
         'spin-reverse-slow': 'spin-reverse 4s linear infinite',
         'spin-reverse-slower': 'spin-reverse 6s linear infinite',
       },
+      backgroundImage: {
+        biotherm:
+          "url('https://res.cloudinary.com/dt3k2apqd/image/upload/v1674579503/Loop%20Film/biotherm_c4o2r3.webp')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',
