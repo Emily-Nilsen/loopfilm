@@ -43,7 +43,7 @@ const slideIn = {
 }
 
 function FeatureHeading() {
-  const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true })
+  const [ref, inView] = useInView({ threshold: 0.3, triggerOnce: true })
 
   return (
     <div className="overflow-x-hidden bg-white">

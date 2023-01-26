@@ -23,7 +23,7 @@ export function ClientsCta() {
               href="/contact"
               className="text-base font-semibold leading-7 text-white"
             >
-              Contact us <span aria-hidden="true">→</span>
+              Get in touch <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>

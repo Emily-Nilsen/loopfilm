@@ -12,6 +12,8 @@ import {
 
 import { GeneralMotorsLogo } from '@/components/Logos'
 import { BiothermLogo } from '@/components/Logos'
+import { EurosportLogo } from '@/components/Logos'
+import { SagaHolidaysLogo } from '@/components/Logos'
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'
 import { BmwLogo } from '@/components/Logos'
@@ -97,7 +99,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/eurosport-large_xax0ao.webp',
     alt: 'Eurosport',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    logo: <EurosportLogo className="h-12 max-h-6 fill-white" />,
     link: '',
   },
   {
@@ -105,7 +107,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674725050/Loop%20Film/sagaHolidays-large_zg4wye.webp',
     alt: 'Saga Holidays',
-    logo: <AppleLogo className="h-12 max-h-12 fill-white" />,
+    logo: <SagaHolidaysLogo className="h-12 max-h-8 fill-white" />,
     link: '',
   },
   {
@@ -113,7 +115,7 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Amazon-large_m2w6kr.webp',
     alt: 'Amazon',
-    logo: <AmazonLogo className="h-12 max-h-12 fill-white" />,
+    logo: <AmazonLogo className="h-12 max-h-10 fill-white" />,
     link: '',
   },
 ]
