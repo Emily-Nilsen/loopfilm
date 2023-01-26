@@ -23,9 +23,10 @@ import { InfinitiLogo } from '@/components/Logos'
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'
 import { BmwLogo } from '@/components/Logos'
-import { FerrariLogo } from '@/components/Logos'
+import { FerrariHorseLogo } from '@/components/Logos'
 import { AmazonLogo } from '@/components/Logos'
 import { AlphaRomeoLogo } from '@/components/Logos'
+import { UniversalLogo } from '@/components/Logos'
 
 const reviews = [
   {
@@ -44,6 +45,7 @@ const reviews = [
     logo: <NapapijriLogo className="h-12 max-h-7 fill-white" />,
     link: '',
   },
+
   {
     id: 3,
     image:
@@ -69,14 +71,6 @@ const reviews = [
     link: '',
   },
   {
-    id: 9,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
-    alt: 'Peugeot',
-    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
-    link: '',
-  },
-  {
     id: 6,
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/essalunga-large_xogjph.webp',
@@ -98,6 +92,14 @@ const reviews = [
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/lotto-large_urvvxz.webp',
     alt: 'Lotto',
     logo: <LottoLogo className="h-12 max-h-10 fill-white" />,
+    link: '',
+  },
+  {
+    id: 9,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
+    alt: 'Peugeot',
+    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
     link: '',
   },
   {
@@ -137,7 +139,23 @@ const reviews = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/peugeotOculus_ahonyu.webp',
     alt: 'Peugeot Oculus',
-    logo: <PeugeotLogo className="h-12 max-h-10 fill-white" />,
+    logo: <PeugeotLogo className="h-12 max-h-12 fill-white" />,
+    link: '',
+  },
+  {
+    id: 15,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/universal_u4yyvj.webp',
+    alt: 'Universal - Ex-Machina',
+    logo: <UniversalLogo className="h-12 max-h-12 fill-white" />,
+    link: '',
+  },
+  {
+    id: 16,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674761459/Loop%20Film/ferrari_xxid5r.webp',
+    alt: 'Ferrari',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
     link: '',
   },
 ]
