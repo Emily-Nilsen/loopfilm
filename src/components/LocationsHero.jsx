@@ -23,7 +23,7 @@ export function LocationsHero() {
   return (
     <div
       className={clsx(
-        `h-[${viewportHeight}px] relative overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
+        `h-[${viewportHeight}px] relative min-h-[70vh] overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
       )}
     >
       <div className="absolute inset-0 bg-gray-800">
@@ -47,27 +47,11 @@ export function LocationsHero() {
       </div>
       <Container className="relative h-full z-1">
         <div className="grid w-full h-full grid-cols-5">
-          <div className="flex flex-col justify-between col-span-4 text-white sm:col-span-2">
+          <div className="flex flex-col justify-between col-span-4 text-white sm:col-span-3">
             <div>
-              <h1 className="pt-10 mb-4 text-4xl font-semibold tracking-tight sm:pt-0 sm:text-5xl lg:text-6xl">
-                Capturing the natural beauty of Norway
+              <h1 className="pt-10 mb-4 text-4xl font-semibold tracking-tight sm:pt-16 sm:text-5xl lg:text-6xl">
+                Norway offers unmatched filming landscapes
               </h1>
-            </div>
-            <div>
-              <h2 className="mt-[40vh] max-w-sm text-lg leading-tight sm:mt-0 sm:text-2xl sm:leading-normal">
-                Unique locations and breathtaking views for your next film
-                production.
-              </h2>
-              <div>
-                <Link href="/contact">
-                  <Button
-                    color="teal"
-                    className="flex-none w-3/4 mt-10 sm:w-fit"
-                  >
-                    <span>Inquire now</span>
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>

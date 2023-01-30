@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 import { Header } from '@/components/Header'
 import { LocationsHero } from '@/components/LocationsHero'
+import { Norway } from '@/components/Norway'
+import { LocationsGrid } from '@/components/LocationsGrid'
 import { CollageOfNorway } from '@/components/CollageOfNorway'
 
 import { LocationsCta } from '@/components/LocationsCta'
@@ -14,7 +16,7 @@ export default function Locations() {
       <Head>
         <title>Locations - LoopFilm</title>
       </Head>
-      <main>
+      {/* <main>
         <div className="flex items-center justify-center w-full h-screen">
           <div className="text-center">
             <p className="my-6 text-lg font-bold text-gray-900">Locations</p>
@@ -23,14 +25,14 @@ export default function Locations() {
             </Link>
           </div>
         </div>
-      </main>
-      {/* <main>
+      </main> */}
+      <main>
         <Header />
         <LocationsHero />
-        <CollageOfNorway />
-
-        
-      </main> */}
+        <Norway />
+        <LocationsGrid />
+        {/* <CollageOfNorway /> */}
+      </main>
       <LocationsFooter />
     </>
   )

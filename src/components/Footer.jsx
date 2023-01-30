@@ -77,7 +77,7 @@ export function Footer() {
   return (
     <footer className="relative bg-t sm:pt-16">
       <Container>
-        <div className="flex flex-col items-start justify-between pt-16 pb-6 border-t border-gray-200 gap-y-2 lg:flex-row lg:items-center lg:py-6">
+        <div className="flex flex-col items-start justify-between pt-16 pb-6 gap-y-2 lg:flex-row lg:items-center lg:py-6">
           <div className="w-full sm:pt-12">
             <div className="flex items-center text-gray-900 sm:justify-between">
               <div className="flex items-start justify-between w-full">

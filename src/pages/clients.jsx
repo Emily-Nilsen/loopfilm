@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Header } from '@/components/Header'
-import { Reviews } from '@/components/Reviews'
+import { ClientCloud } from '@/components/ClientCloud'
 import { ClientsCta } from '@/components/ClientsCta'
 
 export default function Clients() {
@@ -11,8 +11,7 @@ export default function Clients() {
       </Head>
       <Header />
       <main>
-        {/* <ClientHero /> */}
-        <Reviews />
+        <ClientCloud />
         <ClientsCta />
       </main>
     </>

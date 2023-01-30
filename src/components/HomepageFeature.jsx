@@ -98,7 +98,7 @@ export function HomepageFeature() {
         animate={reelInView ? 'show' : 'hidden'}
         className="flex justify-end max-w-full mx-auto"
       >
-        <motion.div variants={slideIn} className="relative">
+        <motion.div variants={slideIn} className="relative sm:-mt-16 lg:-mt-20">
           <Image
             alt="LoopFilm Feature Reel"
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673943616/Loop%20Film/LoopFilm_feature_reel_w1zliz.svg"

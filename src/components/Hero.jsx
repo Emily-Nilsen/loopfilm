@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <div
       className={clsx(
-        `h-[${viewportHeight}px] relative overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
+        `h-[${viewportHeight}px] relative min-h-screen overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
       )}
     >
       <div className="absolute inset-0 bg-gray-800">
