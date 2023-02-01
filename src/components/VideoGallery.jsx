@@ -177,7 +177,7 @@ export function VideoGallery() {
             name="sort"
             value={sortCriteria}
             onChange={handleSortCriteriaChange}
-            className="block py-2 pl-3 pr-10 mt-1 text-base border-gray-300 rounded-md w-fit focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+            className="block py-2 pl-3 pr-10 mt-1 text-base border-gray-300 rounded-md w-fit focus:border-red-500 focus:outline-none focus:ring-red-500 sm:text-sm"
             defaultValue="title"
           >
             <option value="title">Title</option>
