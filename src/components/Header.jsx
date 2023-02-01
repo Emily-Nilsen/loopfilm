@@ -138,7 +138,9 @@ export function Header() {
                       : router.pathname === '/contact'
                       ? ' stroke-white'
                       : router.pathname === '/locations'
-                      ? ' stroke-teal-500'
+                      ? ' stroke-teal-400'
+                      : router.pathname === '/portfolio'
+                      ? ' stroke-white'
                       : router.pathname === '/clients'
                       ? ' stroke-white'
                       : '',
@@ -166,6 +168,10 @@ export function Header() {
                           ? 'stroke-sky-pink hover:bg-sky-pink/10 hover:stroke-sky-pink active:stroke-sky-pink'
                           : router.pathname === '/about'
                           ? ' stroke-fuchsia-300 hover:bg-fuchsia-500/10 hover:stroke-fuchsia-500 active:stroke-fuchsia-500'
+                          : router.pathname === '/locations'
+                          ? ' stroke-teal-500/70 hover:bg-white/10 hover:stroke-teal-500 active:stroke-teal-500'
+                          : router.pathname === '/portfolio'
+                          ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
                           : router.pathname === '/contact'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
                           : '',

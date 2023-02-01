@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { Header } from '@/components/Header'
+import { WorkHero } from '@/components/WorkHero'
+import { VideoGallery } from '@/components/VideoGallery'
+import { Container } from '@/components/Container'
+import { WorkCta } from '@/components/WorkCta'
+import { WorkFooter } from '@/components/WorkFooter'
 
 export default function Portfolio() {
   return (
@@ -7,16 +13,13 @@ export default function Portfolio() {
       <Head>
         <title>Portfolio - LoopFilm</title>
       </Head>
+      <Header />
+      <WorkHero />
       <main>
-        <div className="flex items-center justify-center w-full h-screen">
-          <div className="text-center">
-            <p className="my-6 text-lg font-bold text-gray-900">Portfolio</p>
-            <Link href="/" className="text-gray-500">
-              Back to homepage
-            </Link>
-          </div>
-        </div>
+        <VideoGallery />
+        <WorkCta />
       </main>
+      <WorkFooter />
     </>
   )
 }

@@ -92,7 +92,9 @@ export function Footer() {
                           : router.pathname === '/contact'
                           ? ' text-sky-pink'
                           : router.pathname === '/locations'
-                          ? ' text-teal-600'
+                          ? ' text-sky-600'
+                          : router.pathname === '/portfolio'
+                          ? ' text-red-600'
                           : ''
                       )}
                     >
@@ -118,7 +120,9 @@ export function Footer() {
                           : router.pathname === '/contact'
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/locations'
-                          ? ' hover:text-teal-500'
+                          ? ' hover:text-sky-500'
+                          : router.pathname === '/portfolio'
+                          ? ' hover:text-red-600'
                           : '',
                         'text-gray-400 transition duration-300 ease-in-out'
                       )}

@@ -13,7 +13,7 @@ const locations = [
   },
   {
     title: 'Lofoten Islands',
-    alt: 'Lofoten Islands of Norway',
+    alt: 'View from the mountain Håen towards Måstadvika and the vacated hamlet of Måstad on Værøy in Lofoten, Nordland. Northern Norway. Island in the sea. Coast and mountains. Coastal landscape in Northern Norway.',
     description:
       'The dramatic landscapes and extraordinary views of the Lofoten Islands make for an incredibly picturesque backdrop.',
     source:
@@ -93,23 +93,23 @@ export function LocationsGrid() {
         className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 sm:gap-y-12 sm:gap-x-8 xl:gap-x-8"
       >
         {locations.map((location) => (
-          <li key={location.source} className="relative shadow-xl rounded-2xl">
-            <div className="block w-full overflow-hidden bg-gray-100 rounded-b-none group aspect-w-10 aspect-h-7 rounded-2xl">
+          <li key={location.source} className="relative rounded-2xl shadow-xl">
+            <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-2xl rounded-b-none bg-gray-100">
               <Image
                 src={location.source}
                 alt={location.alt}
-                className="object-cover pointer-events-none"
+                className="pointer-events-none object-cover"
                 fill
               />
             </div>
-            <div className="">
+            <div>
               <div className={location.bgColour}>
-                <p className="block p-6 py-4 text-lg font-semibold text-gray-900 truncate pointer-events-none">
+                <p className="pointer-events-none block truncate p-6 py-4 text-lg font-semibold text-gray-900">
                   {location.title}
                 </p>
               </div>
               <div className="p-6">
-                <p className="block text-base text-gray-600 pointer-events-none">
+                <p className="pointer-events-none block text-base text-gray-600">
                   {location.description}
                 </p>
               </div>
