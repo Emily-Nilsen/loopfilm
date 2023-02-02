@@ -151,18 +151,18 @@ export function VideoGallery() {
 
   return (
     <>
-      <Container className="my-16 lg:my-24">
+      <Container className="mt-16 mb-6 lg:mb-12 lg:mt-24">
         {/* Title */}
         <div className="max-w-4xl px-6 pb-6 mx-auto lg:px-8">
           <div className="text-center">
-            <p className="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-              Films made by LoopFilm AS
+            <p className="my-1 text-4xl font-bold tracking-tight text-gray-900 sm:mb-6 sm:text-5xl lg:text-6xl">
+              {/* Films made by LoopFilm AS */}A selection of our work
             </p>
-            <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
+            {/* <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
               We are a Norwegian production company and full service creative
               agency specialising in commercials, corporate videos and
               documentaries. See some of our work below.
-            </p>
+            </p> */}
           </div>
         </div>
         {/* Sort by category */}

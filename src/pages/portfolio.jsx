@@ -17,7 +17,7 @@ export default function Portfolio() {
       <WorkHero />
       <main>
         <VideoGallery />
-        <WorkCta />
+        {/* <WorkCta /> */}
       </main>
       <WorkFooter />
     </>

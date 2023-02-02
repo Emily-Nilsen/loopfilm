@@ -23,7 +23,7 @@ export function WorkHero() {
   return (
     <div
       className={clsx(
-        `h-[${viewportHeight}px] relative min-h-[50vh] overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
+        `h-[${viewportHeight}px] relative min-h-[50vh] overflow-hidden py-20 sm:h-screen sm:max-h-[500px] sm:pt-32 lg:pb-20`
       )}
     >
       <div className="absolute inset-0 bg-gray-800">
@@ -46,7 +46,7 @@ export function WorkHero() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/90" />
         </motion.div>
       </div>
-      <Container className="relative h-full z-1">
+      {/* <Container className="relative h-full z-1">
         <div className="grid w-full h-full grid-cols-5">
           <div className="flex flex-col justify-between col-span-4 text-white sm:col-span-3">
             <div>
@@ -56,7 +56,7 @@ export function WorkHero() {
             </div>
           </div>
         </div>
-      </Container>
+      </Container> */}
     </div>
   )
 }
