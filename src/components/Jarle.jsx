@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
 import { Container } from './Container'
+import { Button } from './Button'
 
 import { CannesLogo } from '@/components/Logos'
 import { EpicaLogo } from '@/components/Logos'
@@ -239,6 +240,7 @@ export function Jarle() {
                 </motion.div>
               </div>
             </div>
+            <Button href="/test">Test</Button>
           </div>
         </div>
       </Container>
