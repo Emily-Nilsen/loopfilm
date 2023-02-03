@@ -7,11 +7,11 @@ import { Container } from '@/components/Container'
 import { WorkCta } from '@/components/WorkCta'
 import { WorkFooter } from '@/components/WorkFooter'
 
-export default function Portfolio() {
+export default function Work() {
   return (
     <>
       <Head>
-        <title>Portfolio - LoopFilm</title>
+        <title>Work - LoopFilm</title>
       </Head>
       <Header />
       <WorkHero />

@@ -15,20 +15,6 @@ export function Norway() {
               From fjords to glaciers, forests to beaches, and snow-capped
               mountains to lakes, Norway offers the perfect filming locations.
             </p>
-            <div className="flex items-center mt-10 gap-x-6">
-              <Link
-                href="/portfolio"
-                className="rounded-md bg-teal-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-teal-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-600"
-              >
-                See our past work
-              </Link>
-              <Link
-                href="/contact"
-                className="text-base font-semibold leading-7 text-gray-900"
-              >
-                Get in touch <span aria-hidden="true">→</span>
-              </Link>
-            </div>
           </div>
         </div>
         <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">

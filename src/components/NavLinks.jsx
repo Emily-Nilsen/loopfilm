@@ -13,9 +13,10 @@ export function NavLinks() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return [
-    ['Company', '/about'],
+    ['Home', '/'],
+    ['Company', '/company'],
     ['Locations', '/locations'],
-    ['Work', '/portfolio'],
+    ['Work', '/work'],
     ['Clients', '/clients'],
     ['Contact', '/contact'],
   ].map(([label, href], index) => (
@@ -32,7 +33,7 @@ export function NavLinks() {
             className={classNames(
               router.pathname === '/'
                 ? ' bg-sky-pink/50'
-                : router.pathname === '/about'
+                : router.pathname === '/company'
                 ? ' bg-fuchsia-200/20'
                 : 'bg-white/10',
               'absolute inset-0 rounded-lg'

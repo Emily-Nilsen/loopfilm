@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { Header } from '@/components/Header'
 import { ClientCloud } from '@/components/ClientCloud'
-import { ClientsCta } from '@/components/ClientsCta'
+import { ClientsFooter } from '@/components/ClientsFooter'
+import { Footer } from '@/components/Footer'
 
 export default function Clients() {
   return (
@@ -12,8 +13,9 @@ export default function Clients() {
       <Header />
       <main>
         <ClientCloud />
-        <ClientsCta />
+        <ClientsFooter />
       </main>
+      {/* <Footer /> */}
     </>
   )
 }

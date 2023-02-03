@@ -78,7 +78,7 @@ export function Jarle() {
               About us
             </h2>
             <p className="max-w-3xl mt-4 text-xl text-gray-500">
-              Meet the professional team at LoopFilm AS, with decades of
+              Meet the professional team at LoopFilm, with over thirty years of
               experience in service production and working in remote locations.
             </p>
           </div>
@@ -124,7 +124,7 @@ export function Jarle() {
                   hunter, and an enthusiastic hobby sailor.
                 </p>
                 <p className="mt-3 text-lg text-gray-500">
-                  With over two decades of experience working on both sides of
+                  With over three decades of experience working on both sides of
                   the table with service production worldwide, Jarle is
                   well-equipped to bring your project to life.
                 </p>
@@ -240,7 +240,6 @@ export function Jarle() {
                 </motion.div>
               </div>
             </div>
-            <Button href="/test">Test</Button>
           </div>
         </div>
       </Container>

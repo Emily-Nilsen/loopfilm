@@ -45,7 +45,7 @@ export function LoopFilmDetails() {
               </div>
               <div className="sm:col-span-3 sm:-mt-8 xl:col-span-2">
                 <AboutInfographicLeft
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/cameramanv2_uiufq6.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/arri_alexa_mini_mfjzpn.jpg"
                   alt="Expert filmmakers, reliable service"
                   title="Expert filmmakers, reliable service"
                   description="We have a reputation for working with some of the best filmmakers in the world, and we’re proud to have a philosophy that every job is manageable, and every client is our most important client."
@@ -54,7 +54,7 @@ export function LoopFilmDetails() {
               </div>
               <div className="sm:col-span-3 sm:ml-10 sm:-mt-2 lg:justify-self-end xl:col-span-2 xl:col-start-2">
                 <AboutInfographicRight
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/camera_bhkoxf.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/russian-arm-u-crane_a9l1xs.webp"
                   alt="Leading industry standards"
                   title="Leading industry standards"
                   description="We’re also proud members of the Global Production Network, ensuring we are always up to date with the latest industry trends and standards."

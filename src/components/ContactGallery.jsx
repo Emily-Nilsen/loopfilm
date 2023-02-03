@@ -10,7 +10,7 @@ const container = {
     opacity: 1,
     transition: {
       delayChildren: 0.1,
-      staggerChildren: 0.7,
+      staggerChildren: 0.2,
     },
   },
 }
@@ -20,7 +20,7 @@ const slideIn = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.8,
+      duration: 1.2,
       type: 'fade',
       ease: 'easeOut',
     },

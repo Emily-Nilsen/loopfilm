@@ -185,7 +185,7 @@ function Review({ id, image, alt, logo, className, ...props }) {
           fill
           unoptimized={true}
         />
-        <div className="absolute bottom-0 left-0 z-20 flex h-20 w-full items-end justify-start self-end bg-gradient-to-t from-gray-900 px-4">
+        <div className="absolute bottom-0 left-0 z-20 flex items-end self-end justify-start w-full h-20 px-4 bg-gradient-to-t from-gray-900">
           {logo}
         </div>
       </div>
@@ -284,8 +284,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-900" />
+      <div className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-gray-900" />
+      <div className="absolute inset-x-0 bottom-0 h-32 pointer-events-none bg-gradient-to-t from-gray-900" />
     </div>
   )
 }
@@ -295,7 +295,7 @@ export function ClientCloud() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="isolate bg-gray-900"
+      className="bg-gray-900 isolate"
     >
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
@@ -323,16 +323,16 @@ export function ClientCloud() {
         </svg>
       </div>
       <div className="relative py-24 sm:py-32 lg:pb-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto my-16 max-w-2xl text-center sm:my-24">
+        <div className="px-6 mx-auto max-w-7xl lg:px-8">
+          <div className="max-w-2xl mx-auto my-16 text-center sm:my-24">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               <span className="text-fuchsia-200">Loop</span>Film{' '}
-              <span className="text-fuchsia-200">AS</span>
+              {/* <span className="text-fuchsia-200">AS</span> */}
             </h1>
             <h1 className="pt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
               The professional choice for filming in Norway
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+            <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-gray-300">
               Our clients trust us to deliver high-quality results every time.
             </p>
           </div>

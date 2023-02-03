@@ -12,12 +12,12 @@ import { NavLinks } from '@/components/NavLinks'
 
 const container = {
   hidden: {
-    scale: 7,
-    x: 'calc(50vw - 108px)',
+    scale: 1,
+    x: 'calc(50vw - 170px)',
     y: '25vh',
   },
   visible: {
-    scale: 1,
+    scale: 0.5,
     x: 0,
     y: 0,
     transition: {
@@ -31,12 +31,12 @@ const container = {
 
 const containerMobile = {
   hidden: {
-    scale: 7,
-    x: 'calc(50vw - 31px)',
+    scale: 1,
+    x: 'calc(50vw - 85px)',
     y: '25vh',
   },
   visible: {
-    scale: 1,
+    scale: 0.4,
     x: 0,
     y: 0,
     transition: {
@@ -97,7 +97,7 @@ export function Header() {
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
           {/* Logo */}
-          {/* {router.pathname === '/' && (
+          {router.pathname === '/' && (
             <>
               <div className="hidden sm:block">
                 <Link href="/" aria-label="Home">
@@ -107,7 +107,7 @@ export function Header() {
                     animate="visible"
                     className="flex items-center"
                   >
-                    <Logomark className="w-auto h-8 stroke-sky-orange" />
+                    <Logomark className="w-auto h-24 pt-1 -mt-12 -mr-36 stroke-sky-orange" />
                   </motion.div>
                 </Link>
               </div>
@@ -119,27 +119,34 @@ export function Header() {
                     animate="visible"
                     className="flex items-center"
                   >
-                    <Logomark className="w-auto h-6 stroke-sky-orange" />
+                    <Logomark className="w-auto h-24 -mt-16 -mr-40 stroke-sky-orange" />
                   </motion.div>
                 </Link>
               </div>
             </>
-          )} */}
+          )}
 
           <div>
             <Link href="/" aria-label="Home">
-              <div className="flex items-center">
+              <motion.div
+                animate={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.8,
+                  type: 'fade',
+                }}
+                className="flex items-center"
+              >
                 <Logo
                   className={classNames(
-                    router.pathname === '/'
-                      ? ' stroke-white'
-                      : router.pathname === '/about'
+                    router.pathname === '/company'
                       ? ' stroke-fuchsia-200'
                       : router.pathname === '/contact'
                       ? ' stroke-white'
                       : router.pathname === '/locations'
                       ? ' stroke-teal-400'
-                      : router.pathname === '/portfolio'
+                      : router.pathname === '/work'
                       ? ' stroke-white'
                       : router.pathname === '/clients'
                       ? ' stroke-white'
@@ -147,7 +154,7 @@ export function Header() {
                     'h-8 w-auto sm:h-12'
                   )}
                 />
-              </div>
+              </motion.div>
             </Link>
           </div>
 
@@ -166,11 +173,13 @@ export function Header() {
                       className={classNames(
                         router.pathname === '/'
                           ? 'stroke-sky-pink hover:bg-sky-pink/10 hover:stroke-sky-pink active:stroke-sky-pink'
-                          : router.pathname === '/about'
+                          : router.pathname === '/company'
+                          ? ' stroke-fuchsia-300 hover:bg-fuchsia-500/10 hover:stroke-fuchsia-500 active:stroke-fuchsia-500'
+                          : router.pathname === '/clients'
                           ? ' stroke-fuchsia-300 hover:bg-fuchsia-500/10 hover:stroke-fuchsia-500 active:stroke-fuchsia-500'
                           : router.pathname === '/locations'
                           ? ' stroke-teal-500/70 hover:bg-white/10 hover:stroke-teal-500 active:stroke-teal-500'
-                          : router.pathname === '/portfolio'
+                          : router.pathname === '/work'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
                           : router.pathname === '/contact'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
@@ -181,9 +190,9 @@ export function Header() {
                     >
                       {({ open }) =>
                         open ? (
-                          <ChevronUpIcon className="h-6 w-6" />
+                          <ChevronUpIcon className="w-6 h-6" />
                         ) : (
-                          <MenuIcon className="h-6 w-6" />
+                          <MenuIcon className="w-6 h-6" />
                         )
                       }
                     </Popover.Button>
@@ -208,25 +217,23 @@ export function Header() {
                               y: -32,
                               transition: { duration: 0.2 },
                             }}
-                            className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
+                            className="absolute inset-x-0 top-0 z-0 px-6 pt-32 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 shadow-gray-900/20"
                           >
                             <div className="space-y-4">
                               <MobileNavLink href="/">Home</MobileNavLink>
-                              <MobileNavLink href="/about">
+                              <MobileNavLink href="/company">
                                 Company
                               </MobileNavLink>
                               <MobileNavLink href="/locations">
                                 Locations
                               </MobileNavLink>
 
-                              <MobileNavLink href="/portfolio">
-                                Work
-                              </MobileNavLink>
+                              <MobileNavLink href="/work">Work</MobileNavLink>
                               <MobileNavLink href="/clients">
                                 Clients
                               </MobileNavLink>
                             </div>
-                            <div className="mt-8 flex w-full flex-col gap-4 sm:w-fit">
+                            <div className="flex flex-col w-full gap-4 mt-8 sm:w-fit">
                               <Button href="/contact" variant="solid">
                                 Contact
                               </Button>

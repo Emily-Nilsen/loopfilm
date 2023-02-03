@@ -12,9 +12,9 @@ import { NavLinks } from '@/components/NavLinks'
 
 const links = [
   ['Home', '/'],
-  ['Company', '/about'],
+  ['Company', '/company'],
   ['Locations', '/locations'],
-  ['Work', '/portfolio'],
+  ['Work', '/work'],
   ['Clients', '/clients'],
   ['Contact', '/contact'],
 ]
@@ -87,20 +87,20 @@ export function Footer() {
                       className={classNames(
                         router.pathname === '/'
                           ? ' text-sky-pink'
-                          : router.pathname === '/about'
-                          ? ' text-fuchsia-600'
+                          : router.pathname === '/company'
+                          ? ' text-fuchsia-800'
                           : router.pathname === '/contact'
                           ? ' text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' text-sky-600'
-                          : router.pathname === '/portfolio'
+                          : router.pathname === '/work'
                           ? ' text-red-600'
                           : ''
                       )}
                     >
                       Loop
                     </span>
-                    Film AS
+                    Film
                   </p>
                   <p className="mt-1">Capturing the natural beauty of Norway</p>
                 </div>
@@ -115,13 +115,13 @@ export function Footer() {
                       className={classNames(
                         router.pathname === '/'
                           ? ' hover:text-sky-pink'
-                          : router.pathname === '/about'
-                          ? ' hover:text-fuchsia-600'
+                          : router.pathname === '/company'
+                          ? ' hover:text-fuchsia-800'
                           : router.pathname === '/contact'
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' hover:text-sky-500'
-                          : router.pathname === '/portfolio'
+                          : router.pathname === '/work'
                           ? ' hover:text-red-600'
                           : '',
                         'text-gray-400 transition duration-300 ease-in-out'
@@ -151,7 +151,7 @@ export function Footer() {
                   <AnimatePresence>
                     {hoveredIndex === index && (
                       <motion.span
-                        className="absolute inset-0 bg-gray-100 rounded-lg"
+                        className="absolute inset-0 bg-white rounded-lg"
                         layoutId="hoverBackground"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -179,8 +179,8 @@ export function Footer() {
                 className={classNames(
                   router.pathname === '/'
                     ? ' hover:text-sky-pink'
-                    : router.pathname === '/about'
-                    ? ' hover:text-fuchsia-600'
+                    : router.pathname === '/company'
+                    ? ' hover:text-fuchsia-800'
                     : router.pathname === '/contact'
                     ? ' hover:text-green-300'
                     : '',
@@ -197,7 +197,8 @@ export function Footer() {
           </div>
           <div className="flex items-center sm:pt-8 sm:pb-12 md:mt-0 md:pt-6">
             <p className="text-gray-500 ">
-              &copy; LoopFilm {new Date().getFullYear()}. All rights reserved.
+              &copy; LoopFilm Productions AS, {new Date().getFullYear()}. All
+              rights reserved.
             </p>
           </div>
         </div>

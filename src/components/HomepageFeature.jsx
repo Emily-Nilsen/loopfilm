@@ -31,7 +31,7 @@ const slideUp = {
 }
 
 const slideIn = {
-  hidden: { opacity: 0, x: 100 },
+  hidden: { opacity: 0, x: 50 },
   show: {
     opacity: 1,
     x: 0,
@@ -83,7 +83,7 @@ function FeatureHeading() {
 
 export function HomepageFeature() {
   const [reelRef, reelInView] = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
     triggerOnce: true,
   })
 

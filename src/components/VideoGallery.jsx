@@ -155,18 +155,13 @@ export function VideoGallery() {
         {/* Title */}
         <div className="max-w-4xl px-6 pb-6 mx-auto lg:px-8">
           <div className="text-center">
-            <p className="my-1 text-4xl font-bold tracking-tight text-gray-900 sm:mb-6 sm:text-5xl lg:text-6xl">
-              {/* Films made by LoopFilm AS */}A selection of our work
+            <p className="my-1 mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:mb-12 sm:text-5xl lg:text-6xl">
+              A selection of our work
             </p>
-            {/* <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
-              We are a Norwegian production company and full service creative
-              agency specialising in commercials, corporate videos and
-              documentaries. See some of our work below.
-            </p> */}
           </div>
         </div>
         {/* Sort by category */}
-        <div className="my-6">
+        {/* <div className="my-6">
           <label
             htmlFor="sort"
             className="block text-sm font-medium text-gray-700"
@@ -184,7 +179,7 @@ export function VideoGallery() {
             <option value="client">Client</option>
             <option value="productionCompany">Production Company</option>
           </select>
-        </div>
+        </div> */}
 
         {/* Video Gallery */}
         <ul

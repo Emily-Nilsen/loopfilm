@@ -10,8 +10,7 @@ export function MemberLogoCloud() {
     <div className="bg-white">
       <div className="px-6 py-12 mx-auto max-w-7xl lg:py-16 lg:px-8">
         <p className="text-lg font-semibold text-center text-gray-600">
-          LoopFilm is proudly affiliated with the following film production
-          associations
+          LoopFilm is proudly affiliated with the following organisations
         </p>
         <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-4 lg:mt-8">
           <div className="flex justify-center col-span-1 px-8 py-8 bg-white">

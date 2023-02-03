@@ -16,7 +16,7 @@ const companyFeatures = [
   {
     name: 'Global excellence',
     description: `Founded in 1994, we have
-      established ourselves as the leading production company in
+      established ourselves as the leading service production company in
       Norway, known for our ability to provide exceptional services
       to filmmakers worldwide.`,
     image:
@@ -27,7 +27,7 @@ const companyFeatures = [
     description:
       'Our location offers a wide range of spectacular landscapes, from white sandy beaches to glaciers, and we have the infrastructure to make filming in Norway a breeze.',
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674571867/Loop%20Film/beaches_ymznql.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/beaches_ymznql.webp',
   },
 ]
 
@@ -66,7 +66,7 @@ export function AboutHero() {
               <span className="text-fuchsia-300">Film</span>
             </h1>
             <p className="max-w-3xl mt-6 text-lg text-white/95 sm:text-2xl">
-              Bringing 20+ years of experience to the Norwegian film industry.
+              Bringing 30+ years of experience to the Norwegian film industry.
             </p>
           </div>
         </div>
@@ -89,10 +89,12 @@ export function AboutHero() {
                 x: i % 2 === 0 ? -50 : 50,
               }}
               whileInView={{ opacity: 1, y: 0, x: 0 }}
+              // whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.7,
-                delay: i * 0.6,
+                delay: 0.6,
+                duration: 0.8,
+                // delay: i * 0,
                 ease: 'easeOut',
               }}
               key={i}

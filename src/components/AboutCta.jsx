@@ -7,11 +7,9 @@ export function AboutCta() {
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl font-bold tracking-tight text-white">
-            Don’t hesitate to
-            <br />
-            contact us for references.
+            Contact us for references.
           </h2>
-          <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-300">
+          {/* <p className="max-w-xl mx-auto mt-6 text-lg leading-8 text-gray-300">
             We’re ready to discuss your project and help you create a
             masterpiece in Norway.
           </p>
@@ -22,7 +20,7 @@ export function AboutCta() {
             >
               Learn more <span aria-hidden="true">→</span>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <svg

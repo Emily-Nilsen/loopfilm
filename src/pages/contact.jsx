@@ -11,8 +11,6 @@ import { Header } from '@/components/Header'
 import { ContactGallery } from '@/components/ContactGallery'
 import { OurOffices } from '@/components/OurOffices'
 import { ContactFooter } from '@/components/ContactFooter'
-import { CameraFrame } from '@/components/CameraFrame'
-import { Jarle } from '@/components/Jarle'
 
 export default function Contact() {
   return (
@@ -51,18 +49,6 @@ export default function Contact() {
               }}
               className="absolute bottom-0 w-full h-full bg-gradient-to-t from-black/50"
             ></motion.div>
-            <motion.div
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{
-                delay: 1.8,
-                duration: 0.8,
-                type: 'fade',
-              }}
-              className="absolute top-0 flex items-center justify-center w-full h-full"
-            >
-              <CameraFrame className="h-auto max-h-[400px] w-5/6 fill-white/40 stroke-white/50 lg:max-h-[400px] 2xl:max-h-[500px]" />
-            </motion.div>
           </motion.div>
           <motion.div
             animate={{ opacity: 1, y: 0 }}
@@ -86,7 +72,7 @@ export default function Contact() {
       <div className="pt-16 sm:pt-24 lg:pt-32">
         <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-            Contact LoopFilm AS
+            Contact LoopFilm
           </h1>
           <p className="max-w-3xl mt-6 text-xl text-warm-gray-500">
             Don’t hesitate to reach out to us for your next film production.
@@ -100,7 +86,6 @@ export default function Contact() {
       <div className="mb-6 sm:mb-16 lg:mb-24">
         <ContactGallery />
       </div>
-      {/* <Jarle /> */}
 
       {/* Offices */}
       <div className="relative">
