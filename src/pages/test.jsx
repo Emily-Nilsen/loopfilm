@@ -34,7 +34,7 @@ const container = {
 const containerMobile = {
   hidden: {
     scale: 1,
-    x: 'calc(50vw - 31px)',
+    x: 'calc(50vw - 85px)',
     y: '25vh',
   },
   visible: {
@@ -94,7 +94,7 @@ export default function Test() {
                       animate="visible"
                       className="flex items-center"
                     >
-                      <Logomark className="w-auto h-24 stroke-sky-orange" />
+                      <Logomark className="w-auto h-24 -mt-16 -mr-40 stroke-sky-orange" />
                     </motion.div>
                   </Link>
                 </div>
@@ -105,7 +105,7 @@ export default function Test() {
       </header>
       <div
         className={clsx(
-          `h-[${viewportHeight}px] relative min-h-screen overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
+          `h-[${viewportHeight}px] max-h-[${viewportHeight}px] relative min-h-screen overflow-hidden py-20 sm:h-screen sm:max-h-[768px] sm:pt-32 lg:pb-20`
         )}
       >
         <div className="absolute inset-0 bg-gray-800">
