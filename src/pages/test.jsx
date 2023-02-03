@@ -33,12 +33,12 @@ const container = {
 
 const containerMobile = {
   hidden: {
-    scale: 7,
+    scale: 1,
     x: 'calc(50vw - 31px)',
     y: '25vh',
   },
   visible: {
-    scale: 1,
+    scale: 0.3,
     x: 0,
     y: 0,
     transition: {
@@ -94,7 +94,7 @@ export default function Test() {
                       animate="visible"
                       className="flex items-center"
                     >
-                      <Logomark className="w-auto h-6 stroke-sky-orange" />
+                      <Logomark className="w-auto h-24 stroke-sky-orange" />
                     </motion.div>
                   </Link>
                 </div>
@@ -150,7 +150,7 @@ export default function Test() {
           duration: 1.3,
           type: 'fade',
         }}
-        className="absolute inset-0 bg-gray-900/95"
+        className="absolute inset-0 w-full h-full bg-gray-900/95"
       />
     </>
   )
