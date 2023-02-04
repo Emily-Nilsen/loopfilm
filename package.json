@@ -19,6 +19,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@vimeo/player": "^2.18.0",
     "autoprefixer": "^10.4.12",
+    "cloudinary-react": "^1.8.1",
     "clsx": "^1.2.1",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",

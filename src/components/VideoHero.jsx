@@ -1,34 +1,12 @@
-import { useRef, useState } from 'react'
-import { Play } from 'phosphor-react'
-import ReactPlayer from 'react-player/lazy'
+import { CloudinaryVideoPlayer } from './CloudinaryVideoPlayer'
 
-function PlayIcon(props) {
+export function VideoHero() {
   return (
-    <svg {...props} viewBox="0 0 384 512">
-      <path d="M384 256L0 32V480L384 256z" />
-    </svg>
-  )
-}
-
-export function VideoHero({ url }) {
-  const playerRef = useRef()
-
-  return (
-    <div className="relative pt-[56.25%]">
-      <ReactPlayer
-        ref={playerRef}
-        // id="MyId"
-        className="absolute top-0 left-0 w-full h-full overflow-hidden"
-        width="100%"
-        height="100%"
-        autoplay="true"
-        loop="true"
-        muted="true"
-        controls="false"
-        playsinline="true"
-        responsive="true"
-        url={`https://vimeo.com/${url}`}
-      />
+    <div className="relative z-20 h-auto w-full bg-red-400 pt-[56.25%]">
+      <div className="absolute inset-0">
+        <CloudinaryVideoPlayer publicId="https://res.cloudinary.com/dt3k2apqd/video/upload/v1675528149/Loop%20Film/LoopFilm_01_uy1dlw.mp4" />
+      </div>
+      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-gray-900 sm:h-60 lg:h-80" />
     </div>
   )
 }

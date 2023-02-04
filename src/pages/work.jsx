@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
+import { VideoHero } from '@/components/VideoHero'
 import { WorkHero } from '@/components/WorkHero'
 import { VideoGallery } from '@/components/VideoGallery'
 import { Container } from '@/components/Container'
@@ -14,7 +15,8 @@ export default function Work() {
         <title>Work - LoopFilm</title>
       </Head>
       <Header />
-      <WorkHero />
+      {/* <WorkHero /> */}
+      <VideoHero />
       <main>
         <VideoGallery />
         {/* <WorkCta /> */}
