@@ -13,11 +13,11 @@ import { NavLinks } from '@/components/NavLinks'
 const container = {
   hidden: {
     scale: 1,
-    x: 'calc(50vw - 170px)',
+    x: 'calc(50vw - 342px)',
     y: '25vh',
   },
   visible: {
-    scale: 0.5,
+    scale: 0.25,
     x: 0,
     y: 0,
     transition: {
@@ -107,7 +107,7 @@ export function Header() {
                     animate="visible"
                     className="flex items-center"
                   >
-                    <Logomark className="w-auto h-24 pt-1 -mt-12 -mr-36 stroke-sky-orange" />
+                    <Logomark className="w-auto h-48 pt-1 -mt-32 -mr-80 stroke-sky-orange" />
                   </motion.div>
                 </Link>
               </div>
@@ -161,9 +161,15 @@ export function Header() {
           {/* NavItems */}
           <div className="flex">
             <div className="relative z-10 flex items-center gap-16">
-              <div className="hidden lg:flex lg:gap-10">
-                <NavLinks />
-              </div>
+              {router.pathname === '/' ? (
+                <div className="hidden sm:-mt-4 lg:flex lg:gap-10">
+                  <NavLinks />
+                </div>
+              ) : (
+                <div className="hidden lg:flex lg:gap-10">
+                  <NavLinks />
+                </div>
+              )}
             </div>
             <div className="flex items-center gap-6">
               <Popover className="lg:hidden">

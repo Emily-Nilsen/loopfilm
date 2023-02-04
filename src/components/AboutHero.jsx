@@ -35,7 +35,7 @@ export function AboutHero() {
   return (
     <div className="overflow-hidden bg-t">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32 sm:-mb-0 sm:h-[60vh] sm:min-h-[550px]">
+      <div className="relative bg-gray-800 pb-32 sm:-mb-0 sm:h-[70vh] sm:min-h-[550px]">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}

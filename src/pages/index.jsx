@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {/* <LogoCloud /> */}
+
         <div className="overflow-x-hidden">
           <HomepageFeature />
         </div>
