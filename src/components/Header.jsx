@@ -107,7 +107,7 @@ export function Header() {
                     animate="visible"
                     className="flex items-center"
                   >
-                    <Logomark className="w-auto h-48 pt-1 -mt-32 -mr-80 stroke-sky-orange" />
+                    <Logomark className="-mt-32 -mr-80 h-48 w-auto stroke-sky-orange pt-1" />
                   </motion.div>
                 </Link>
               </div>
@@ -119,7 +119,7 @@ export function Header() {
                     animate="visible"
                     className="flex items-center"
                   >
-                    <Logomark className="w-auto h-24 -mt-16 -mr-40 stroke-sky-orange" />
+                    <Logomark className="-mt-16 -mr-40 h-24 w-auto stroke-sky-orange" />
                   </motion.div>
                 </Link>
               </div>
@@ -196,9 +196,9 @@ export function Header() {
                     >
                       {({ open }) =>
                         open ? (
-                          <ChevronUpIcon className="w-6 h-6" />
+                          <ChevronUpIcon className="h-6 w-6" />
                         ) : (
-                          <MenuIcon className="w-6 h-6" />
+                          <MenuIcon className="h-6 w-6" />
                         )
                       }
                     </Popover.Button>
@@ -223,7 +223,7 @@ export function Header() {
                               y: -32,
                               transition: { duration: 0.2 },
                             }}
-                            className="absolute inset-x-0 top-0 z-0 px-6 pt-32 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 shadow-gray-900/20"
+                            className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                           >
                             <div className="space-y-4">
                               <MobileNavLink href="/">Home</MobileNavLink>
@@ -239,7 +239,7 @@ export function Header() {
                                 Clients
                               </MobileNavLink>
                             </div>
-                            <div className="flex flex-col w-full gap-4 mt-8 sm:w-fit">
+                            <div className="mt-8 flex w-full flex-col gap-4 sm:w-fit">
                               <Button href="/contact" variant="solid">
                                 Contact
                               </Button>

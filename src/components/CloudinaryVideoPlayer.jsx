@@ -17,7 +17,7 @@ export function CloudinaryVideoPlayer({ publicId }) {
           width="100%"
           innerRef={videoRef}
           fluid
-          // poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
+          poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
         >
           {/* <Transformation quality="auto" videoCodec="auto" /> */}
         </Video>
