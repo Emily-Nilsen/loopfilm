@@ -16,7 +16,11 @@ export default function Contact() {
   return (
     <main className="relative">
       <Head>
-        <title>Contact Us - LoopFilm</title>
+        <title>Contact LoopFilm</title>
+        <meta
+          name="description"
+          content="Experience top-quality film production in Norway - with our dedicated team."
+        />
       </Head>
       <Header />
       <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:max-h-[800px] sm:min-h-[600px]">

@@ -16,8 +16,7 @@ export default function Home() {
         <title>LoopFilm - Capturing the natural beauty of Norway</title>
         <meta
           name="description"
-          content="Unique locations and breathtaking views for your next film
-          production."
+          content="Elevate your film production experience in Norway with our superior services."
         />
       </Head>
       <Header />

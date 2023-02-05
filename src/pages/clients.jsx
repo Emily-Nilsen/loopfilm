@@ -8,7 +8,11 @@ export default function Clients() {
   return (
     <>
       <Head>
-        <title>About LoopFilm</title>
+        <title>Our clients</title>
+        <meta
+          name="description"
+          content="Innovative film service production company in Norway - delivering creative solutions."
+        />
       </Head>
       <Header />
       <main>

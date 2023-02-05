@@ -21,6 +21,10 @@ export default function About() {
     <>
       <Head>
         <title>About LoopFilm</title>
+        <meta
+          name="description"
+          content="First-rate film services in Norway - bringing your ideas to the screen."
+        />
       </Head>
       <Header />
 

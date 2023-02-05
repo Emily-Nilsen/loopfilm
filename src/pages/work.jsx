@@ -12,7 +12,11 @@ export default function Work() {
   return (
     <>
       <Head>
-        <title>Work - LoopFilm</title>
+        <title>Past work</title>
+        <meta
+          name="description"
+          content="Transform your vision into reality - with our film production services in Norway."
+        />
       </Head>
       <Header />
       {/* <WorkHero /> */}

@@ -13,7 +13,12 @@ export default function Locations() {
   return (
     <>
       <Head>
-        <title>Locations - LoopFilm</title>
+        <title>Locations</title>
+        <meta
+          name="description"
+          content="Unique locations and breathtaking views for your next film
+          production."
+        />
       </Head>
       <main>
         <Header />
