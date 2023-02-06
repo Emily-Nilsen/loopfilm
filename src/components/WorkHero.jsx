@@ -1,5 +1,4 @@
 import { useId, useRef, useState, useEffect } from 'react'
-import { VideoHero } from './VideoHero'
 import { isMobile } from 'react-device-detect'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -43,20 +42,9 @@ export function WorkHero() {
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1674725050/Loop%20Film/bmw-large_rbr1c8.webp"
             unoptimized
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-900/90" />
+          <div className="absolute inset-0 h-1/2 bg-gradient-to-b from-gray-900" />
         </motion.div>
       </div>
-      {/* <Container className="relative h-full z-1">
-        <div className="grid w-full h-full grid-cols-5">
-          <div className="flex flex-col justify-between col-span-4 text-white sm:col-span-3">
-            <div>
-              <h1 className="pt-10 mb-4 text-4xl font-semibold tracking-tight sm:pt-16 sm:text-5xl lg:text-6xl">
-                Films, from concept to delivery
-              </h1>
-            </div>
-          </div>
-        </div>
-      </Container> */}
     </div>
   )
 }
