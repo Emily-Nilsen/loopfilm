@@ -23,7 +23,7 @@ export function VideoPlayer({ url, image }) {
         height="100%"
         controls
         playing
-        playsinline="true"
+        // playsinline="true"
         responsive="true"
         light={image}
         playIcon={
