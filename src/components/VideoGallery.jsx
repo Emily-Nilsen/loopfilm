@@ -15,7 +15,10 @@ export function VideoGallery({
 }) {
   return (
     <li key={videoUrl} className="relative">
-      <div className="overflow-hidden bg-white shadow-xl rounded-2xl">
+      <div
+        id={videoUrl}
+        className="overflow-hidden bg-white shadow-xl rounded-2xl"
+      >
         <VideoPlayer url={videoUrl} image={imgUrl} />
 
         <div className="px-6 pt-5 pb-6 ">
