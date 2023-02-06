@@ -48,7 +48,6 @@ module.exports = {
       }),
       fontFamily: {
         sans: ['futura-pt', ...defaultTheme.fontFamily.sans],
-        display: ['adobe-garamond-pro', ...defaultTheme.fontFamily.serif],
       },
       keyframes: {
         'fade-in': {

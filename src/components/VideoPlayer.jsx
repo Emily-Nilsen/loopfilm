@@ -31,7 +31,7 @@ export function VideoPlayer({ url, image }) {
             <PlayIcon className="w-auto h-12 p-2 pl-3 fill-white group-hover:fill-gray-500" />
           </div>
         }
-        url={`https://vimeo.com/${url}`}
+        url={url}
       />
     </div>
   )

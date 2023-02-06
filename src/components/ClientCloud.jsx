@@ -145,16 +145,120 @@ const reviews = [
   {
     id: 15,
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/universal_u4yyvj.webp',
-    alt: 'Universal - Ex-Machina',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/ex_machina_vs2few.webp',
+    alt: 'Universal - Ex_Machina',
     logo: <UniversalLogo className="h-12 max-h-12 fill-white" />,
     link: '',
   },
   {
     id: 16,
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1674761459/Loop%20Film/ferrari_xxid5r.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/ferrari_xxid5r.webp',
     alt: 'Ferrari',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 17,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/porsche_lbx71d.webp',
+    alt: 'Porsche',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 18,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/ford_imj3io.webp',
+    alt: 'Ford Noruega',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 19,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/ford_northpole_ivzbpv.webp',
+    alt: 'Ford North Pole',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 20,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/CitiBank_tgklop.webp',
+    alt: 'CitiBank',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 21,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/ThreeMobile_kjtccc.webp',
+    alt: 'Three Mobile',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 22,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Toyota_vliogc.webp',
+    alt: 'Toyota',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 23,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Marriott_Vikings_ihkzvi.webp',
+    alt: 'Marriott Vikings',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 24,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Marriott_Cattle_Drive_btridg.webp',
+    alt: 'Marriott Cattle Drive',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 25,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Toyota_FlyingBird_ur0e7q.webp',
+    alt: 'Ford Mondeo - FlyingBird',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 26,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/marriott_yukon_jll6dn.webp',
+    alt: 'Marriott - Yukon',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 27,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/subaru_xjil6g.webp',
+    alt: 'Subaru',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 28,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/general_electric_ij1hgf.webp',
+    alt: 'General Electric',
+    logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
+    link: '',
+  },
+  {
+    id: 29,
+    image:
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Sharp_bbiiha.webp',
+    alt: 'Sharp',
     logo: <FerrariHorseLogo className="h-16 max-h-16 fill-white" />,
     link: '',
   },

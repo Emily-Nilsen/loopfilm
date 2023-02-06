@@ -7,7 +7,7 @@ export function CloudinaryVideoPlayer({ publicId }) {
 
   return (
     <CloudinaryContext cloud_name={cloudName}>
-      <div className="">
+      <div>
         <Video
           playsInline
           muted
