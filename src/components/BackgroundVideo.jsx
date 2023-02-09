@@ -6,7 +6,7 @@ export function BackgroundVideo() {
         autoPlay
         muted
         // loop
-        poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
+        // poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
       >
         <source
           src="https://res.cloudinary.com/dt3k2apqd/video/upload/f_webm/Loop%20Film/LoopFilm_ix0zjg.mp4"
