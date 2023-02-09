@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "logo": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_favicon_z0yh8u.svg",
+  "@id": "https://www.loopfilm.no/",
+  "name": "LoopFilm",
+  "slogan": "Capturing the natural beauty of Norway",
+  "alternateName": "LoopFilm Productions AS",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Frognerveien 35 b",
+      "addressLocality": "Oslo",
+      "addressRegion": "Oslo",
+      "postalCode": "0266",
+      "addressCountry": "Norway"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Rørstadvegen 55",
+      "addressLocality": "Ålesund",
+      "addressRegion": "Ålesund",
+      "postalCode": "6016",
+      "addressCountry": "Norway"
+    }
+  ],
+  "geo": [
+    {
+      "@type": "GeoCoordinates",
+      "latitude": "59.9197755",
+      "longitude": "10.7047813"
+    },
+    {
+      "@type": "GeoCoordinates",
+      "latitude": "62.4631868",
+      "longitude": "6.2860158"
+    }
+  ],
+  "url": "https://www.loopfilm.no/",
+  "telephone": "+47 9098 0286",
+  "email": "jarle@loopfilm.no",
+  "founder": "Jarle Tangen",
+  "foundingDate": "1994",
+  "makesOffer": "LoopFilm offers a diverse range of high-quality services to a broad clientele, ranging from creative minds and commercial entrepreneurs to broadcasters, producers and production companies.",
+  "description": "Take your film production to the next level with LoopFilm, the leading film service production company in Norway. From pre-production to post-production, LoopFilm has it all. Explore LoopFilm's wide range of services and make your film a success.",
+  "keywords": "leading film service production company Norway, film services Norway, film production services Norway, film production companies in Norway, film services in Norway, film production services in Norway"
+}
