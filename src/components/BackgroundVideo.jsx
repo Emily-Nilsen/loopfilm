@@ -5,7 +5,7 @@ export function BackgroundVideo() {
         width="100%"
         autoPlay
         muted
-        // loop
+        playsInline
         // poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
       >
         <source
