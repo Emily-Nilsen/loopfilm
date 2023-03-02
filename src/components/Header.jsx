@@ -21,9 +21,9 @@ const container = {
     x: 0,
     y: 0,
     transition: {
-      delay: 4,
+      delay: 0.5,
       type: 'spring',
-      duration: 1.0,
+      duration: 1,
       bounce: 0,
     },
   },
@@ -40,9 +40,9 @@ const containerMobile = {
     x: 0,
     y: 0,
     transition: {
-      delay: 4,
+      delay: 0.5,
       type: 'spring',
-      duration: 1.0,
+      duration: 1,
       bounce: 0,
     },
   },
@@ -198,7 +198,9 @@ export function Header() {
                         open ? (
                           <ChevronUpIcon className="h-6 w-6" />
                         ) : (
-                          <MenuIcon className="h-6 w-6" />
+                          <div className="fixed top-0 right-10 mt-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 shadow">
+                            <MenuIcon className="h-6 w-6" />
+                          </div>
                         )
                       }
                     </Popover.Button>

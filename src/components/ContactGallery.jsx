@@ -10,7 +10,7 @@ const container = {
     opacity: 1,
     transition: {
       delayChildren: 0.1,
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
     },
   },
 }
@@ -20,7 +20,7 @@ const slideIn = {
   show: {
     opacity: 1,
     transition: {
-      duration: 1.2,
+      duration: 0.3,
       type: 'fade',
       ease: 'easeOut',
     },
@@ -67,7 +67,7 @@ export function ContactGallery() {
         variants={container}
         initial={inView ? 'show' : 'hidden'}
         animate={inView ? 'show' : 'hidden'}
-        className="flex justify-center gap-5 py-4 -my-4 overflow-hidden sm:gap-8"
+        className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8"
       >
         {photos.map((photo, imageIndex) => (
           <div
@@ -107,7 +107,7 @@ export function ContactGallery() {
                   height={1600}
                   alt="Beautiful Norway"
                   sizes="(min-width: 640px) 18rem, 11rem"
-                  className="absolute inset-0 object-cover w-full h-full opacity-100"
+                  className="absolute inset-0 h-full w-full object-cover opacity-100"
                   unoptimized
                 />
               </motion.div>

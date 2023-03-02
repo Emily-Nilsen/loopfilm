@@ -39,14 +39,14 @@ export function Hero() {
         </div>
       </div>
 
-      <Container className="relative h-full z-1">
-        <div className="grid w-full h-full grid-cols-5">
-          <div className="flex col-span-4 text-white sm:col-span-3">
+      <Container className="z-1 relative h-full">
+        <div className="grid h-full w-full grid-cols-5">
+          <div className="col-span-4 flex text-white sm:col-span-3">
             <motion.div
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 4,
+                delay: 1,
                 duration: 0.8,
                 type: 'fade',
               }}
@@ -64,7 +64,7 @@ export function Hero() {
         animate={{ opacity: 0 }}
         initial={{ opacity: 1 }}
         transition={{
-          delay: 3.8,
+          delay: 0.6,
           duration: 0.8,
           type: 'fade',
         }}

@@ -32,7 +32,9 @@ module.exports = {
       backgroundImage: {
         biotherm:
           "url('https://res.cloudinary.com/dt3k2apqd/image/upload/v1674579503/Loop%20Film/biotherm_c4o2r3.webp')",
-        'footer-texture': "url('/img/footer-texture.png')",
+
+        imageA:
+          "url('https://res.cloudinary.com/dt3k2apqd/image/upload/v1677772918/Loop%20Film/client-01_wrf7n3.webp')",
       },
       borderRadius: {
         '4xl': '2rem',

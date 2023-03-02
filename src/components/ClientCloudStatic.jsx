@@ -1,15 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
-import Link from 'next/link'
 import Image from 'next/image'
-import clsx from 'clsx'
-import {
-  motion,
-  useAnimationFrame,
-  useInView,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from 'framer-motion'
 
 import { FerrariHorseLogo } from '@/components/Logos'
 import { GeneralMotorsLogo } from '@/components/Logos'
@@ -68,7 +57,23 @@ import image27 from '@/images/client-27.webp'
 import image28 from '@/images/client-28.webp'
 import image29 from '@/images/client-29.webp'
 
-const reviews = [
+const testimonials = [
+  {
+    body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+    author: {
+      image: image01,
+      alt: 'General Motors',
+      logo: <GeneralMotorsLogo className="h-12 max-h-12 fill-white" />,
+      name: 'Leslie Alexander',
+      handle: 'lesliealexander',
+      imageUrl:
+        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+  },
+  // More testimonials...
+]
+
+const clients = [
   {
     id: 1,
     image: image01,
@@ -148,12 +153,12 @@ const reviews = [
     alt: 'Infiniti',
     logo: <InfinitiLogo className="h-12 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 14,
-  //   image: image14,
-  //   alt: 'Peugeot Oculus',
-  //   logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
-  // },
+  {
+    id: 14,
+    image: image14,
+    alt: 'Peugeot Oculus',
+    logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
+  },
   {
     id: 15,
     image: image15,
@@ -178,12 +183,12 @@ const reviews = [
     alt: 'Ford Noruega',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 19,
-  //   image: image19,
-  //   alt: 'Ford North Pole',
-  //   logo: <FordLogo className="h-10 max-h-10 fill-white" />,
-  // },
+  {
+    id: 19,
+    image: image19,
+    alt: 'Ford North Pole',
+    logo: <FordLogo className="h-10 max-h-10 fill-white" />,
+  },
   {
     id: 20,
     image: image20,
@@ -208,18 +213,18 @@ const reviews = [
     alt: 'Marriott Vikings',
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 24,
-  //   image: image24,
-  //   alt: 'Marriott Cattle Drive',
-  //   logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
-  // },
-  // {
-  //   id: 25,
-  //   image: image25,
-  //   alt: 'Ford Mondeo - FlyingBird',
-  //   logo: <FordLogo className="h-10 max-h-10 fill-white" />,
-  // },
+  {
+    id: 24,
+    image: image24,
+    alt: 'Marriott Cattle Drive',
+    logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
+  },
+  {
+    id: 25,
+    image: image25,
+    alt: 'Ford Mondeo - FlyingBird',
+    logo: <FordLogo className="h-10 max-h-10 fill-white" />,
+  },
   {
     id: 26,
     image: image26,
@@ -238,151 +243,17 @@ const reviews = [
     alt: 'Sharp',
     logo: <SharpLogo className="h-5 max-h-5 fill-white" />,
   },
-  // {
-  //   id: 29,
-  //   image: image29,
-  //   alt: 'Marriott - Yukon',
-  //   logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
-  // },
+  {
+    id: 29,
+    image: image29,
+    alt: 'Marriott - Yukon',
+    logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
+  },
 ]
 
-function Review({ id, image, alt, logo, link, className, ...props }) {
-  let animationDelay = useMemo(() => {
-    let possibleAnimationDelays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
-    return possibleAnimationDelays[
-      Math.floor(Math.random() * possibleAnimationDelays.length)
-    ]
-  }, [])
-
+export function ClientCloudStatic({ id, image, alt, logo, link }) {
   return (
-    <>
-      <div
-        className={clsx(
-          'relative h-28 animate-fade-in rounded-none bg-gray-800 p-6 opacity-0 shadow-md shadow-gray-900/5',
-          className
-        )}
-        style={{ animationDelay }}
-        {...props}
-      >
-        {/* <Image
-          src={image}
-          alt={alt}
-          className="object-cover object-center"
-          fill
-          unoptimized={true}
-        /> */}
-        <div className="absolute bottom-0 left-0 z-20 flex h-20 w-full items-center justify-center self-end bg-gradient-to-t from-gray-900 p-4">
-          {logo}
-        </div>
-      </div>
-    </>
-  )
-}
-
-function splitArray(array, numParts) {
-  let result = []
-  for (let i = 0; i < array.length; i++) {
-    let index = i % numParts
-    if (!result[index]) {
-      result[index] = []
-    }
-    result[index].push(array[i])
-  }
-  return result
-}
-
-function ReviewColumn({
-  className,
-  reviews,
-  reviewClassName = () => {},
-  msPerPixel = 0,
-}) {
-  let columnRef = useRef()
-  let [columnHeight, setColumnHeight] = useState(0)
-  let duration = `${columnHeight * msPerPixel}ms`
-
-  useEffect(() => {
-    let resizeObserver = new window.ResizeObserver(() => {
-      setColumnHeight(columnRef.current.offsetHeight)
-    })
-
-    resizeObserver.observe(columnRef.current)
-
-    return () => {
-      resizeObserver.disconnect()
-    }
-  }, [])
-
-  return (
-    <div
-      ref={columnRef}
-      className={clsx('animate-marquee space-y-8 py-4', className)}
-      style={{ '--marquee-duration': duration }}
-    >
-      {reviews.concat(reviews).map((review, reviewIndex) => (
-        <Review
-          key={reviewIndex}
-          aria-hidden={reviewIndex >= reviews.length}
-          className={reviewClassName(reviewIndex % reviews.length)}
-          {...review}
-        />
-      ))}
-    </div>
-  )
-}
-
-function ReviewGrid() {
-  let containerRef = useRef()
-  let isInView = useInView(containerRef, { once: true, amount: 0.4 })
-  let columns = splitArray(reviews, 3)
-  columns = [columns[0], columns[1], splitArray(columns[2], 2)]
-
-  return (
-    <div
-      ref={containerRef}
-      className="relative -mx-4 mt-16 grid h-[49rem] max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden bg-gray-900 px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
-    >
-      {isInView && (
-        <>
-          <ReviewColumn
-            reviews={[...columns[0], ...columns[2].flat(), ...columns[1]]}
-            reviewClassName={(reviewIndex) =>
-              clsx(
-                reviewIndex >= columns[0].length + columns[2][0].length &&
-                  'md:hidden',
-                reviewIndex >= columns[0].length && 'lg:hidden'
-              )
-            }
-            msPerPixel={10}
-          />
-          <ReviewColumn
-            reviews={[...columns[1], ...columns[2][1]]}
-            className="hidden md:block"
-            reviewClassName={(reviewIndex) =>
-              reviewIndex >= columns[1].length && 'lg:hidden'
-            }
-            msPerPixel={15}
-          />
-          <ReviewColumn
-            reviews={columns[2].flat()}
-            className="hidden lg:block"
-            msPerPixel={10}
-          />
-        </>
-      )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-900" />
-    </div>
-  )
-}
-
-export function ClientCloud() {
-  return (
-    <section
-      id="reviews"
-      aria-labelledby="reviews-title"
-      className="isolate bg-gray-900"
-    >
+    <section id="reviews" className="isolate bg-gray-900 py-24 sm:py-32">
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
           className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -408,20 +279,40 @@ export function ClientCloud() {
           </defs>
         </svg>
       </div>
-      <div className="relative py-24 sm:py-32 lg:pb-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto my-12 max-w-2xl text-center sm:my-20">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              <span className="text-fuchsia-200">Loop</span>Film{' '}
-            </h1>
-            <h1 className="pt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              The professional choice for filming in Norway
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
-              Our clients trust us to deliver high-quality results every time.
-            </p>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto my-12 max-w-xl text-center sm:my-20">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            <span className="text-fuchsia-200">Loop</span>Film{' '}
+          </h1>
+          <h1 className="pt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            The professional choice for filming in Norway
+          </h1>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+            Our clients trust us to deliver high-quality results every time.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+          <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+            {clients.map((client) => (
+              <div
+                key={client.id}
+                className="pt-8 sm:inline-block sm:w-full sm:px-4 "
+              >
+                <figure className="relative h-52 animate-fade-in overflow-hidden rounded-2xl bg-gray-800 p-8 text-sm leading-6 opacity-0 shadow-md shadow-gray-900/5">
+                  <Image
+                    src={client.image}
+                    alt={client.alt}
+                    className="overflow-hidden rounded-2xl object-cover object-center"
+                    fill
+                    unoptimized={true}
+                  />
+                  <div className="absolute bottom-0 left-0 z-20 flex h-20 w-full items-end justify-start self-end bg-gradient-to-t from-gray-900 p-4">
+                    {client.logo}
+                  </div>
+                </figure>
+              </div>
+            ))}
           </div>
-          <ReviewGrid />
         </div>
       </div>
     </section>

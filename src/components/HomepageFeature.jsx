@@ -36,7 +36,7 @@ const slideIn = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 1.5,
+      duration: 0.3,
       ease: 'easeOut',
     },
   },
@@ -47,7 +47,7 @@ function FeatureHeading() {
 
   return (
     <div className="overflow-x-hidden bg-white">
-      <div className="px-6 pb-6 mx-auto max-w-7xl sm:pb-10 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pb-6 sm:pb-10 lg:px-8">
         <motion.div
           ref={ref}
           whileInView={{ opacity: inView ? 1 : 0 }}
@@ -60,19 +60,11 @@ function FeatureHeading() {
               <p className="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
                 Film in Norway’s stunning natural settings
               </p>
-              <p className="max-w-xl mx-auto mt-5 text-xl text-gray-500">
+              <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
                 From fjords, snowy mountains, and forests to cities, explore the
                 diverse and spectacular locations available for your next
                 production.
               </p>
-            </div>
-            <div className="flex justify-center">
-              <Link href="/contact">
-                <div className="flex items-center px-3 py-2 my-10 space-x-2 text-lg font-medium text-gray-800 transition duration-300 ease-in-out bg-gray-100 rounded-lg group hover:bg-gray-50 hover:text-sky-pink">
-                  <p>Get in touch and bring your film to life</p>
-                  <ArrowLongRightIcon className="w-6 h-6 text-gray-500 transition duration-300 ease-in-out group-hover:text-sky-pink" />
-                </div>
-              </Link>
             </div>
           </motion.div>
         </motion.div>
@@ -83,7 +75,7 @@ function FeatureHeading() {
 
 export function HomepageFeature() {
   const [reelRef, reelInView] = useInView({
-    threshold: 0.2,
+    threshold: 0,
     triggerOnce: true,
   })
 
@@ -96,7 +88,7 @@ export function HomepageFeature() {
         variants={container}
         initial={reelInView ? 'show' : 'hidden'}
         animate={reelInView ? 'show' : 'hidden'}
-        className="flex justify-end max-w-full mx-auto"
+        className="mx-auto flex max-w-full justify-end"
       >
         <motion.div variants={slideIn} className="relative sm:-mt-16 lg:-mt-20">
           <Image
