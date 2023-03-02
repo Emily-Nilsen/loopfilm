@@ -38,208 +38,209 @@ import { SubaruLogo } from '@/components/Logos'
 import { GeneralElectricLogo } from '@/components/Logos'
 import { SharpLogo } from '@/components/Logos'
 
+import image01 from '@/images/client-01.webp'
+import image02 from '@/images/client-02.webp'
+import image03 from '@/images/client-03.webp'
+import image04 from '@/images/client-04.webp'
+import image05 from '@/images/client-05.webp'
+import image06 from '@/images/client-06.webp'
+import image07 from '@/images/client-07.webp'
+import image08 from '@/images/client-08.webp'
+import image09 from '@/images/client-09.webp'
+import image10 from '@/images/client-10.webp'
+import image11 from '@/images/client-11.webp'
+import image12 from '@/images/client-12.webp'
+import image13 from '@/images/client-13.webp'
+import image14 from '@/images/client-14.webp'
+import image15 from '@/images/client-15.webp'
+import image16 from '@/images/client-16.webp'
+import image17 from '@/images/client-17.webp'
+import image18 from '@/images/client-18.webp'
+import image19 from '@/images/client-19.webp'
+import image20 from '@/images/client-20.webp'
+import image21 from '@/images/client-21.webp'
+import image22 from '@/images/client-22.webp'
+import image23 from '@/images/client-23.webp'
+import image24 from '@/images/client-24.webp'
+import image25 from '@/images/client-25.webp'
+import image26 from '@/images/client-26.webp'
+import image27 from '@/images/client-27.webp'
+import image28 from '@/images/client-28.webp'
+import image29 from '@/images/client-29.webp'
+
 const reviews = [
   {
     id: 1,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/bmw-large_rbr1c8.webp',
+    image: image01,
     alt: 'General Motors',
     logo: <GeneralMotorsLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 2,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Napapijri-large_ez7sne.webp',
+    image: image02,
     alt: 'Napapijri',
     logo: <NapapijriLogo className="h-12 max-h-7 fill-white" />,
   },
 
   {
     id: 3,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Bmw-large_mxsd4y.webp',
+    image: image03,
     alt: 'BMW',
     logo: <BmwLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 4,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/biotherm-large_exjyfe.webp',
+    image: image04,
     alt: 'Biotherm',
     logo: <BiothermLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 5,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Allstate-large_gjdlvn.webp',
+    image: image05,
     alt: 'Allstate',
     logo: <AllstateLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 6,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/essalunga-large_xogjph.webp',
+    image: image06,
     alt: 'Esselunga',
     logo: <EsselungaLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 7,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/apple-large_yy5gds.webp',
+    image: image07,
     alt: 'Apple',
     logo: <AppleLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 8,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/lotto-large_urvvxz.webp',
+    image: image08,
     alt: 'Lotto',
     logo: <LottoLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 9,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/pegueot-large_wopox3.webp',
+    image: image09,
     alt: 'Peugeot',
     logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 10,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/eurosport-large_xax0ao.webp',
+    image: image10,
     alt: 'Eurosport',
     logo: <EurosportLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 11,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/sagaHolidays-large_zg4wye.webp',
+    image: image11,
     alt: 'Saga Holidays',
     logo: <SagaHolidaysLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 12,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Amazon-large_m2w6kr.webp',
+    image: image12,
     alt: 'Amazon',
     logo: <AmazonLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 13,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/infiniti_fmqpxj.webp',
+    image: image13,
     alt: 'Infiniti',
     logo: <InfinitiLogo className="h-12 max-h-10 fill-white" />,
   },
   {
     id: 14,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/peugeotOculus_ahonyu.webp',
+    image: image14,
     alt: 'Peugeot Oculus',
     logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 15,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/ex_machina_vs2few.webp',
+    image: image15,
     alt: 'Universal - Ex_Machina',
     logo: <UniversalLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 16,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/ferrari_xxid5r.webp',
+    image: image16,
     alt: 'Ferrari',
     logo: <FerrariLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 17,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/porsche_lbx71d.webp',
+    image: image17,
     alt: 'Porsche',
     logo: <PorscheLogo className="max-w-40 w-40 fill-white" />,
   },
   {
     id: 18,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/ford_imj3io.webp',
+    image: image18,
     alt: 'Ford Noruega',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 19,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/ford_northpole_ivzbpv.webp',
+    image: image19,
     alt: 'Ford North Pole',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 20,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/CitiBank_tgklop.webp',
+    image: image20,
     alt: 'CitiBank',
     logo: <CitibankLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 21,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/ThreeMobile_kjtccc.webp',
+    image: image21,
     alt: 'Three Mobile',
     logo: <ThreeLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 22,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Toyota_vliogc.webp',
+    image: image22,
     alt: 'Toyota',
     logo: <ToyotaLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 23,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Marriott_Vikings_ihkzvi.webp',
+    image: image23,
     alt: 'Marriott Vikings',
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 24,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Marriott_Cattle_Drive_btridg.webp',
+    image: image24,
     alt: 'Marriott Cattle Drive',
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 25,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Toyota_FlyingBird_ur0e7q.webp',
+    image: image25,
     alt: 'Ford Mondeo - FlyingBird',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 26,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/subaru_xjil6g.webp',
+    image: image26,
     alt: 'Subaru',
     logo: <SubaruLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 27,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/general_electric_ij1hgf.webp',
+    image: image27,
     alt: 'General Electric',
     logo: <GeneralElectricLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 28,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/Sharp_bbiiha.webp',
+    image: image28,
     alt: 'Sharp',
     logo: <SharpLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 29,
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/c_fit,w_1000/q_auto/Loop%20Film/marriott_yukon_jll6dn.webp',
+    image: image29,
     alt: 'Marriott - Yukon',
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
