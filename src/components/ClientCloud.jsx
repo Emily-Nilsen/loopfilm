@@ -333,7 +333,7 @@ function ReviewColumn({
 
 function ReviewGrid() {
   let containerRef = useRef()
-  let isInView = useInView(containerRef, { once: true, amount: 0.4 })
+  let isInView = useInView(containerRef, { once: true, amount: 0 })
   let columns = splitArray(reviews, 3)
   columns = [columns[0], columns[1], splitArray(columns[2], 2)]
 

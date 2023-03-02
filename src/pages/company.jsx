@@ -30,9 +30,9 @@ export default function About() {
 
       <main>
         <AboutHero />
-        <div className="-mt-6 sm:-mt-0">
+        {/* <div className="-mt-6 sm:-mt-0">
           <AboutCta />
-        </div>
+        </div> */}
         <LoopFilmDetails />
 
         <Jarle />
