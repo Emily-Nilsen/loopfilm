@@ -27,7 +27,14 @@ export function Hero() {
       )}
     >
       <div className="absolute inset-0 bg-gray-800">
-        <div>
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{
+            duration: 0.8,
+            type: 'fade',
+          }}
+        >
           <Image
             priority
             className="object-cover"
@@ -36,7 +43,7 @@ export function Hero() {
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/landing_page_ufbowp.webp"
             unoptimized
           />
-        </div>
+        </motion.div>
       </div>
 
       <Container className="z-1 relative h-full">
@@ -46,7 +53,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 1,
+                delay: 0.2,
                 duration: 0.8,
                 type: 'fade',
               }}
@@ -60,16 +67,6 @@ export function Hero() {
           </div>
         </div>
       </Container>
-      <motion.div
-        animate={{ opacity: 0 }}
-        initial={{ opacity: 1 }}
-        transition={{
-          delay: 0.6,
-          duration: 0.8,
-          type: 'fade',
-        }}
-        className="absolute inset-0 bg-gray-900/95"
-      />
     </div>
   )
 }

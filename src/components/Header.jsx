@@ -92,40 +92,14 @@ function classNames(...classes) {
 export function Header() {
   const router = useRouter()
 
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <header className="absolute top-0 left-0 w-full">
       <nav>
         <Container className="relative z-50 flex justify-between py-8">
-          {/* Logo */}
-          {router.pathname === '/' && (
-            <>
-              <div className="hidden sm:block">
-                <Link href="/" aria-label="Home">
-                  <motion.div
-                    variants={container}
-                    initial="hidden"
-                    animate="visible"
-                    className="flex items-center"
-                  >
-                    <Logomark className="-mt-32 -mr-80 h-48 w-auto stroke-sky-orange pt-1" />
-                  </motion.div>
-                </Link>
-              </div>
-              <div className="sm:hidden">
-                <Link href="/" aria-label="Home">
-                  <motion.div
-                    variants={containerMobile}
-                    initial="hidden"
-                    animate="visible"
-                    className="flex items-center"
-                  >
-                    <Logomark className="-mt-16 -mr-40 h-24 w-auto stroke-sky-orange" />
-                  </motion.div>
-                </Link>
-              </div>
-            </>
-          )}
-
           <div>
             <Link href="/" aria-label="Home">
               <motion.div
@@ -140,7 +114,9 @@ export function Header() {
               >
                 <Logo
                   className={classNames(
-                    router.pathname === '/company'
+                    router.pathname === '/'
+                      ? ' stroke-sky-orange'
+                      : router.pathname === '/company'
                       ? ' stroke-fuchsia-200'
                       : router.pathname === '/contact'
                       ? ' stroke-white'
@@ -161,15 +137,9 @@ export function Header() {
           {/* NavItems */}
           <div className="flex">
             <div className="relative z-10 flex items-center gap-16">
-              {router.pathname === '/' ? (
-                <div className="hidden sm:-mt-4 lg:flex lg:gap-10">
-                  <NavLinks />
-                </div>
-              ) : (
-                <div className="hidden lg:flex lg:gap-10">
-                  <NavLinks />
-                </div>
-              )}
+              <div className="hidden lg:flex lg:gap-10">
+                <NavLinks />
+              </div>
             </div>
             <div className="flex items-center gap-6">
               <Popover className="lg:hidden">
@@ -198,7 +168,10 @@ export function Header() {
                         open ? (
                           <ChevronUpIcon className="h-6 w-6" />
                         ) : (
-                          <div className="fixed top-0 right-6 mt-6 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 shadow">
+                          <div
+                            onClick={handleClick}
+                            className="fixed top-0 right-6 mt-6 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 shadow"
+                          >
                             <MenuIcon className="h-6 w-6" />
                           </div>
                         )

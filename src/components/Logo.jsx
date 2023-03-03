@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: (i) => {
-    const delay = 0.01 + i * 0.1
+    const delay = 0.01 + i * 0.15
     return {
       pathLength: 1,
       opacity: 1,
