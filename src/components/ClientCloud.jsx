@@ -38,212 +38,128 @@ import { SubaruLogo } from '@/components/Logos'
 import { GeneralElectricLogo } from '@/components/Logos'
 import { SharpLogo } from '@/components/Logos'
 
-import image01 from '@/images/client-01.webp'
-import image02 from '@/images/client-02.webp'
-import image03 from '@/images/client-03.webp'
-import image04 from '@/images/client-04.webp'
-import image05 from '@/images/client-05.webp'
-import image06 from '@/images/client-06.webp'
-import image07 from '@/images/client-07.webp'
-import image08 from '@/images/client-08.webp'
-import image09 from '@/images/client-09.webp'
-import image10 from '@/images/client-10.webp'
-import image11 from '@/images/client-11.webp'
-import image12 from '@/images/client-12.webp'
-import image13 from '@/images/client-13.webp'
-import image14 from '@/images/client-14.webp'
-import image15 from '@/images/client-15.webp'
-import image16 from '@/images/client-16.webp'
-import image17 from '@/images/client-17.webp'
-import image18 from '@/images/client-18.webp'
-import image19 from '@/images/client-19.webp'
-import image20 from '@/images/client-20.webp'
-import image21 from '@/images/client-21.webp'
-import image22 from '@/images/client-22.webp'
-import image23 from '@/images/client-23.webp'
-import image24 from '@/images/client-24.webp'
-import image25 from '@/images/client-25.webp'
-import image26 from '@/images/client-26.webp'
-import image27 from '@/images/client-27.webp'
-import image28 from '@/images/client-28.webp'
-import image29 from '@/images/client-29.webp'
-
 const reviews = [
   {
     id: 1,
-    image: image01,
     alt: 'General Motors',
     logo: <GeneralMotorsLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 2,
-    image: image02,
     alt: 'Napapijri',
     logo: <NapapijriLogo className="h-12 max-h-7 fill-white" />,
   },
 
   {
     id: 3,
-    image: image03,
     alt: 'BMW',
     logo: <BmwLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 4,
-    image: image04,
     alt: 'Biotherm',
     logo: <BiothermLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 5,
-    image: image05,
     alt: 'Allstate',
     logo: <AllstateLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 6,
-    image: image06,
     alt: 'Esselunga',
     logo: <EsselungaLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 7,
-    image: image07,
     alt: 'Apple',
     logo: <AppleLogo className="h-10 max-h-10 fill-white" />,
   },
   {
     id: 8,
-    image: image08,
     alt: 'Lotto',
     logo: <LottoLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 9,
-    image: image09,
     alt: 'Peugeot',
     logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 10,
-    image: image10,
     alt: 'Eurosport',
     logo: <EurosportLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 11,
-    image: image11,
     alt: 'Saga Holidays',
     logo: <SagaHolidaysLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 12,
-    image: image12,
     alt: 'Amazon',
     logo: <AmazonLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 13,
-    image: image13,
     alt: 'Infiniti',
     logo: <InfinitiLogo className="h-12 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 14,
-  //   image: image14,
-  //   alt: 'Peugeot Oculus',
-  //   logo: <PeugeotLogo className="h-6 max-h-6 fill-white" />,
-  // },
   {
     id: 15,
-    image: image15,
     alt: 'Universal - Ex_Machina',
     logo: <UniversalLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 16,
-    image: image16,
     alt: 'Ferrari',
     logo: <FerrariLogo className="h-6 max-h-6 fill-white" />,
   },
   {
     id: 17,
-    image: image17,
     alt: 'Porsche',
     logo: <PorscheLogo className="max-w-40 w-40 fill-white" />,
   },
   {
     id: 18,
-    image: image18,
     alt: 'Ford Noruega',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 19,
-  //   image: image19,
-  //   alt: 'Ford North Pole',
-  //   logo: <FordLogo className="h-10 max-h-10 fill-white" />,
-  // },
   {
     id: 20,
-    image: image20,
     alt: 'CitiBank',
     logo: <CitibankLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 21,
-    image: image21,
     alt: 'Three Mobile',
     logo: <ThreeLogo className="h-12 max-h-12 fill-white" />,
   },
   {
     id: 22,
-    image: image22,
     alt: 'Toyota',
     logo: <ToyotaLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 23,
-    image: image23,
     alt: 'Marriott Vikings',
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
-  // {
-  //   id: 24,
-  //   image: image24,
-  //   alt: 'Marriott Cattle Drive',
-  //   logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
-  // },
-  // {
-  //   id: 25,
-  //   image: image25,
-  //   alt: 'Ford Mondeo - FlyingBird',
-  //   logo: <FordLogo className="h-10 max-h-10 fill-white" />,
-  // },
   {
     id: 26,
-    image: image26,
     alt: 'Subaru',
     logo: <SubaruLogo className="h-7 max-h-7 fill-white" />,
   },
   {
     id: 27,
-    image: image27,
     alt: 'General Electric',
     logo: <GeneralElectricLogo className="h-5 max-h-5 fill-white" />,
   },
   {
     id: 28,
-    image: image28,
     alt: 'Sharp',
     logo: <SharpLogo className="h-5 max-h-5 fill-white" />,
   },
-  // {
-  //   id: 29,
-  //   image: image29,
-  //   alt: 'Marriott - Yukon',
-  //   logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
-  // },
 ]
 
 function Review({ id, image, alt, logo, link, className, ...props }) {
@@ -264,13 +180,6 @@ function Review({ id, image, alt, logo, link, className, ...props }) {
         style={{ animationDelay }}
         {...props}
       >
-        {/* <Image
-          src={image}
-          alt={alt}
-          className="object-cover object-center"
-          fill
-          unoptimized={true}
-        /> */}
         <div className="absolute bottom-0 left-0 z-20 flex h-20 w-full items-center justify-center self-end bg-gradient-to-t from-gray-900 p-4">
           {logo}
         </div>

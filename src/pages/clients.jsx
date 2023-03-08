@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Header } from '@/components/Header'
 import { ClientCloud } from '@/components/ClientCloud'
-import { ClientCloudStatic } from '@/components/ClientCloudStatic'
+
 import { ClientsFooter } from '@/components/ClientsFooter'
 import { Footer } from '@/components/Footer'
 
@@ -17,7 +17,7 @@ export default function Clients() {
       </Head>
       <Header />
       <main>
-        {/* <ClientCloudStatic /> */}
+        
         <ClientCloud />
         <ClientsFooter />
       </main>
