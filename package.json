@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -28,6 +29,7 @@
     "html-react-parser": "^3.0.7",
     "next": "13.0.2",
     "next-cloudinary": "^1.8.1",
+    "next-sitemap": "^4.0.5",
     "numeral": "^2.0.6",
     "phosphor-react": "^1.4.1",
     "postcss-focus-visible": "^6.0.4",
