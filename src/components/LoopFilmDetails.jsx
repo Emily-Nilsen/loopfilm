@@ -54,7 +54,7 @@ export function LoopFilmDetails() {
               </div>
               <div className="sm:col-span-3 sm:ml-10 sm:-mt-2 lg:justify-self-end xl:col-span-2 xl:col-start-2">
                 <AboutInfographicRight
-                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/Russian_Arm_oi1lcw.webp"
+                  src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_Porche-kopi_n5e45u.webp"
                   alt="Leading industry standards"
                   title="Leading industry standards"
                   description="We’re also proud members of the Global Production Network, ensuring we are always up to date with the latest industry trends and standards."
