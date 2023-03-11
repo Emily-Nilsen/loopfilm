@@ -11,7 +11,7 @@ const companyFeatures = [
     name: 'Full-service production',
     description: `Looking to film in Norway? Look no further than LoopFilm AS - the experienced Norwegian film production company offering a one-stop full-service production.`,
     image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/big_camera_qm9msm.webp',
+      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/camera_pejrz0.webp',
   },
   {
     name: 'Global excellence',

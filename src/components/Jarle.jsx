@@ -70,9 +70,9 @@ export function Jarle() {
   return (
     <section className="relative w-full h-full">
       <div className="absolute w-full h-32 bg-gradient-to-b from-gray-50" />
-      <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-gray-50" />
+      {/* <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-gray-50" /> */}
       <Container>
-        <div className="py-16 overflow-hidden bg-white lg:py-24">
+        <div className="pt-16 overflow-hidden bg-white lg:pt-24">
           <div className="relative px-6 lg:px-8">
             <h2 className="text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               About us
