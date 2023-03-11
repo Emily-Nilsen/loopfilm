@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { Container } from './Container'
 import { AboutInfographicLeft } from './AboutInfographicLeft'
@@ -60,6 +61,20 @@ export function LoopFilmDetails() {
                   description="We’re also proud members of the Global Production Network, ensuring we are always up to date with the latest industry trends and standards."
                   bgColour="bg-gray-400/10"
                 />
+                <div className="flex mt-6 ml-3 sm:mt-0 sm:ml-10">
+                  <a
+                    className="transition duration-300 ease-in-out hover:opacity-75"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.globalproductionnetwork.com/"
+                  >
+                    <Image
+                      width={100}
+                      height={30}
+                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673762573/Loop%20Film/GPN_logo_wtwvlh.svg"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
