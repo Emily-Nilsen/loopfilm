@@ -9,9 +9,9 @@ const testimonials = [
     [
       {
         image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_bro2-kopi_stimib.webp',
-        height: 'h-72',
-        rotation: 'sm:-rotate-3',
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-28_u0zpq2.webp',
+        height: 'h-80',
+        rotation: 'rotate-2',
         scale: 'sm:scale-110',
       },
       {
@@ -23,11 +23,12 @@ const testimonials = [
       },
       {
         image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-28_u0zpq2.webp',
-        height: 'h-80',
-        rotation: 'rotate-2',
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_bro2-kopi_stimib.webp',
+        height: 'h-72',
+        rotation: 'sm:-rotate-3',
         scale: 'sm:scale-110',
       },
+
       {
         image:
           'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-22_fl2jiv.webp',
@@ -108,13 +109,6 @@ const testimonials = [
     [
       {
         image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-07_qilvqo.webp',
-        height: 'h-64',
-        rotation: 'rotate-3',
-        scale: 'sm:scale-100',
-      },
-      {
-        image:
           'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-29_p2wkgy.webp',
         height: 'h-52',
         rotation: '-rotate-2',
@@ -139,6 +133,13 @@ const testimonials = [
           'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-10_sbw3nb.webp',
         height: 'h-80',
         rotation: 'rotate-2',
+        scale: 'sm:scale-100',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-07_qilvqo.webp',
+        height: 'h-64',
+        rotation: 'rotate-3',
         scale: 'sm:scale-100',
       },
     ],

@@ -37,6 +37,13 @@ import { MarriottLogo } from '@/components/Logos'
 import { SubaruLogo } from '@/components/Logos'
 import { GeneralElectricLogo } from '@/components/Logos'
 import { SharpLogo } from '@/components/Logos'
+import { MyHeritageLogo } from '@/components/Logos'
+import { AdidasLogo } from '@/components/Logos'
+import { MitsubishiLogo } from '@/components/Logos'
+import { JeepLogo } from '@/components/Logos'
+import { WarnerBrosLogo } from '@/components/Logos'
+import { LexusLogo } from '@/components/Logos'
+import { CQMagazineLogo } from '@/components/Logos'
 
 const reviews = [
   {
@@ -49,7 +56,6 @@ const reviews = [
     alt: 'Napapijri',
     logo: <NapapijriLogo className="h-12 max-h-7 fill-white" />,
   },
-
   {
     id: 3,
     alt: 'BMW',
@@ -106,6 +112,11 @@ const reviews = [
     logo: <InfinitiLogo className="h-12 max-h-10 fill-white" />,
   },
   {
+    id: 14,
+    alt: 'Alfa Romeo',
+    logo: <AlphaRomeoLogo className="h-12 max-h-10 fill-white" />,
+  },
+  {
     id: 15,
     alt: 'Universal - Ex_Machina',
     logo: <UniversalLogo className="h-12 max-h-12 fill-white" />,
@@ -118,12 +129,17 @@ const reviews = [
   {
     id: 17,
     alt: 'Porsche',
-    logo: <PorscheLogo className="max-w-40 w-40 fill-white" />,
+    logo: <PorscheLogo className="w-40 max-w-40 fill-white" />,
   },
   {
     id: 18,
     alt: 'Ford Noruega',
     logo: <FordLogo className="h-10 max-h-10 fill-white" />,
+  },
+  {
+    id: 19,
+    alt: 'My Heritage',
+    logo: <MyHeritageLogo className="h-8 max-h-8 fill-white" />,
   },
   {
     id: 20,
@@ -146,6 +162,16 @@ const reviews = [
     logo: <MarriottLogo className="h-10 max-h-10 fill-white" />,
   },
   {
+    id: 24,
+    alt: 'Adidas',
+    logo: <AdidasLogo className="h-7 max-h-7 fill-white" />,
+  },
+  {
+    id: 25,
+    alt: 'Mitsubishi',
+    logo: <MitsubishiLogo className="h-12 max-h-12 fill-white" />,
+  },
+  {
     id: 26,
     alt: 'Subaru',
     logo: <SubaruLogo className="h-7 max-h-7 fill-white" />,
@@ -160,9 +186,29 @@ const reviews = [
     alt: 'Sharp',
     logo: <SharpLogo className="h-5 max-h-5 fill-white" />,
   },
+  {
+    id: 29,
+    alt: 'Jeep',
+    logo: <JeepLogo className="h-8 max-h-8 fill-white" />,
+  },
+  {
+    id: 30,
+    alt: 'Warner Bros Pictures',
+    logo: <WarnerBrosLogo className="h-12 max-h-12 fill-white" />,
+  },
+  {
+    id: 31,
+    alt: 'Lexus',
+    logo: <LexusLogo className="h-7 max-h-7 fill-white" />,
+  },
+  {
+    id: 32,
+    alt: 'CQ Magazine',
+    logo: <CQMagazineLogo className="h-8 max-h-8 fill-white" />,
+  },
 ]
 
-function Review({ id, image, alt, logo, link, className, ...props }) {
+function Review({ id, alt, logo, className, ...props }) {
   let animationDelay = useMemo(() => {
     let possibleAnimationDelays = ['0s', '0.1s', '0.2s', '0.3s', '0.4s', '0.5s']
     return possibleAnimationDelays[
@@ -180,7 +226,11 @@ function Review({ id, image, alt, logo, link, className, ...props }) {
         style={{ animationDelay }}
         {...props}
       >
-        <div className="absolute bottom-0 left-0 z-20 flex h-20 w-full items-center justify-center self-end bg-gradient-to-t from-gray-900 p-4">
+        <div
+          role="img"
+          alt={alt}
+          className="absolute bottom-0 left-0 z-20 flex items-center self-end justify-center w-full h-20 p-4 bg-gradient-to-t from-gray-900"
+        >
           {logo}
         </div>
       </div>
@@ -279,8 +329,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-900" />
+      <div className="absolute inset-x-0 top-0 h-32 pointer-events-none bg-gradient-to-b from-gray-900" />
+      <div className="absolute inset-x-0 bottom-0 h-32 pointer-events-none bg-gradient-to-t from-gray-900" />
     </div>
   )
 }
@@ -290,7 +340,7 @@ export function ClientCloud() {
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="isolate bg-gray-900"
+      className="bg-gray-900 isolate"
     >
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
@@ -318,15 +368,15 @@ export function ClientCloud() {
         </svg>
       </div>
       <div className="relative py-24 sm:py-32 lg:pb-40">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto my-12 max-w-2xl text-center sm:my-20">
+        <div className="px-6 mx-auto max-w-7xl lg:px-8">
+          <div className="max-w-2xl mx-auto my-12 text-center sm:my-20">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               <span className="text-fuchsia-200">Loop</span>Film{' '}
             </h1>
             <h1 className="pt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
               The professional choice for filming in Norway
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+            <p className="max-w-2xl mx-auto mt-6 text-lg leading-8 text-gray-300">
               Our clients trust us to deliver high-quality results every time.
             </p>
           </div>
