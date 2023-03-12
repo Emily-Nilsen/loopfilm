@@ -14,10 +14,10 @@ export default function Clients() {
           name="description"
           content="Innovative film service production company in Norway - delivering creative solutions."
         />
+        <link rel="canonical" href="https://loopfilm.no/clients" />
       </Head>
       <Header />
       <main>
-        
         <ClientCloud />
         <ClientsFooter />
       </main>

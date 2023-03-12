@@ -19,6 +19,7 @@ export default function Locations() {
           content="Unique locations and breathtaking views for your next film
           production."
         />
+        <link rel="canonical" href="https://loopfilm.no/locations" />
       </Head>
       <main>
         <Header />

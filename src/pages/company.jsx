@@ -26,6 +26,7 @@ export default function About() {
           name="description"
           content="First-rate film services in Norway - bringing your ideas to the screen."
         />
+        <link rel="canonical" href="https://loopfilm.no/company" />
       </Head>
       <Header />
 

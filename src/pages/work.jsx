@@ -19,13 +19,14 @@ export default function Work({ films }) {
           name="description"
           content="Transform your vision into reality - with our film production services in Norway."
         />
+        <link rel="canonical" href="https://loopfilm.no/work" />
       </Head>
       <Header />
 
       <VideoHero />
       <main>
         <Container className="mt-16 mb-6 lg:mb-12 lg:mt-24">
-          <div className="mx-auto max-w-4xl px-6 pb-6 lg:px-8">
+          <div className="max-w-4xl px-6 pb-6 mx-auto lg:px-8">
             <div className="text-center">
               <p className="my-1 mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:mb-12 sm:text-5xl lg:text-6xl">
                 A selection of our work

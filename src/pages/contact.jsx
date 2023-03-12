@@ -21,6 +21,7 @@ export default function Contact() {
           name="description"
           content="Experience top-quality film production in Norway - with our dedicated team."
         />
+        <link rel="canonical" href="https://loopfilm.no/contact" />
       </Head>
       <Header />
       <div className="relative flex h-[450px] w-full items-center bg-gray-800 sm:h-[70vh] sm:max-h-[800px] sm:min-h-[600px]">

@@ -18,6 +18,7 @@ export default function Home() {
           name="description"
           content="Elevate your film production experience in Norway with our superior services."
         />
+        <link rel="canonical" href="https://loopfilm.no" />
       </Head>
       <Header />
       <main>
