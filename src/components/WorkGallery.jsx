@@ -43,6 +43,48 @@ const testimonials = [
         rotation: 'rotate-2',
         scale: 'sm:scale-110',
       },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-08_aefnzo.webp',
+        height: 'h-64',
+        rotation: '-rotate-2',
+        scale: 'sm:scale-105',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-09_kaxmg6.webp',
+        height: 'h-56',
+        rotation: 'rotate-1',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-13_oagr2e.webp',
+        height: 'h-64',
+        rotation: '-rotate-3',
+        scale: 'sm:scale-105',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559687/Loop%20Film/LoopFilm_img-14_emstqh.webp',
+        height: 'h-60',
+        rotation: 'rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_julebilde-kopi_b3gecs.webp',
+        height: 'h-72',
+        rotation: '-rotate-1',
+        scale: 'sm:scale-105',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-33_zgzprj.webp',
+        height: 'h-64',
+        rotation: '-rotate-3',
+        scale: 'sm:scale-105',
+      },
     ],
     [
       {
@@ -71,6 +113,48 @@ const testimonials = [
           'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559687/Loop%20Film/LoopFilm_img-17_hcctfo.webp',
         height: 'h-52',
         rotation: '-rotate-2',
+        scale: 'sm:scale-125',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-09_n3kmy1.webp',
+        height: 'h-80',
+        rotation: 'rotate-1',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-15_n2ftv6.webp',
+        height: 'h-60',
+        rotation: '-rotate-3',
+        scale: 'sm:scale-125',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/camera_pejrz0.webp',
+        height: 'h-52',
+        rotation: 'rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-05_rv2gji.webp',
+        height: 'h-28',
+        rotation: '-rotate-3',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-32_ksnlhp.webp',
+        height: 'h-96',
+        rotation: '-rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-01_yizsg2.webp',
+        height: 'h-40',
+        rotation: 'rotate-3',
         scale: 'sm:scale-125',
       },
     ],
@@ -103,6 +187,48 @@ const testimonials = [
           'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-16_vtztxu.webp',
         height: 'h-56',
         rotation: '-rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-07_p5k5rg.webp',
+        height: 'h-96',
+        rotation: 'rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-06_sjppif.webp',
+        height: 'h-56',
+        rotation: '-rotate-1',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-12_mw7n3n.webp',
+        height: 'h-64',
+        rotation: 'rotate-3',
+        scale: 'sm:scale-125',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-31_ryguae.webp',
+        height: 'h-64',
+        rotation: '-rotate-2',
+        scale: 'sm:scale-125',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-10_x5pezl.webp',
+        height: 'h-28',
+        rotation: 'rotate-1',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-30_fzbijn.webp',
+        height: 'h-52',
+        rotation: 'rotate-3',
         scale: 'sm:scale-110',
       },
     ],
@@ -141,6 +267,41 @@ const testimonials = [
         height: 'h-64',
         rotation: 'rotate-3',
         scale: 'sm:scale-100',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-05_sxsrpr.webp',
+        height: 'h-60',
+        rotation: '-rotate-2',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559686/Loop%20Film/LoopFilm_img-04_z780md.webp',
+        height: 'h-80',
+        rotation: 'rotate-3',
+        scale: 'sm:scale-100',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/big_camera_qm9msm.webp',
+        height: 'h-60',
+        rotation: '-rotate-1',
+        scale: 'sm:scale-110',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-03_nnu4qn.webp',
+        height: 'h-96',
+        rotation: 'rotate-2',
+        scale: 'sm:scale-100',
+      },
+      {
+        image:
+          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678627831/Loop%20Film/LoopFilm_img-34_daan2q.webp',
+        height: 'h-64',
+        rotation: 'rotate-3',
+        scale: 'sm:scale-110',
       },
     ],
   ],
