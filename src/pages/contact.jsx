@@ -19,7 +19,7 @@ export default function Contact() {
         <title>Contact LoopFilm</title>
         <meta
           name="description"
-          content="Experience top-quality film production in Norway - with our dedicated team."
+          content="Experience top-quality film production service in Norway - with our dedicated team."
         />
         <link rel="canonical" href="https://loopfilm.no/contact" />
       </Head>
@@ -43,7 +43,7 @@ export default function Contact() {
               className="object-cover object-center"
               unoptimized
             />
-            <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/80"></div>
+            <div className="absolute top-0 h-full w-full bg-gradient-to-b from-black/80"></div>
             <motion.div
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
@@ -52,7 +52,7 @@ export default function Contact() {
                 duration: 0.5,
                 type: 'fade',
               }}
-              className="absolute bottom-0 w-full h-full bg-gradient-to-t from-black/50"
+              className="absolute bottom-0 h-full w-full bg-gradient-to-t from-black/50"
             ></motion.div>
           </motion.div>
           <motion.div
@@ -75,11 +75,11 @@ export default function Contact() {
 
       {/* Title */}
       <div className="pt-16 sm:pt-24 lg:pt-32">
-        <div className="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-7xl pl-4 pr-8 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             Contact LoopFilm
           </h1>
-          <p className="max-w-3xl mt-6 text-xl text-warm-gray-500">
+          <p className="text-warm-gray-500 mt-6 max-w-3xl text-xl">
             Don’t hesitate to reach out to us for your next film production.
             We’re here to help bring your vision to life in the beautiful
             landscapes of Norway.
