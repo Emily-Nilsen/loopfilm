@@ -19,6 +19,10 @@ export default function Locations() {
           content="Unique locations and breathtaking views for your next film
           production."
         />
+        <meta
+          name="keywords"
+          content="Oslo, Norway, Nordic countries, Scandinavia, Arctic Circle, Fjords, Mountains, Northern Lights, Snow, Snowscapes, Snowy landscapes, Snowy mountains, Bridges, Windy roads, Curving roads, Picturesque, Tundra, Forests, Lakes, Glaciers, Cliffs, Coastal towns, Cities and towns in Norway, Film locations in Norway, Historical landmarks in Norway, Natural landmarks in Norway, Cinematic locations in Norway, Unique filming locations in Norway, Film-friendly locations in Norway, LoopFilm AS, LoopFilm Productions AS, Film production services in Norway, Video production in Norway, Production support in Norway"
+        />
         <link rel="canonical" href="https://loopfilm.no/locations" />
       </Head>
       <main>

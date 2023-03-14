@@ -2,7 +2,8 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "logo": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_favicon_z0yh8u.svg",
-  "@id": "https://www.loopfilm.no/",
+  "image": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-02_hsq98i.webp",
+  "@id": "https://loopfilm.no/",
   "name": "LoopFilm",
   "slogan": "Capturing the natural beauty of Norway",
   "alternateName": "LoopFilm Productions AS",
@@ -36,7 +37,7 @@
       "longitude": "6.2860158"
     }
   ],
-  "url": "https://www.loopfilm.no/",
+  "url": "https://loopfilm.no/",
   "telephone": "+47 9098 0286",
   "email": "jarle@loopfilm.no",
   "founder": "Jarle Tangen",

@@ -20,6 +20,10 @@ export default function Work({ films }) {
           content="Transform your vision into reality - with our film production services in Norway."
         />
         <link rel="canonical" href="https://loopfilm.no/work" />
+        <meta
+          name="keywords"
+          content="General Electric - Fishing, Santa, Saga Holidays, CitiBank - Father and son, Ford, Noruega, The Cabin, Sharp, The Faint of Heart, Toyota, Subaru, Courtyard Marriott - Cattle Drive, The Dream Road, Ferrari, Apple Sigrid, Peugeot Oculus, Ford Mondeo - FlyingBird, Courtyard Marriott - Yukon, Ex_Machina - Official Trailer, Dream Big, Biotherm, Life Plankton Elixir, Will Ferrell, Super Bowl, Three Mobile, Peugeot Senses, BMW “The Difference”, Porsche Panamera, Courtyard Marriott - Vikings, Napapijri, Allstate, The Island, Eurosport Beijing"
+        />
       </Head>
       <Header />
 

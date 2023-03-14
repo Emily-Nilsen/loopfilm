@@ -21,6 +21,10 @@ export default function Contact() {
           name="description"
           content="Experience top-quality film production service in Norway - with our dedicated team."
         />
+        <meta
+          name="keywords"
+          content="Jarle Tangen, Per Henry Borch, Contact LoopFilm Productions AS, Film production services in Oslo, Ålesund, Aalesund, Frognerveien, Rerstadvegen, Video production in Oslo, Film equipment rental in Oslo, Cinematography in Oslo, Commercial film in Oslo, Corporate video in Oslo, Documentary film in Oslo, Motion graphics in Oslo, Sound design in Oslo, Location scouting in Oslo, Pre-production in Oslo, Post-production in Oslo, Film industry in Norway, Film industry in Scandinavia, Professional film production in Norway, High-quality video production in Norway, Experienced film crew in Norway, Creative team in Norway, Customer service in Norway, Client satisfaction in Norway, Sustainability in film production, LoopFilm AS in Oslo, Norway, Business inquiries, Collaboration opportunities"
+        />
         <link rel="canonical" href="https://loopfilm.no/contact" />
       </Head>
       <Header />
