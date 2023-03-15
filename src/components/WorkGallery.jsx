@@ -358,7 +358,7 @@ export function WorkGallery() {
                   className="object-cover overflow-hidden rounded-2xl"
                   fill
                   src={featuredTestimonial.image}
-                  alt="Loop Film"
+                  alt="Loop Film - Film Production Services, Norway"
                 />
               </div>
             </figure>

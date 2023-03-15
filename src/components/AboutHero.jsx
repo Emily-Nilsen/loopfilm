@@ -16,7 +16,7 @@ const companyFeatures = [
   {
     name: 'Global excellence',
     description: `Founded in 1994, we have
-      established ourselves as the leading service production company in
+      established ourselves as the leading production service company in
       Norway, known for our ability to provide exceptional services
       to filmmakers worldwide.`,
     image:

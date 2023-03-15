@@ -79,7 +79,7 @@ export function Jarle() {
             </h2>
             <p className="max-w-3xl mt-4 text-xl text-gray-500">
               Meet the professional team at LoopFilm, with over thirty years of
-              experience in service production and working in remote locations.
+              experience in film production service and working in remote locations.
             </p>
           </div>
           <div className="relative max-w-xl px-6 mx-auto mt-12 lg:mt-24 lg:max-w-7xl lg:px-8">
@@ -125,7 +125,7 @@ export function Jarle() {
                 </p>
                 <p className="mt-3 text-lg text-gray-500">
                   With over three decades of experience working on both sides of
-                  the table with service production worldwide, Jarle is
+                  the table with film production services worldwide, Jarle is
                   well-equipped to bring your project to life.
                 </p>
               </div>
