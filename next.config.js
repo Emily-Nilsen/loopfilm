@@ -14,17 +14,17 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: '/(.*)',
-        has: [
-          {
-            type: 'host',
-            value: 'loopfilm.no',
-          },
-        ],
-        permanent: true,
-        destination: 'https://loopfilm.no/:splat',
-      },
+      // {
+      //   source: '/(.*)',
+      //   has: [
+      //     {
+      //       type: 'host',
+      //       value: 'loopfilm.no',
+      //     },
+      //   ],
+      //   permanent: true,
+      //   destination: 'https://loopfilm.no/:splat',
+      // },
       {
         source: '/locations/',
         destination: '/locations',
