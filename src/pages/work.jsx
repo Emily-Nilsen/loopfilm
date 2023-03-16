@@ -37,7 +37,7 @@ export default function Work({ films }) {
               </p>
             </div>
           </div>
-          <ul
+          {/* <ul
             role="list"
             className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
           >
@@ -84,7 +84,7 @@ export default function Work({ films }) {
                 />
               </div>
             ))}
-          </ul>
+          </ul> */}
         </Container>
       </main>
       <WorkFooter />
