@@ -10,7 +10,7 @@ import { WorkFooter } from '@/components/WorkFooter'
 
 import { Client } from '@notionhq/client'
 
-export default function Work({ films }) {
+export default function Work() {
   return (
     <>
       <Head>
