@@ -155,7 +155,7 @@ export function Header() {
                           ? ' stroke-fuchsia-300 hover:bg-fuchsia-500/10 hover:stroke-fuchsia-500 active:stroke-fuchsia-500'
                           : router.pathname === '/locations'
                           ? ' stroke-teal-500/70 hover:bg-white/10 hover:stroke-teal-500 active:stroke-teal-500'
-                          : router.pathname === '/work'
+                          : router.pathname === '/comingsoon'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
                           : router.pathname === '/contact'
                           ? ' stroke-red-500/70 hover:bg-white/10 hover:stroke-red-500 active:stroke-red-500'
@@ -209,7 +209,9 @@ export function Header() {
                                 Locations
                               </MobileNavLink>
 
-                              <MobileNavLink href="/work">Work</MobileNavLink>
+                              <MobileNavLink href="/comingsoon">
+                                Work
+                              </MobileNavLink>
                               <MobileNavLink href="/clients">
                                 Clients
                               </MobileNavLink>

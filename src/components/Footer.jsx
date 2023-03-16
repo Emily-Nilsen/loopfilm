@@ -14,7 +14,7 @@ const links = [
   ['Home', '/'],
   ['Company', '/company'],
   ['Locations', '/locations'],
-  ['Work', '/work'],
+  ['Work', '/comingsoon'],
   ['Clients', '/clients'],
   ['Contact', '/contact'],
 ]
@@ -75,12 +75,12 @@ export function Footer() {
   let [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <footer className="relative bg-t sm:pt-16">
+    <footer className="bg-t relative sm:pt-16">
       <Container>
-        <div className="flex flex-col items-start justify-between pt-16 pb-6 gap-y-2 lg:flex-row lg:items-center lg:py-6">
+        <div className="flex flex-col items-start justify-between gap-y-2 pt-16 pb-6 lg:flex-row lg:items-center lg:py-6">
           <div className="w-full sm:pt-12">
             <div className="flex items-center text-gray-900 sm:justify-between">
-              <div className="flex items-start justify-between w-full">
+              <div className="flex w-full items-start justify-between">
                 <div className="w-full">
                   <p className="text-lg font-semibold">
                     <span
@@ -93,7 +93,7 @@ export function Footer() {
                           ? ' text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' text-sky-600'
-                          : router.pathname === '/work'
+                          : router.pathname === '/comingsoon'
                           ? ' text-red-600'
                           : ''
                       )}
@@ -121,7 +121,7 @@ export function Footer() {
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' hover:text-sky-500'
-                          : router.pathname === '/work'
+                          : router.pathname === '/comingsoon'
                           ? ' hover:text-red-600'
                           : '',
                         'text-gray-400 transition duration-300 ease-in-out'
@@ -129,7 +129,7 @@ export function Footer() {
                     >
                       <span className="sr-only">{item.name}</span>
                       <item.icon
-                        className="w-4 h-4 sm:h-5 sm:w-5"
+                        className="h-4 w-4 sm:h-5 sm:w-5"
                         aria-hidden="true"
                       />
                     </a>
@@ -138,7 +138,7 @@ export function Footer() {
               </div>
             </div>
 
-            <nav className="flex-wrap hidden w-full gap-8 sm:mt-12 sm:flex">
+            <nav className="hidden w-full flex-wrap gap-8 sm:mt-12 sm:flex">
               {/* Links */}
               {links.map(([label, href], index) => (
                 <Link
@@ -151,7 +151,7 @@ export function Footer() {
                   <AnimatePresence>
                     {hoveredIndex === index && (
                       <motion.span
-                        className="absolute inset-0 bg-white rounded-lg"
+                        className="absolute inset-0 rounded-lg bg-white"
                         layoutId="hoverBackground"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { duration: 0.15 } }}
@@ -168,7 +168,7 @@ export function Footer() {
             </nav>
           </div>
         </div>
-        <div className="flex flex-col gap-6 pb-24 mt-6 sm:pb-12">
+        <div className="mt-6 flex flex-col gap-6 pb-24 sm:pb-12">
           <div className="flex space-x-5 sm:hidden sm:space-x-6 md:order-2">
             {socials.map((item) => (
               <a
@@ -189,7 +189,7 @@ export function Footer() {
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon
-                  className="w-4 h-4 sm:h-5 sm:w-5"
+                  className="h-4 w-4 sm:h-5 sm:w-5"
                   aria-hidden="true"
                 />
               </a>
