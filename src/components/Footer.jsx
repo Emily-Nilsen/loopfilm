@@ -14,7 +14,7 @@ const links = [
   ['Home', '/'],
   ['Company', '/company'],
   ['Locations', '/locations'],
-  ['Work', '/comingsoon'],
+  ['Work', '/work'],
   ['Clients', '/clients'],
   ['Contact', '/contact'],
 ]
@@ -93,7 +93,7 @@ export function Footer() {
                           ? ' text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' text-sky-600'
-                          : router.pathname === '/comingsoon'
+                          : router.pathname === '/work'
                           ? ' text-red-600'
                           : ''
                       )}
@@ -121,7 +121,7 @@ export function Footer() {
                           ? ' hover:text-sky-pink'
                           : router.pathname === '/locations'
                           ? ' hover:text-sky-500'
-                          : router.pathname === '/comingsoon'
+                          : router.pathname === '/work'
                           ? ' hover:text-red-600'
                           : '',
                         'text-gray-400 transition duration-300 ease-in-out'
