@@ -13,10 +13,10 @@ export default function Home() {
   return (
     <div className="relative">
       <Head>
-        <title>LoopFilm - Capturing the natural beauty of Norway</title>
+        <title>LoopFilm - Film production service company in Norway</title>
         <meta
           name="description"
-          content="Elevate your film production experience in Norway with our superior film production services."
+          content="Elevate your film production experience in Norway with our leading film production services."
         />
         <meta
           name="keywords"

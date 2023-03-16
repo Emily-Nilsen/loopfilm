@@ -16,7 +16,7 @@ export default function Clients() {
         />
         <meta
           name="keywords"
-          content="General Motors, Napapijri, BMW, Biotherm, Allstate, Esselunga, Apple, Lotto, Peugeot, Eurosport, Saga Holidays, Amazon, Infiniti, Alfa Romeo, Universal - Ex_Machina, Ferrari, Porsche, Ford, My Heritage, CitiBank, Three Mobile, Toyota, Marriott, Adidas, Mitsubishi, Subaru, General Electric, Sharp, Jeep, Warner Bros Pictures, Lexus"
+          content="General Motors, Napapijri, BMW, Biotherm, Allstate, Esselunga, Apple, Lotto, Peugeot, Eurosport, Saga Holidays, Amazon, Infiniti, Alfa Romeo, Universal - Ex_Machina, Ferrari, Porsche, Ford, My Heritage, CitiBank, Three Mobile, Toyota, Marriott, Adidas, Mitsubishi, Subaru, General Electric, Sharp, Jeep, Warner Bros Pictures, Lexus, Volvo, Findus, HM Government, Telenor"
         />
         <link rel="canonical" href="https://loopfilm.no/clients" />
       </Head>
