@@ -92,24 +92,24 @@ export default function Work({ films }) {
   )
 }
 
-export async function getStaticProps() {
-  const notion = new Client({ auth: process.env.NOTION_API_KEY })
+// export async function getStaticProps() {
+//   const notion = new Client({ auth: process.env.NOTION_API_KEY })
 
-  const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
+//   const response = await notion.databases.query({
+//     database_id: process.env.NOTION_DATABASE_ID,
 
-    sorts: [
-      {
-        property: 'Order',
-        direction: 'descending',
-      },
-    ],
-  })
+//     sorts: [
+//       {
+//         property: 'Order',
+//         direction: 'descending',
+//       },
+//     ],
+//   })
 
-  return {
-    props: {
-      films: response.results,
-    },
-    revalidate: 1,
-  }
-}
+//   return {
+//     props: {
+//       films: response.results,
+//     },
+//     revalidate: 1,
+//   }
+// }
