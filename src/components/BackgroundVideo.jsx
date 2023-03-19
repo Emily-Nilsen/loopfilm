@@ -5,6 +5,7 @@ export function BackgroundVideo() {
         width="100%"
         autoPlay
         muted
+        loop
         playsInline
         poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_Desktop_cltinr.webp"
       >
