@@ -3,7 +3,6 @@ export function BackgroundVideo() {
     <div>
       <video
         width="100%"
-        // controls
         autoPlay
         muted
         playsInline
