@@ -15,7 +15,7 @@ export function VideoHero() {
       <div className="absolute inset-0">
         <BackgroundVideo />
       </div>
-      <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-gray-900 sm:h-60 lg:h-80" />
+      {/* <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-gray-900 sm:h-60 lg:h-80" /> */}
     </motion.div>
   )
 }

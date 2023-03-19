@@ -362,8 +362,8 @@ function ReviewGrid() {
 export function ClientCloud() {
   return (
     <section
-      id="reviews"
-      aria-labelledby="reviews-title"
+      id="clients"
+      aria-labelledby="clients-title"
       className="isolate bg-gray-900"
     >
       <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">

@@ -3,13 +3,14 @@ export function BackgroundVideo() {
     <div>
       <video
         width="100%"
+        controls
         autoPlay
         muted
         playsInline
-        poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/bmw-large_rbr1c8.webp"
+        poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_Desktop_cltinr.webp"
       >
         <source
-          src="https://res.cloudinary.com/dt3k2apqd/video/upload/f_webm/Loop%20Film/LoopFilm_2_owtl3q.mp4"
+          src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1679221458/Loop%20Film/LoopFilm_Desktop_jjukya.mp4"
           type="video/mp4"
         />
       </video>
