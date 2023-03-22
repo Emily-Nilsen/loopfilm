@@ -27,10 +27,10 @@ export function LocationsFooter() {
         >
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/locationsFooterv2_e8plcx.webp"
-            alt="Beautiful Norway"
+            alt="Filming on ice for a unique perspective"
             width={3000}
             height={1993}
-            className="object-cover -mt-32 sm:-mt-60 lg:-mt-80"
+            className="-mt-32 object-cover sm:-mt-60 lg:-mt-80"
           />
         </motion.div>
       </div>

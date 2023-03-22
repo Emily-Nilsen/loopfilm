@@ -12,7 +12,7 @@ export default function Clients() {
         <title>Our clients</title>
         <meta
           name="description"
-          content="Innovative film production service company in Norway - delivering creative solutions."
+          content="Innovative film production service company in Norway - delivering creative filming solutions."
         />
         <meta
           name="keywords"

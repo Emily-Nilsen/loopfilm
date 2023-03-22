@@ -17,7 +17,7 @@ export default function Locations() {
         <meta
           name="description"
           content="Unique locations and breathtaking views for your next film
-          production."
+          production – From scenic mountains to picturesque fjords, LoopFilm has got you covered for filming in Norway"
         />
         <meta
           name="keywords"

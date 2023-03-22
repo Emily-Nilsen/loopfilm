@@ -19,7 +19,7 @@ export default function Contact() {
         <title>Contact LoopFilm</title>
         <meta
           name="description"
-          content="Experience top-quality film production service in Norway - with our dedicated team."
+          content="Experience top-quality film production service in Norway with our dedicated team - From permits to logistics, LoopFilm takes care of everything for your Norway shoot."
         />
         <meta
           name="keywords"
@@ -43,7 +43,7 @@ export default function Contact() {
               priority
               fill
               src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/contactHero_tyxchd.webp"
-              alt="Beautiful Norway"
+              alt="Unlock the full potential of Norway’s breathtaking locations with LoopFilm"
               className="object-cover object-center"
               unoptimized
             />

@@ -17,7 +17,7 @@ export default function Work({ films }) {
         <title>Past work</title>
         <meta
           name="description"
-          content="Transform your vision into reality - with our film production services in Norway."
+          content="Bringing your vision to life with LoopFilm - Your reliable filming partner in Norway"
         />
         <link rel="canonical" href="https://loopfilm.no/work" />
         <meta

@@ -32,26 +32,31 @@ const photos = [
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_3_ogurke.webp',
     rotation: 'rotate-2',
+    alt: 'Effortless filming in Norway with LoopFilm’s help',
   },
   {
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_2_bbbumk.webp',
     rotation: '-rotate-2',
+    alt: 'LoopFilm’s expert lighting techniques',
   },
   {
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_wf1exg.webp',
     rotation: 'rotate-2',
+    alt: 'LoopFilm - Where creativity meets efficiency for your Norway shoot',
   },
   {
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_5_jqm0mm.webp',
     rotation: 'rotate-2',
+    alt: 'LoopFilm’s expert glacier shots',
   },
   {
     image:
       'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_1_hptbyl.webp',
     rotation: '-rotate-2',
+    alt: 'Filming in Norway made easy',
   },
 ]
 
@@ -105,7 +110,7 @@ export function ContactGallery() {
                   src={photo.image}
                   width={1200}
                   height={1600}
-                  alt="Beautiful Norway"
+                  alt={photo.alt}
                   sizes="(min-width: 640px) 18rem, 11rem"
                   className="absolute inset-0 h-full w-full object-cover opacity-100"
                   unoptimized

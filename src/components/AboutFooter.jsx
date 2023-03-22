@@ -11,7 +11,7 @@ export function AboutFooter() {
   })
 
   return (
-    <section className="relative bg-t">
+    <section className="bg-t relative">
       <div className="flex flex-col">
         <div className="relative z-10">
           <Footer />
@@ -27,10 +27,10 @@ export function AboutFooter() {
         >
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutFooterv2_la1yic.webp"
-            alt="Beautiful Norway"
+            alt="Norway’s picturesque mountains as the perfect backdrop"
             width={3000}
             height={821}
-            className="object-cover -mt-20 sm:-mt-36 lg:-mt-60 xl:-mt-72"
+            className="-mt-20 object-cover sm:-mt-36 lg:-mt-60 xl:-mt-72"
           />
         </motion.div>
       </div>

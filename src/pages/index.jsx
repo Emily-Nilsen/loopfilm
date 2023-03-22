@@ -16,11 +16,11 @@ export default function Home() {
         <title>LoopFilm - Film production service company in Norway</title>
         <meta
           name="description"
-          content="Elevate your film production experience in Norway with our leading film production services."
+          content="Experience seamless filming in Norway with LoopFilm - Norway’s leading film production service company"
         />
         <meta
           name="keywords"
-          content="Film production services, Film production services Norway, Video production, Film editing, Cinematography, Commercial film, Corporate video, Documentary film, Motion graphics, Sound design, Location scouting, Pre-production, Post-production, Film equipment rental, Oslo, Norway, LoopFilm AS, LoopFilm Productions AS"
+          content="filming norway, filming in Norway, Film production services, Film production services Norway, Video production, Film editing, Cinematography, Commercial film, Corporate video, Documentary film, Motion graphics, Sound design, Location scouting, Pre-production, Post-production, Film equipment rental, Oslo, Norway, LoopFilm AS, LoopFilm Productions AS"
         />
         <link rel="canonical" href="https://loopfilm.no" />
       </Head>

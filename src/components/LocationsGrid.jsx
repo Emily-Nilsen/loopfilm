@@ -31,7 +31,7 @@ const locations = [
   },
   {
     title: 'Snowy Mountains',
-    alt: 'Mountains of Norway',
+    alt: 'Filming in Norway’s charming towns',
     description:
       'Do you need snow for your film production? Look no further. In Norway’s mountains, you can find snow all year round.',
     source:
@@ -49,7 +49,7 @@ const locations = [
   },
   {
     title: 'Tundra',
-    alt: 'Tundra of Norway',
+    alt: 'Filming Norway’s wildlife with LoopFilm',
     description:
       'Norway is home to a vast tundra landscape, with incredible views of this untouched landscape.',
     source:
@@ -58,7 +58,7 @@ const locations = [
   },
   {
     title: 'Roads and Bridges',
-    alt: 'Roads and Bridges of Norway',
+    alt: 'Filming on Norway’s scenic roads',
     description:
       'Norway can offer sensational driving scenes with its curvy roads, rugged coastline, and modern infrastructure.',
     source:
@@ -67,7 +67,7 @@ const locations = [
   },
   {
     title: 'Vistas',
-    alt: 'Vistas of Norway',
+    alt: 'Filming on cliffs for breathtaking views',
     description:
       'Spectacular views over sheer cliffs, perfect for panoramic landscapes and sensational vistas, await you in Norway.',
     source:
@@ -76,7 +76,7 @@ const locations = [
   },
   {
     title: 'Beaches and Coastlines',
-    alt: 'Beaches and Coastlines of Norway',
+    alt: 'Beaches and Coastlines of Norway - Capturing Norway’s natural beauty with LoopFilm',
     description:
       'With beautiful white sands and turquoise waters, Norway has some of the most striking stretches of coastline and beaches.',
     source:

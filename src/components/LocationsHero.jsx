@@ -39,7 +39,7 @@ export function LocationsHero() {
             priority
             className="object-cover"
             fill
-            alt="The Beauty of Norway"
+            alt="Arctic Norway - Filming the Northern Lights in the snow with LoopFilm"
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/locationsHero_q0qijj.webp"
             unoptimized
           />

@@ -28,7 +28,7 @@ export function ContactFooter() {
         >
           <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutFooter_huleog.webp"
-            alt="Beautiful Oslo"
+            alt="Bringing your vision to life with LoopFilm - Your reliable filming partner in Norway"
             width={3000}
             height={1148}
             className="-mt-20 object-cover"
