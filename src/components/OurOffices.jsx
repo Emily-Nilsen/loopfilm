@@ -41,17 +41,17 @@ export function OurOffices() {
     <section className="relative">
       {/* Offices */}
       <div className="relative w-full bg-white">
-        <div className="px-6 py-16 mx-auto max-w-7xl sm:py-24 lg:py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-            Our offices
+            Our office
           </h2>
-          <p className="max-w-3xl mt-6 text-lg text-gray-900/80">
+          {/* <p className="max-w-3xl mt-6 text-lg text-gray-900/80">
             We have offices in Oslo and Aalesund, providing easy access to the
             best locations throughout Norway.
-          </p>
-          <div className="grid grid-cols-1 gap-10 mt-10 sm:grid-cols-2 lg:grid-cols-4">
+          </p> */}
+          <div className="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             <div>
-              <h3 className="text-lg font-medium text-gray-900">Main office</h3>
+              {/* <h3 className="text-lg font-medium text-gray-900">Main office</h3> */}
               <p className="mt-2 text-base text-gray-900/80">
                 <span className="block">LoopFilm Productions AS</span>
                 <span className="block">Frognerveien 35 B</span>
@@ -59,7 +59,7 @@ export function OurOffices() {
                 <span className="block">Norway</span>
               </p>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-lg font-medium text-gray-900">West Coast</h3>
               <p className="mt-2 text-base text-gray-900/80">
                 <span className="block">LoopFilm Productions AS</span>
@@ -67,7 +67,7 @@ export function OurOffices() {
                 <span className="block">6016 Aalesund</span>
                 <span className="block">Norway</span>
               </p>
-            </div>
+            </div> */}
             <div>
               <h3 className="text-lg font-bold text-gray-900">
                 Contact details
@@ -75,16 +75,16 @@ export function OurOffices() {
               <div className="mt-2 text-base text-gray-900">
                 <dl className="space-y-2">
                   <dd className="flex items-center space-x-2">
-                    <PhoneIcon className="w-4 h-4 fill-sky-pink " />
+                    <PhoneIcon className="h-4 w-4 fill-sky-pink " />
                     <span className="block">+47 9098 0286</span>
                   </dd>
                   <dd className="flex items-center space-x-2">
-                    <SkypeIcon className="w-5 h-5 fill-sky-pink " />
+                    <SkypeIcon className="h-5 w-5 fill-sky-pink " />
                     <span className="block">jarletangen</span>
                   </dd>
 
                   <dd className="flex items-center space-x-2">
-                    <EmailIcon className="w-4 h-4 fill-sky-pink " />
+                    <EmailIcon className="h-4 w-4 fill-sky-pink " />
                     <span className="block">jarle@loopfilm.no</span>
                   </dd>
                 </dl>
