@@ -72,7 +72,7 @@ export function LoopFilmDetails() {
                       alt="Global Production Network logo"
                       width={100}
                       height={30}
-                      src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673762573/Loop%20Film/GPN_logo_wtwvlh.svg"
+                      src="/GPN-colour.svg"
                     />
                   </a>
                 </div>
