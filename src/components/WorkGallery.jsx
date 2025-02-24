@@ -233,40 +233,35 @@ const testimonials = [
     ],
     [
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-29_p2wkgy.webp',
+        image: '/media/LoopFilm_img-29_p2wkgy.webp',
         height: 'h-52',
         rotation: '-rotate-2',
         alt: 'Breathtaking footage of Norway’s mountains and glaciers, made possible by LoopFilm',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-23_qfrxrm.webp',
+        image: '/media/LoopFilm_img-23_qfrxrm.webp',
         height: 'h-96',
         rotation: 'rotate-2',
         alt: 'Trust LoopFilm for all your filming requirements in Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-19_nnkxgo.webp',
+        image: '/media/LoopFilm_img-19_nnkxgo.webp',
         height: 'h-56',
         rotation: '-rotate-3',
         alt: 'LoopFilm ensures seamless filming in Norway',
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-10_sbw3nb.webp',
+        image: '/media/LoopFilm_img-10_sbw3nb.webp',
         height: 'h-80',
         rotation: 'rotate-2',
         alt: 'Icy landscapes for breathtaking footage',
         scale: 'sm:scale-100',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-07_qilvqo.webp',
+        image: '/media/workGallery-07_qilvqo.webp',
         height: 'h-64',
         rotation: 'rotate-3',
         alt: 'From the mountains to the ice fields, LoopFilm captures the essence of Norway’s natural beauty',
