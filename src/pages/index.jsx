@@ -1,11 +1,7 @@
 import Head from 'next/head'
-
-import { CallToAction } from '@/components/CallToAction'
-
 import { HomepageFooter } from '@/components/HomepageFooter'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { LogoCloud } from '@/components/LogoCloud'
 import { HomepageFeature } from '@/components/HomepageFeature'
 import { MemberLogoCloud } from '@/components/MemberLogoCloud'
 
