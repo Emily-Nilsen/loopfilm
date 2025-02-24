@@ -108,24 +108,21 @@ const testimonials = [
         scale: 'sm:scale-100',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559687/Loop%20Film/LoopFilm_img-17_hcctfo.webp',
+        image: '/media/LoopFilm_img-17_hcctfo.webp',
         height: 'h-52',
         rotation: '-rotate-2',
         alt: 'Behind the scenes with LoopFilm: Capturing stunning shots in the snowy wonderland of Norway',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-09_n3kmy1.webp',
+        image: '/media/workGallery-09_n3kmy1.webp',
         height: 'h-80',
         rotation: 'rotate-1',
         alt: 'Filming Norway’s natural beauty of endless forests and mountains',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-15_n2ftv6.webp',
+        image: '/media/LoopFilm_img-15_n2ftv6.webp',
         height: 'h-60',
         rotation: '-rotate-3',
         alt: 'Shooting on boats with LoopFilm',
