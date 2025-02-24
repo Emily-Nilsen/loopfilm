@@ -282,24 +282,21 @@ const testimonials = [
         scale: 'sm:scale-100',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/big_camera_qm9msm.webp',
+        image: '/media/big_camera_qm9msm.webp',
         height: 'h-60',
         rotation: '-rotate-1',
         alt: 'Full-service filming in Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-03_nnu4qn.webp',
+        image: '/media/LoopFilm_img-03_nnu4qn.webp',
         height: 'h-96',
         rotation: 'rotate-2',
         alt: 'Easy filming in Norway with LoopFilm',
         scale: 'sm:scale-100',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678627831/Loop%20Film/LoopFilm_img-34_daan2q.webp',
+        image: '/media/LoopFilm_img-34_daan2q.webp',
         height: 'h-64',
         rotation: 'rotate-3',
         alt: 'Professional film crew in Norway',
