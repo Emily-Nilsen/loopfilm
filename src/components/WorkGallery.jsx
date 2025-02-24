@@ -64,24 +64,21 @@ const testimonials = [
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559687/Loop%20Film/LoopFilm_img-14_emstqh.webp',
+        image: '/media/LoopFilm_img-14_emstqh.webp',
         height: 'h-60',
         rotation: 'rotate-2',
         alt: 'Teamwork to bring your vision to life in Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_julebilde-kopi_b3gecs.webp',
+        image: '/media/RA_julebilde-kopi_b3gecs.webp',
         height: 'h-72',
         rotation: '-rotate-1',
         alt: 'From snow-covered roads to icy glaciers, LoopFilm captures the essence of Norway',
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-33_zgzprj.webp',
+        image: '/media/LoopFilm_img-33_zgzprj.webp',
         height: 'h-64',
         rotation: '-rotate-3',
         alt: 'On board with LoopFilm: Filming stunning scenes on the boat in Norway’s crystal-clear waters',
