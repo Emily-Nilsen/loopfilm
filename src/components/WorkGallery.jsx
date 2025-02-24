@@ -87,24 +87,21 @@ const testimonials = [
     ],
     [
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-02_hsq98i.webp',
+        image: '/media/LoopFilm_img-02_hsq98i.webp',
         height: 'h-60',
         rotation: '-rotate-3',
         alt: 'Professional film production team in Norway',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-26_so0lqd.webp',
+        image: '/media/LoopFilm_img-26_so0lqd.webp',
         height: 'h-80',
         rotation: 'rotate-3',
         alt: 'Capturing Norway’s unique culture on film',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-21_onmk4l.webp',
+        image: '/media/LoopFilm_img-21_onmk4l.webp',
         height: 'h-60',
         rotation: 'rotate-1',
         alt: 'Professionals who know how to film in Norway',
