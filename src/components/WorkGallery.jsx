@@ -1,23 +1,20 @@
 import Image from 'next/image'
 
 const featuredTestimonial = {
-  image:
-    'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-02_fphdlo.webp',
+  image: '/media/workGallery-02_fphdlo.webp',
 }
 const testimonials = [
   [
     [
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-28_u0zpq2.webp',
+        image: '/media/LoopFilm_img-28_u0zpq2.webp',
         height: 'h-80',
         rotation: 'rotate-2',
         alt: 'Stunning natural scenery for unforgettable footage',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559688/Loop%20Film/LoopFilm_img-25_eytw4c.webp',
+        image: '/media/LoopFilm_img-25_eytw4c.webp',
         height: 'h-60',
         rotation: '-rotate-2',
         alt: 'Shooting in Norway’s picturesque fjords',
@@ -355,8 +352,8 @@ function classNames(...classes) {
 export function WorkGallery() {
   return (
     <section className="w-full overflow-x-hidden">
-      <div className="relative isolate bg-white pb-6 pt-28 sm:pb-16 sm:pt-32">
-        <div className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl">
+      <div className="relative pb-6 bg-white isolate pt-28 sm:pb-16 sm:pt-32">
+        <div className="absolute inset-x-0 overflow-hidden -translate-y-1/2 top-1/2 -z-10 transform-gpu opacity-30 blur-3xl">
           <svg
             viewBox="0 0 1313 771"
             aria-hidden="true"
@@ -382,7 +379,7 @@ export function WorkGallery() {
             </defs>
           </svg>
         </div>
-        <div className="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end">
+        <div className="absolute inset-x-0 top-0 flex pt-32 overflow-hidden opacity-25 -z-10 transform-gpu blur-3xl sm:pt-40 xl:justify-end">
           <svg
             viewBox="0 0 1313 771"
             aria-hidden="true"
@@ -391,12 +388,12 @@ export function WorkGallery() {
             <use href="#bc169a03-3518-42d4-ab1e-d3eadac65edc" />
           </svg>
         </div>
-        <div className="mx-auto -mt-24 max-w-7xl px-6 sm:-mt-16 lg:px-8">
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
-            <figure className="relative col-span-1 hidden h-96 rotate-2 sm:col-span-2 sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
+        <div className="px-6 mx-auto -mt-24 max-w-7xl sm:-mt-16 lg:px-8">
+          <div className="grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 mx-auto mt-16 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+            <figure className="relative hidden col-span-1 h-96 rotate-2 sm:col-span-2 sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
               <div className="absolute inset-0">
                 <Image
-                  className="overflow-hidden rounded-2xl object-cover"
+                  className="object-cover overflow-hidden rounded-2xl"
                   fill
                   src={featuredTestimonial.image}
                   alt="No challenge too big for LoopFilm’s skilled team in capturing stunning shots in Norway’s challenging terrain"
@@ -432,7 +429,7 @@ export function WorkGallery() {
                       >
                         <div className="absolute inset-0">
                           <Image
-                            className="overflow-hidden rounded-2xl object-cover"
+                            className="object-cover overflow-hidden rounded-2xl"
                             fill
                             src={testimonial.image}
                             alt={testimonial.alt}
