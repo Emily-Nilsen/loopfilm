@@ -129,24 +129,21 @@ const testimonials = [
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/camera_pejrz0.webp',
+        image: '/media/camera_pejrz0.webp',
         height: 'h-52',
         rotation: 'rotate-2',
         alt: 'High-tech filming equipment in Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-05_rv2gji.webp',
+        image: '/media/workGallery-05_rv2gji.webp',
         height: 'h-28',
         rotation: '-rotate-3',
         alt: 'High-tech filming equipment for superior results',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-32_ksnlhp.webp',
+        image: '/media/LoopFilm_img-32_ksnlhp.webp',
         height: 'h-96',
         rotation: '-rotate-2',
         alt: 'Unique angles for your Norway film',
