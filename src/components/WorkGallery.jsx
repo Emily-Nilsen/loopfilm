@@ -175,32 +175,28 @@ const testimonials = [
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-27_dht1rp.webp',
+        image: '/media/LoopFilm_img-27_dht1rp.webp',
         height: 'h-52',
         rotation: 'rotate-3',
         alt: 'Filming in Norway’s Arctic regions with LoopFilm',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-16_vtztxu.webp',
+        image: '/media/LoopFilm_img-16_vtztxu.webp',
         height: 'h-56',
         rotation: '-rotate-2',
         alt: 'Norway’s unique locations captured by LoopFilm',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-07_p5k5rg.webp',
+        image: '/media/LoopFilm_img-07_p5k5rg.webp',
         height: 'h-96',
         rotation: 'rotate-2',
         alt: 'LoopFilm’s expertise ensures a successful shoot',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-06_sjppif.webp',
+        image: '/media/workGallery-06_sjppif.webp',
         height: 'h-56',
         rotation: '-rotate-1',
         alt: 'Professionals who know how to film in Norway',
