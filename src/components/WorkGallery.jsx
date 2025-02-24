@@ -150,8 +150,7 @@ const testimonials = [
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-01_yizsg2.webp',
+        image: '/media/workGallery-01_yizsg2.webp',
         height: 'h-40',
         rotation: 'rotate-3',
         alt: 'LoopFilm’s team braves the cold to capture the perfect shot amidst Norway’s mountainous terrain',
@@ -162,16 +161,14 @@ const testimonials = [
   [
     [
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-01_mc5xeq.webp',
+        image: '/media/LoopFilm_img-01_mc5xeq.webp',
         height: 'h-72',
         rotation: 'rotate-3',
         alt: 'Filming on roads in Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-24_i1fjnf.webp',
+        image: '/media/LoopFilm_img-24_i1fjnf.webp',
         height: 'h-56',
         rotation: '-rotate-3',
         alt: 'LoopFilm takes care of all your filming needs in Norway',
