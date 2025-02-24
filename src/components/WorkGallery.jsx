@@ -21,8 +21,7 @@ const testimonials = [
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/RA_bro2-kopi_stimib.webp',
+        image: '/media/RA_bro2-kopi_stimib.webp',
         height: 'h-72',
         rotation: 'sm:-rotate-3',
         alt: 'LoopFilm’s crew and equipment work together seamlessly to bring your Norway shoot to life',
@@ -30,40 +29,35 @@ const testimonials = [
       },
 
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-22_fl2jiv.webp',
+        image: '/media/LoopFilm_img-22_fl2jiv.webp',
         height: 'h-56',
         rotation: '-rotate-3',
         alt: 'LoopFilm’s team of experts makes filming in Norway easy and effortless for you',
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559687/Loop%20Film/LoopFilm_img-11_yz81f0.webp',
+        image: '/media/LoopFilm_img-11_yz81f0.webp',
         height: 'h-56',
         rotation: 'rotate-2',
         alt: 'Cinematic shots of Norway’s fjords and other beautiful landscapes',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-08_aefnzo.webp',
+        image: '/media/LoopFilm_img-08_aefnzo.webp',
         height: 'h-64',
         rotation: '-rotate-2',
         alt: 'Creative filming solutions with LoopFilm',
         scale: 'sm:scale-105',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-09_kaxmg6.webp',
+        image: '/media/LoopFilm_img-09_kaxmg6.webp',
         height: 'h-56',
         rotation: 'rotate-1',
         alt: 'Bringing your vision to life with LoopFilm’s expertise in filming in Norway’s extreme environments',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-13_oagr2e.webp',
+        image: '/media/LoopFilm_img-13_oagr2e.webp',
         height: 'h-64',
         rotation: '-rotate-3',
         alt: 'A team of professionals for your filming needs in Norway',
