@@ -203,32 +203,28 @@ const testimonials = [
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-12_mw7n3n.webp',
+        image: '/media/LoopFilm_img-12_mw7n3n.webp',
         height: 'h-64',
         rotation: 'rotate-3',
         alt: 'LoopFilm’s team captures the beauty of Norway',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-31_ryguae.webp',
+        image: '/media/LoopFilm_img-31_ryguae.webp',
         height: 'h-64',
         rotation: '-rotate-2',
         alt: 'Dedicated and experienced film crew in Norway',
         scale: 'sm:scale-125',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/workGallery-10_x5pezl.webp',
+        image: '/media/workGallery-10_x5pezl.webp',
         height: 'h-28',
         rotation: 'rotate-1',
         alt: 'Filming scenes in snowy Norway',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-30_fzbijn.webp',
+        image: '/media/LoopFilm_img-30_fzbijn.webp',
         height: 'h-52',
         rotation: 'rotate-3',
         alt: 'Capturing the beauty of Norway with LoopFilm',
