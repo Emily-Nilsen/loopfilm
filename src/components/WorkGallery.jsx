@@ -268,16 +268,14 @@ const testimonials = [
         scale: 'sm:scale-100',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-05_sxsrpr.webp',
+        image: '/media/LoopFilm_img-05_sxsrpr.webp',
         height: 'h-60',
         rotation: '-rotate-2',
         alt: 'Choose LoopFilm for hassle-free filming in Norway - The land of natural wonders',
         scale: 'sm:scale-110',
       },
       {
-        image:
-          'https://res.cloudinary.com/dt3k2apqd/image/upload/v1678559686/Loop%20Film/LoopFilm_img-04_z780md.webp',
+        image: '/media/LoopFilm_img-04_z780md.webp',
         height: 'h-80',
         rotation: 'rotate-3',
         alt: 'Dedicated and experienced team',
