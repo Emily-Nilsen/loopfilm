@@ -4,9 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
 import { motion, useInView, useMotionValue, useAnimation } from 'framer-motion'
-import { CldImage } from 'next-cloudinary'
-import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
 
 export function WorkHero() {
   const [viewportHeight, setViewportHeight] = useState(0)
