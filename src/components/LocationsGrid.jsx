@@ -7,8 +7,7 @@ const locations = [
     alt: 'Northern Lights of Norway',
     description:
       'The Aurora Borealis, or Northern Lights, can be seen in Norway between September and April.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/northern_lights_zkcaln.webp',
+    source: '/media/northern_lights_zkcaln.webp',
     bgColour: 'bg-fuchsia-400/5',
   },
   {
@@ -16,8 +15,7 @@ const locations = [
     alt: 'View from the mountain Håen towards Måstadvika and the vacated hamlet of Måstad on Værøy in Lofoten, Nordland. Northern Norway. Island in the sea. Coast and mountains. Coastal landscape in Northern Norway.',
     description:
       'The dramatic landscapes and extraordinary views of the Lofoten Islands make for an incredibly picturesque backdrop.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/lofoten_qplihb.webp',
+    source: '/media/lofoten_qplihb.webp',
     bgColour: 'bg-teal-200/10',
   },
   {
@@ -25,8 +23,7 @@ const locations = [
     alt: 'Norwegian forests and woodlands',
     description:
       'Norway enjoys some of the oldest and most beautiful forests in Europe, with many accessible for filming.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/forest_zatrol.webp',
+    source: '/media/forest_zatrol.webp',
     bgColour: 'bg-green-500/5',
   },
   {
@@ -34,8 +31,7 @@ const locations = [
     alt: 'Filming in Norway’s charming towns',
     description:
       'Do you need snow for your film production? Look no further. In Norway’s mountains, you can find snow all year round.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1675094342/Loop%20Film/snow_xhdehm.webp',
+    source: '/media/snow_xhdehm.webp',
     bgColour: 'bg-pink-300/10',
   },
   {
@@ -93,23 +89,23 @@ export function LocationsGrid() {
         className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 sm:gap-y-12 sm:gap-x-8 xl:gap-x-8"
       >
         {locations.map((location) => (
-          <li key={location.source} className="relative rounded-2xl shadow-xl">
-            <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-2xl rounded-b-none bg-gray-100">
+          <li key={location.source} className="relative shadow-xl rounded-2xl">
+            <div className="block w-full overflow-hidden bg-gray-100 rounded-b-none group aspect-w-10 aspect-h-7 rounded-2xl">
               <Image
                 src={location.source}
                 alt={location.alt}
-                className="pointer-events-none object-cover"
+                className="object-cover pointer-events-none"
                 fill
               />
             </div>
             <div>
               <div className={location.bgColour}>
-                <p className="pointer-events-none block truncate p-6 py-4 text-lg font-semibold text-gray-900">
+                <p className="block p-6 py-4 text-lg font-semibold text-gray-900 truncate pointer-events-none">
                   {location.title}
                 </p>
               </div>
               <div className="p-6">
-                <p className="pointer-events-none block text-base text-gray-600">
+                <p className="block text-base text-gray-600 pointer-events-none">
                   {location.description}
                 </p>
               </div>
