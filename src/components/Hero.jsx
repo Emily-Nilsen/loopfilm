@@ -1,13 +1,9 @@
-import { useId, useRef, useState, useEffect } from 'react'
-
+import { useState, useEffect } from 'react'
 import { isMobile } from 'react-device-detect'
 import Image from 'next/image'
-import Link from 'next/link'
 import clsx from 'clsx'
-import { motion, useInView, useMotionValue, useAnimation } from 'framer-motion'
-import { CldImage } from 'next-cloudinary'
+import { motion } from 'framer-motion'
 import { Container } from '@/components/Container'
-import { Button } from '@/components/Button'
 
 export function Hero() {
   const [viewportHeight, setViewportHeight] = useState(0)
@@ -40,15 +36,15 @@ export function Hero() {
             className="object-cover"
             fill
             alt="The Beauty of Norway"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/landing_page_ufbowp.webp"
+            src="/media/landing_page_ufbowp.webp"
             unoptimized
           />
         </motion.div>
       </div>
 
-      <Container className="z-1 relative h-full">
-        <div className="grid h-full w-full grid-cols-5">
-          <div className="col-span-4 flex text-white sm:col-span-3">
+      <Container className="relative h-full z-1">
+        <div className="grid w-full h-full grid-cols-5">
+          <div className="flex col-span-4 text-white sm:col-span-3">
             <motion.div
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
