@@ -19,7 +19,7 @@ export function LocationsFooter() {
           }}
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/locationsFooterv2_e8plcx.webp"
+            src="/media/locationsFooterv2_e8plcx.webp"
             alt="Filming on ice for a unique perspective"
             width={3000}
             height={1993}

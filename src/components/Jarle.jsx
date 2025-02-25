@@ -79,7 +79,8 @@ export function Jarle() {
             </h2>
             <p className="max-w-3xl mt-4 text-xl text-gray-500">
               Meet the professional team at LoopFilm, with over thirty years of
-              experience in film production service and working in remote locations.
+              experience in film production service and working in remote
+              locations.
             </p>
           </div>
           <div className="relative max-w-xl px-6 mx-auto mt-12 lg:mt-24 lg:max-w-7xl lg:px-8">
@@ -136,7 +137,7 @@ export function Jarle() {
                     className="relative object-cover object-center mx-auto rounded-lg shadow-lg"
                     width={478}
                     height={472}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Jarle_w2viow.webp"
+                    src="/media/Jarle_w2viow.webp"
                     alt="Jarle Tangen"
                   />
                 </figure>
@@ -203,7 +204,7 @@ export function Jarle() {
                     className="relative object-cover object-center mx-auto rounded-lg shadow-lg"
                     width={435}
                     height={472}
-                    src="https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Per_Henry_btmlrb.webp"
+                    src="/media/Per_Henry_btmlrb.webp"
                     alt="Per-Henry Borch"
                   />
                 </div>
