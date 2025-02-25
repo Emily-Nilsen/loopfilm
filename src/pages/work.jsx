@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { Header } from '@/components/Header'
-import { WorkHero } from '@/components/WorkHero'
 import { VideoHero } from '@/components/VideoHero'
 import { VideoGallery } from '@/components/VideoGallery'
 import { Container } from '@/components/Container'
-import { WorkCta } from '@/components/WorkCta'
 import { WorkFooter } from '@/components/WorkFooter'
 
 import { Client } from '@notionhq/client'

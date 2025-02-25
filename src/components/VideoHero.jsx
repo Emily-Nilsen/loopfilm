@@ -1,5 +1,5 @@
 import { BackgroundVideo } from './BackgroundVideo'
-import { motion, useInView, useMotionValue, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export function VideoHero() {
   return (
@@ -17,7 +17,7 @@ export function VideoHero() {
         <div className="absolute inset-0">
           <BackgroundVideo />
         </div>
-        <div className="absolute top-0 left-0 h-20 w-full bg-gradient-to-b from-gray-900 sm:h-40" />
+        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-900 sm:h-40" />
       </motion.div>
     </>
   )

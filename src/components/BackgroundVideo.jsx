@@ -7,7 +7,7 @@ export function BackgroundVideo() {
         muted
         loop
         playsInline
-        poster="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_Desktop_cltinr.webp"
+        poster="/media/LoopFilm_Desktop_cltinr.webp"
       >
         <source
           src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1679221458/Loop%20Film/LoopFilm_Desktop_jjukya.mp4"
