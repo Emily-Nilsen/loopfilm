@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "logo": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_favicon_z0yh8u.svg",
-  "image": "https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/LoopFilm_img-02_hsq98i.webp",
+  "logo": "/media/LoopFilm_favicon_z0yh8u.svg",
+  "image": "/media/LoopFilm_img-02_hsq98i.webp",
   "@id": "https://loopfilm.no/",
   "name": "LoopFilm",
   "slogan": "Experience seamless filming in Norway with LoopFilm - Norway’s leading film production service company",
