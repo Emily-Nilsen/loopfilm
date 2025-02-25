@@ -21,7 +21,7 @@ export function Norway() {
           <div className="-mt-12 sm:mt-0">
             <Image
               className="lg:aspect-auto w-full bg-white object-contain sm:aspect-[3/2] lg:absolute lg:inset-0 lg:h-full"
-              src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/collage-transparent_eovpsp.webp"
+              src="/media/collage-transparent_eovpsp.webp"
               alt="Norway"
               width={1365}
               height={1525}
