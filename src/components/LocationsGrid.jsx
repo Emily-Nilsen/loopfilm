@@ -39,8 +39,7 @@ const locations = [
     alt: 'Fjords of Norway',
     description:
       'Norway is famous for its deep, narrow fjords surrounded by steep mountains and lush forests, creating a spectacular backdrop.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/oleksii-topolianskyi--oWyJoSqBRM-unsplash_xunz8i.jpg',
+    source: '/media/oleksii-topolianskyi--oWyJoSqBRM-unsplash_xunz8i.jpg',
     bgColour: 'bg-blue-100/40',
   },
   {
@@ -48,8 +47,7 @@ const locations = [
     alt: 'Filming Norway’s wildlife with LoopFilm',
     description:
       'Norway is home to a vast tundra landscape, with incredible views of this untouched landscape.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/sebastien-goldberg-1r6rwX1FUdc-unsplash_fqicna.jpg',
+    source: '/media/sebastien-goldberg-1r6rwX1FUdc-unsplash_fqicna.jpg',
     bgColour: 'bg-amber-400/5',
   },
   {
@@ -57,8 +55,7 @@ const locations = [
     alt: 'Filming on Norway’s scenic roads',
     description:
       'Norway can offer sensational driving scenes with its curvy roads, rugged coastline, and modern infrastructure.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/roads_xpbivu.webp',
+    source: '/media/roads_xpbivu.webp',
     bgColour: 'bg-gray-200/20',
   },
   {
@@ -66,8 +63,7 @@ const locations = [
     alt: 'Filming on cliffs for breathtaking views',
     description:
       'Spectacular views over sheer cliffs, perfect for panoramic landscapes and sensational vistas, await you in Norway.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/cliff_fdcqrd.webp',
+    source: '/media/cliff_fdcqrd.webp',
     bgColour: 'bg-sky-800/5',
   },
   {
@@ -75,8 +71,7 @@ const locations = [
     alt: 'Beaches and Coastlines of Norway - Capturing Norway’s natural beauty with LoopFilm',
     description:
       'With beautiful white sands and turquoise waters, Norway has some of the most striking stretches of coastline and beaches.',
-    source:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/beach_p7ohnf.webp',
+    source: '/media/beach_p7ohnf.webp',
     bgColour: 'bg-yellow-100/30',
   },
 ]

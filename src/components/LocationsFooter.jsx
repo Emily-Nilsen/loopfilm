@@ -1,15 +1,8 @@
 import Image from 'next/image'
 import { Footer } from './Footer'
-
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 
 export function LocationsFooter() {
-  const [ref, inView] = useInView({
-    threshold: 0.5, // adjust as needed
-    triggerOnce: true,
-  })
-
   return (
     <section className="relative">
       <div className="flex flex-col">
@@ -30,7 +23,7 @@ export function LocationsFooter() {
             alt="Filming on ice for a unique perspective"
             width={3000}
             height={1993}
-            className="-mt-32 object-cover sm:-mt-60 lg:-mt-80"
+            className="object-cover -mt-32 sm:-mt-60 lg:-mt-80"
           />
         </motion.div>
       </div>
