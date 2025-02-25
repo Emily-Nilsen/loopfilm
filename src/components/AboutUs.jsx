@@ -23,8 +23,7 @@ const people = [
   {
     name: 'Jarle Tangen',
     role: 'Founder of LoopFilm',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/g_face,g_east/Loop%20Film/Jarle_w2viow.webp',
+    imageUrl: '/media/Jarle_w2viow.webp',
     bio: [
       'Meet Jarle Tangen, the founding partner of LoopFilm AS. Jarle has a wealth of experience in the film industry, having studied film at the University of Windsor in Canada and Communication studies and Philosophy at the University of Oslo in Norway.',
       'He is also an authorised ski instructor, a happy grouse hunter, and an enthusiastic hobby sailor.',
@@ -38,8 +37,7 @@ const people = [
   {
     name: 'Per-Henry Borch',
     role: 'Film Producer',
-    imageUrl:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/v1673770954/Loop%20Film/Per_Henry_btmlrb.webp',
+    imageUrl: '/media/Per_Henry_btmlrb.webp',
     bio: [
       'Joining Jarle at LoopFilm AS is Per-Henry Borch, a seasoned film producer with over 25 years of experience in the industry. Per Henry is dedicated to getting the best results from any budget or script and takes an active role in every production stage.',
       'He works closely with all team members and has experience filming on all continents, having travelled to 55 countries and specialising in working in remote locations.',
@@ -85,7 +83,7 @@ export function AboutUs() {
 
   return (
     <div className="overflow-x-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+      <div className="px-6 py-24 mx-auto max-w-7xl lg:px-8 lg:py-32">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           <div className="flex flex-col justify-between">
             <div className="space-y-5 sm:space-y-4">
@@ -98,7 +96,7 @@ export function AboutUs() {
                 locations.
               </p>
             </div>
-            <div className="hidden items-end lg:flex"></div>
+            <div className="items-end hidden lg:flex"></div>
           </div>
           <div className="lg:col-span-2">
             <ul
@@ -112,7 +110,7 @@ export function AboutUs() {
                       <div className="aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
                         <Image
                           fill
-                          className="rounded-lg object-cover shadow-lg"
+                          className="object-cover rounded-lg shadow-lg"
                           src={person.imageUrl}
                           alt={person.name}
                         />
@@ -124,7 +122,7 @@ export function AboutUs() {
                           <h3>{person.name}</h3>
                           <p className="text-sky-600">{person.role}</p>
                           {/* LinkedIn */}
-                          <ul role="list" className="flex space-x-5 py-4">
+                          <ul role="list" className="flex py-4 space-x-5">
                             <li>
                               <a
                                 href={person.linkedinUrl}
@@ -134,7 +132,7 @@ export function AboutUs() {
                               >
                                 <span className="sr-only">LinkedIn</span>
                                 <svg
-                                  className="h-5 w-5"
+                                  className="w-5 h-5"
                                   aria-hidden="true"
                                   fill="currentColor"
                                   viewBox="0 0 20 20"
@@ -159,7 +157,7 @@ export function AboutUs() {
                                     Personal website link
                                   </span>
                                   <LinkIcon
-                                    className="h-5 w-5"
+                                    className="w-5 h-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -175,7 +173,7 @@ export function AboutUs() {
                                 >
                                   <span className="sr-only">Instagram</span>
                                   <InstagramLogo
-                                    className="h-5 w-5"
+                                    className="w-5 h-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -191,7 +189,7 @@ export function AboutUs() {
                                 >
                                   <span className="sr-only">Facebook</span>
                                   <FacebookLogo
-                                    className="h-5 w-5"
+                                    className="w-5 h-5"
                                     fill="currentColor"
                                   />
                                 </a>
@@ -218,7 +216,7 @@ export function AboutUs() {
                                 <span>
                                   <ArrowRightIcon
                                     fill="currentColor"
-                                    className="ml-2 h-4 w-4"
+                                    className="w-4 h-4 ml-2"
                                   />
                                 </span>{' '}
                               </Expandable.Button>
@@ -234,11 +232,11 @@ export function AboutUs() {
           </div>
         </div>
         {/* Awards */}
-        <div className="bg-t flex w-full pt-16">
+        <div className="flex w-full pt-16 bg-t">
           <div
             ref={awardsRef}
             id="awards"
-            className="mx-auto flex w-full max-w-4xl items-center px-3 text-center text-sm font-medium text-sky-50"
+            className="flex items-center w-full max-w-4xl px-3 mx-auto text-sm font-medium text-center text-sky-50"
           >
             <motion.div
               whileInView={{ opacity: awardsInView ? 1 : 0 }}
@@ -251,9 +249,9 @@ export function AboutUs() {
                 <motion.div
                   variants={slideIn}
                   key={i}
-                  className="mx-auto flex h-36 w-36 flex-col items-center justify-around gap-2 rounded-full bg-sky-900 p-6 shadow-sm sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
+                  className="flex flex-col items-center justify-around gap-2 p-6 mx-auto rounded-full shadow-sm h-36 w-36 bg-sky-900 sm:h-40 sm:w-40 sm:p-8 lg:justify-evenly lg:gap-0"
                 >
-                  <div className="flex h-full items-center justify-center">
+                  <div className="flex items-center justify-center h-full">
                     <award.logo className="h-auto max-h-[70px] w-24 max-w-[80px] fill-sky-200 sm:max-h-[80px] sm:w-28 sm:max-w-[100px]" />
                   </div>
                   <div className="max-w-[90px] pt-4 text-xs">{award.title}</div>

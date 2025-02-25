@@ -1,18 +1,12 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-
-import { MountainIcon } from './Logos'
-import { GlobeIcon } from './Logos'
-import { ClapperboardIcon } from './Logos'
 
 const companyFeatures = [
   {
     name: 'Full-service production',
     description: `Looking to film in Norway? Look no further than LoopFilm AS - the experienced Norwegian film production company offering a one-stop full-service production.`,
     alt: 'LoopFilm’s expert editing team offers professional post-production services in Norway',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/about_img_1_m0foha.webp',
+    image: '/media/about_img_1_m0foha.webp',
   },
   {
     name: 'Global excellence',
@@ -21,22 +15,20 @@ const companyFeatures = [
       Norway, known for our ability to provide exceptional services
       to filmmakers worldwide.`,
     alt: 'Norway’s best film production service',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/car_qtaqko.webp',
+    image: '/media/car_qtaqko.webp',
   },
   {
     name: 'Scenic Norway',
     description:
       'Our location offers a wide range of spectacular landscapes, from white sandy beaches to glaciers, and we have the infrastructure to make filming in Norway a breeze.',
     alt: 'Filming in Norway’s stunning landscape',
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/beaches_ymznql.webp',
+    image: '/media/beaches_ymznql.webp',
   },
 ]
 
 export function AboutHero() {
   return (
-    <div className="bg-t overflow-hidden">
+    <div className="overflow-hidden bg-t">
       {/* Header */}
       <div className="relative bg-gray-800 pb-32 sm:-mb-0 sm:h-[70vh] sm:min-h-[550px]">
         <motion.div
@@ -50,8 +42,8 @@ export function AboutHero() {
         >
           <Image
             fill
-            className="h-full w-full object-cover"
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutHero_uk3dmg.webp"
+            className="object-cover w-full h-full"
+            src="/media/aboutHero_uk3dmg.webp"
             alt="Capturing Norway’s stunning snowy mountains"
             unoptimized
             priority
@@ -62,13 +54,13 @@ export function AboutHero() {
             aria-hidden="true"
           />
         </motion.div>
-        <div className="relative mx-auto flex h-full max-w-7xl items-center px-6 pt-32 pb-16 sm:pt-32 sm:pb-16 lg:px-8">
+        <div className="relative flex items-center h-full px-6 pt-32 pb-16 mx-auto max-w-7xl sm:pt-32 sm:pb-16 lg:px-8">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
               Loop
               <span className="text-fuchsia-300">Film</span>
             </h1>
-            <p className="mt-6 max-w-3xl text-lg text-white/95 sm:text-2xl">
+            <p className="max-w-3xl mt-6 text-lg text-white/95 sm:text-2xl">
               Bringing 30+ years of experience to the Norwegian film industry.
             </p>
           </div>
@@ -77,7 +69,7 @@ export function AboutHero() {
 
       {/* Overlapping cards */}
       <section
-        className="relative z-10 mx-auto -mt-28 max-w-7xl px-6 pb-32 lg:-mt-36 lg:px-8"
+        className="relative z-10 px-6 pb-32 mx-auto -mt-28 max-w-7xl lg:-mt-36 lg:px-8"
         aria-labelledby="company-heading"
       >
         <h2 className="sr-only" id="company-heading">
@@ -99,11 +91,11 @@ export function AboutHero() {
                 ease: 'easeOut',
               }}
               key={i}
-              className="relative mx-auto flex max-w-3xl flex-col rounded-2xl bg-white shadow-xl sm:flex-row lg:flex-col"
+              className="relative flex flex-col max-w-3xl mx-auto bg-white shadow-xl rounded-2xl sm:flex-row lg:flex-col"
             >
-              <div className="relative z-10 flex-1 flex-col">
+              <div className="relative z-10 flex-col flex-1">
                 <div>
-                  <div className="relative w-full rounded-t-2xl bg-fuchsia-100 px-6 pt-10 pb-8 sm:rounded-tr-none md:px-8 lg:rounded-tr-2xl">
+                  <div className="relative w-full px-6 pt-10 pb-8 rounded-t-2xl bg-fuchsia-100 sm:rounded-tr-none md:px-8 lg:rounded-tr-2xl">
                     <h3 className="text-xl font-semibold text-gray-900">
                       {feature.name}
                     </h3>
@@ -116,13 +108,13 @@ export function AboutHero() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-52 rounded-bl-2xl rounded-br-2xl bg-gray-300 p-2 sm:h-auto sm:w-1/2 sm:rounded-tr-2xl md:px-8 lg:h-52 lg:w-full lg:rounded-tr-none lg:rounded-bl-2xl">
+              <div className="relative p-2 bg-gray-300 h-52 rounded-bl-2xl rounded-br-2xl sm:h-auto sm:w-1/2 sm:rounded-tr-2xl md:px-8 lg:h-52 lg:w-full lg:rounded-tr-none lg:rounded-bl-2xl">
                 <Image
                   src={feature.image}
                   alt={feature.alt}
                   unoptimized
                   fill
-                  className="h-full w-full overflow-hidden rounded-bl-2xl rounded-br-2xl object-cover sm:rounded-tr-2xl sm:rounded-bl-none lg:rounded-tr-none lg:rounded-bl-2xl"
+                  className="object-cover w-full h-full overflow-hidden rounded-bl-2xl rounded-br-2xl sm:rounded-tr-2xl sm:rounded-bl-none lg:rounded-tr-none lg:rounded-bl-2xl"
                 />
               </div>
             </motion.div>
