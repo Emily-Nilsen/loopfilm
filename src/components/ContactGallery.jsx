@@ -29,32 +29,27 @@ const slideIn = {
 
 const photos = [
   {
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_3_ogurke.webp',
+    image: '/media/gallery_3_ogurke.webp',
     rotation: 'rotate-2',
     alt: 'Effortless filming in Norway with LoopFilm’s help',
   },
   {
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_2_bbbumk.webp',
+    image: '/media/gallery_2_bbbumk.webp',
     rotation: '-rotate-2',
     alt: 'LoopFilm’s expert lighting techniques',
   },
   {
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_wf1exg.webp',
+    image: '/media/gallery_wf1exg.webp',
     rotation: 'rotate-2',
     alt: 'LoopFilm - Where creativity meets efficiency for your Norway shoot',
   },
   {
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_5_jqm0mm.webp',
+    image: '/media/gallery_5_jqm0mm.webp',
     rotation: 'rotate-2',
     alt: 'LoopFilm’s expert glacier shots',
   },
   {
-    image:
-      'https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/gallery_1_hptbyl.webp',
+    image: '/media/gallery_1_hptbyl.webp',
     rotation: '-rotate-2',
     alt: 'Filming in Norway made easy',
   },
@@ -63,8 +58,6 @@ const photos = [
 export function ContactGallery() {
   const [ref, inView] = useInView({ threshold: 0.7, triggerOnce: true })
 
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
   return (
     <div ref={ref} className="mt-16 overflow-hidden sm:mt-20">
       <motion.div
@@ -72,7 +65,7 @@ export function ContactGallery() {
         variants={container}
         initial={inView ? 'show' : 'hidden'}
         animate={inView ? 'show' : 'hidden'}
-        className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8"
+        className="flex justify-center gap-5 py-4 -my-4 overflow-hidden sm:gap-8"
       >
         {photos.map((photo, imageIndex) => (
           <div
@@ -112,7 +105,7 @@ export function ContactGallery() {
                   height={1600}
                   alt={photo.alt}
                   sizes="(min-width: 640px) 18rem, 11rem"
-                  className="absolute inset-0 h-full w-full object-cover opacity-100"
+                  className="absolute inset-0 object-cover w-full h-full opacity-100"
                   unoptimized
                 />
               </motion.div>
