@@ -9,10 +9,7 @@ export function BackgroundVideo() {
         playsInline
         poster="/media/LoopFilm_Desktop_cltinr.webp"
       >
-        <source
-          src="https://res.cloudinary.com/dt3k2apqd/video/upload/v1679221458/Loop%20Film/LoopFilm_Desktop_jjukya.mp4"
-          type="video/mp4"
-        />
+        <source src="/media/LoopFilm_Desktop_jjukya.mp4" type="video/mp4" />
       </video>
     </div>
   )
