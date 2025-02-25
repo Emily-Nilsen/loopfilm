@@ -1,16 +1,8 @@
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-
 import { Footer } from './Footer'
 
 export function ContactFooter() {
-  const [ref, inView] = useInView({
-    threshold: 0.5, // adjust as needed
-    triggerOnce: true,
-  })
-
   return (
     <section className="relative">
       <div className="flex flex-col">
@@ -27,11 +19,11 @@ export function ContactFooter() {
           }}
         >
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Loop%20Film/aboutFooter_huleog.webp"
+            src="/media/aboutFooter_huleog.webp"
             alt="Bringing your vision to life with LoopFilm - Your reliable filming partner in Norway"
             width={3000}
             height={1148}
-            className="-mt-20 object-cover"
+            className="object-cover -mt-20"
           />
         </motion.div>
       </div>
