@@ -86,7 +86,7 @@ export default function Contact() {
           <p className="text-warm-gray-500 mt-6 max-w-3xl text-xl">
             Don’t hesitate to reach out to us for your next film production.
             We’re here to help bring your vision to life in the beautiful
-            landscapes of Norway..
+            landscapes of Norway.
           </p>
         </div>
       </div>
