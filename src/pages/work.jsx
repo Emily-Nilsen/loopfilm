@@ -40,7 +40,7 @@ export default function Work() {
             className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
           >
             {films.map((film) => (
-              <div key={film.videoUrl}>
+              <div key={film.videoUrl} className="h-full">
                 <VideoGallery
                   title={film.title}
                   videoUrl={film.videoUrl}

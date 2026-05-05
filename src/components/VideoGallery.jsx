@@ -11,10 +11,10 @@ export function VideoGallery({
   imgUrl,
 }) {
   return (
-    <li key={videoUrl} className="relative">
+    <li key={videoUrl} className="relative h-full">
       <div
         id={videoUrl}
-        className="overflow-hidden bg-white shadow-xl rounded-2xl"
+        className="h-full overflow-hidden bg-white shadow-xl rounded-2xl"
       >
         <div className="flex-shrink-0">
           <VideoPlayer url={videoUrl} image={imgUrl} />
