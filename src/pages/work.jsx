@@ -5,9 +5,9 @@ import { VideoGallery } from '@/components/VideoGallery'
 import { Container } from '@/components/Container'
 import { WorkFooter } from '@/components/WorkFooter'
 
-import { Client } from '@notionhq/client'
+import films from '@/data/films.json'
 
-export default function Work({ films }) {
+export default function Work() {
   return (
     <>
       <Head>
@@ -40,45 +40,16 @@ export default function Work({ films }) {
             className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8"
           >
             {films.map((film) => (
-              <div key={film.id}>
+              <div key={film.videoUrl}>
                 <VideoGallery
-                  title={
-                    film.properties.Title.title[0]
-                      ? film.properties.Title.title[0].plain_text
-                      : 'New Release: LoopFilm'
-                  }
-                  videoUrl={film.properties.VideoUrl.url}
-                  director={
-                    film.properties.Director.rich_text[0]
-                      ? film.properties.Director.rich_text[0].plain_text
-                      : null
-                  }
-                  productionCompany={
-                    film.properties.ProductionCompany.rich_text[0]
-                      ? film.properties.ProductionCompany.rich_text[0]
-                          .plain_text
-                      : null
-                  }
-                  producer={
-                    film.properties.Producer.rich_text[0]
-                      ? film.properties.Producer.rich_text[0].plain_text
-                      : null
-                  }
-                  client={
-                    film.properties.Client.rich_text[0]
-                      ? film.properties.Client.rich_text[0].plain_text
-                      : null
-                  }
-                  agency={
-                    film.properties.Agency.rich_text[0]
-                      ? film.properties.Agency.rich_text[0].plain_text
-                      : null
-                  }
-                  imgUrl={
-                    film.properties.ImgUrl.files[0]
-                      ? film.properties.ImgUrl.files[0].name
-                      : '/media/new_release_loopfilm_zbk6jw.webp'
-                  }
+                  title={film.title}
+                  videoUrl={film.videoUrl}
+                  director={film.director}
+                  productionCompany={film.productionCompany}
+                  producer={film.producer}
+                  client={film.client}
+                  agency={film.agency}
+                  imgUrl={film.imgUrl}
                 />
               </div>
             ))}
@@ -88,26 +59,4 @@ export default function Work({ films }) {
       <WorkFooter />
     </>
   )
-}
-
-export async function getStaticProps() {
-  const notion = new Client({ auth: process.env.NOTION_API_KEY })
-
-  const response = await notion.databases.query({
-    database_id: process.env.NOTION_DATABASE_ID,
-
-    sorts: [
-      {
-        property: 'Order',
-        direction: 'descending',
-      },
-    ],
-  })
-
-  return {
-    props: {
-      films: response.results,
-    },
-    revalidate: 1,
-  }
 }
