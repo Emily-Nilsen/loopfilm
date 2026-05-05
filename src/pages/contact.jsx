@@ -42,10 +42,10 @@ export default function Contact() {
             <Image
               priority
               fill
+              sizes="100vw"
               src="/media/contactHero_tyxchd.webp"
               alt="Unlock the full potential of Norway’s breathtaking locations with LoopFilm"
               className="object-cover object-center"
-              unoptimized
             />
             <div className="absolute top-0 h-full w-full bg-gradient-to-b from-black/80"></div>
             <motion.div

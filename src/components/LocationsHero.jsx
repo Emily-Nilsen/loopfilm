@@ -35,9 +35,9 @@ export function LocationsHero() {
             priority
             className="object-cover"
             fill
+            sizes="100vw"
             alt="Arctic Norway - Filming the Northern Lights in the snow with LoopFilm"
             src="/media/locationsHero_q0qijj.webp"
-            unoptimized
           />
         </motion.div>
       </div>

@@ -7,6 +7,7 @@ export function BackgroundVideo() {
         muted
         loop
         playsInline
+        preload="metadata"
         poster="/media/LoopFilm_Desktop_cltinr.webp"
       >
         <source src="/media/LoopFilm_Desktop_jjukya.mp4" type="video/mp4" />

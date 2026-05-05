@@ -110,6 +110,7 @@ export function AboutUs() {
                       <div className="aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
                         <Image
                           fill
+                          sizes="(min-width: 640px) 25vw, 100vw"
                           className="object-cover rounded-lg shadow-lg"
                           src={person.imageUrl}
                           alt={person.name}

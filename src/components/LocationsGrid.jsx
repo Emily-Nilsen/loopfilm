@@ -91,6 +91,7 @@ export function LocationsGrid() {
                 alt={location.alt}
                 className="object-cover pointer-events-none"
                 fill
+                sizes="(min-width: 640px) 33vw, 100vw"
               />
             </div>
             <div>

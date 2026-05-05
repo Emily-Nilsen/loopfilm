@@ -35,9 +35,9 @@ export function Hero() {
             priority
             className="object-cover"
             fill
+            sizes="100vw"
             alt="The Beauty of Norway"
             src="/media/landing_page_ufbowp.webp"
-            unoptimized
           />
         </motion.div>
       </div>

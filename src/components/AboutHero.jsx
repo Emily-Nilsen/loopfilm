@@ -42,10 +42,10 @@ export function AboutHero() {
         >
           <Image
             fill
+            sizes="100vw"
             className="object-cover w-full h-full"
             src="/media/aboutHero_uk3dmg.webp"
             alt="Capturing Norway’s stunning snowy mountains"
-            unoptimized
             priority
           />
 
@@ -112,8 +112,8 @@ export function AboutHero() {
                 <Image
                   src={feature.image}
                   alt={feature.alt}
-                  unoptimized
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover w-full h-full overflow-hidden rounded-bl-2xl rounded-br-2xl sm:rounded-tr-2xl sm:rounded-bl-none lg:rounded-tr-none lg:rounded-bl-2xl"
                 />
               </div>

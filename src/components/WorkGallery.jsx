@@ -356,6 +356,7 @@ export function WorkGallery() {
                 <Image
                   className="object-cover overflow-hidden rounded-2xl"
                   fill
+                  sizes="(min-width: 1280px) 50vw, (min-width: 640px) 100vw, 100vw"
                   src={featuredTestimonial.image}
                   alt="No challenge too big for LoopFilm’s skilled team in capturing stunning shots in Norway’s challenging terrain"
                 />
@@ -392,6 +393,7 @@ export function WorkGallery() {
                           <Image
                             className="object-cover overflow-hidden rounded-2xl"
                             fill
+                            sizes="(min-width: 1280px) 25vw, (min-width: 640px) 50vw, 100vw"
                             src={testimonial.image}
                             alt={testimonial.alt}
                           />

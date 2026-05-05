@@ -106,7 +106,6 @@ export function ContactGallery() {
                   alt={photo.alt}
                   sizes="(min-width: 640px) 18rem, 11rem"
                   className="absolute inset-0 object-cover w-full h-full opacity-100"
-                  unoptimized
                 />
               </motion.div>
             </div>
