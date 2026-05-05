@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/components/Image'
 
 import { PorscheLogo } from '@/components/Logos'
 import { AppleLogo } from '@/components/Logos'

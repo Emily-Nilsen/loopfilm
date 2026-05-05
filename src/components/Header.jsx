@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from '@/components/Image'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 

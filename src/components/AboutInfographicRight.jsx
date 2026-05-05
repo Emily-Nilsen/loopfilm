@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/components/Image'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

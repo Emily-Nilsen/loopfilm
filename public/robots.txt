@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://loopfilm.no
+
+# Sitemaps
+Sitemap: https://loopfilm.no/sitemap.xml

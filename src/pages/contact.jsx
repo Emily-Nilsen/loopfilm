@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from '@/components/Image'
 
 import clsx from 'clsx'
 import { motion } from 'framer-motion'

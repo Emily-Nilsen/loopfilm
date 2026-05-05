@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import Image from 'next/image'
+import Image from '@/components/Image'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 import clsx from 'clsx'

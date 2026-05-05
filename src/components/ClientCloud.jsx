@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import Image from '@/components/Image'
 import clsx from 'clsx'
 import {
   motion,

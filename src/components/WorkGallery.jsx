@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from '@/components/Image'
 
 const featuredTestimonial = {
   image: '/media/workGallery-02_fphdlo.webp',

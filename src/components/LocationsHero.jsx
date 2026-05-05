@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { isMobile } from 'react-device-detect'
-import Image from 'next/image'
+import Image from '@/components/Image'
 import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { Container } from '@/components/Container'
