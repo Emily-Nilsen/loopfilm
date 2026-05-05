@@ -93,7 +93,7 @@ export function HomepageFeature() {
         <motion.div variants={slideIn} className="relative sm:-mt-16 lg:-mt-20">
           <Image
             alt="LoopFilm Feature Reel"
-            src="/media/LoopFilm_feature_reel_w1zliz.svg"
+            src="/media/LoopFilm_feature_reel.webp"
             width={1187}
             height={829}
             className="relative z-0 object-cover"
